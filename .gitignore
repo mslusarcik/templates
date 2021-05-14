@@ -1,0 +1,6 @@
+#nodes
+node_modules/
+
+#babyweb
+babyweb.exe
+
