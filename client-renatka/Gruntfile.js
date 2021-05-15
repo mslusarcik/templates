@@ -27,6 +27,13 @@ module.exports = function (grunt) {
         ],
       },
     },
+    uglify: {
+      target: {
+        files: {
+          'assets/js/min/main.min.js': ['assets/js/main.js']
+        }
+      }
+    },
     connect: {
       server: {
         options: {
@@ -48,6 +55,11 @@ module.exports = function (grunt) {
         files: ["**/*.scss", "!**/*.css", "!**/*.map"],
         tasks: ["css"],
       },
+      js: {
+        // You need a task, can be any string
+        files: ["**/*.js", "!**/*.min.js"],
+        tasks: ["uglify"],
+      },
       html: {
         // You need a task, can be any string
         files: ["**/*.html"],
@@ -56,6 +68,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("css", ["sass", "cssmin"]);
+  grunt.registerTask("uglify", ["uglify"]);
   grunt.registerTask("default", ["watch"]);
   grunt.registerTask("server", ["connect", "watch"]);
 
@@ -64,4 +77,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-connect");
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 };
