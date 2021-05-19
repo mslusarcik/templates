@@ -1,5 +1,7 @@
 #nodes
 node_modules/
+node_modules_NTB/
+node_modules_PC/
 
 #babyweb
 babyweb.exe
