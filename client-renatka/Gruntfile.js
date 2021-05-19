@@ -34,6 +34,16 @@ module.exports = function (grunt) {
         }
       }
     },
+    autoprefixer: {
+      options: {
+        browsers: ['ie > 7', 'ff > 3.4', 'chrome > 3', 'safari > 3'],
+      },
+      dist: { // Target
+        files: {
+          'assets/css/main-prefixed.css': 'assets/css/main.css'
+        }
+      }
+    },
     connect: {
       server: {
         options: {
@@ -43,8 +53,8 @@ module.exports = function (grunt) {
           hostname: "localhost",
           base: ".",
           open: true,
-        },
-      },
+        }
+      }
     },
     watch: {
       options: {
@@ -64,10 +74,10 @@ module.exports = function (grunt) {
         // You need a task, can be any string
         files: ["**/*.html"],
       },
-    },
+    }
   });
 
-  grunt.registerTask("css", ["sass", "cssmin"]);
+  grunt.registerTask("css", ["sass", "autoprefixer", "cssmin"]);
   grunt.registerTask("uglify", ["uglify"]);
   grunt.registerTask("default", ["watch"]);
   grunt.registerTask("server", ["connect", "watch"]);
@@ -78,4 +88,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-connect");
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-autoprefixer');
 };
