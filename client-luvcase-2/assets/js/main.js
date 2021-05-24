@@ -1,5 +1,5 @@
 setTimeout(function () {
-  const uploadsFolder = "https://shoptetdoplnky.cz/dapfresh/uploads/";
+  const uploadsFolder = "https://slusarcik.cz/shoptet/luvcase/images/";
 
   $("body").append(`
   <div class="band-designer-modal" style="display: none;">
@@ -16,7 +16,7 @@ setTimeout(function () {
 
   let designerInitialized = false;
 
-  $.getJSON("/assets/json/designerProducts.json", function (data) {
+  $.getJSON("assets/json/designerProducts.json", function (data) {
     let prodJson = data;
     $("#show-fpd").click(() => {
       /*
@@ -166,7 +166,8 @@ setTimeout(function () {
             $("#show-fpd").text("UPRAVIT NÁVRH");
             $(".add-to-cart").show();
           });
-        });*/
+        });
+        */
       }
     });
   });
