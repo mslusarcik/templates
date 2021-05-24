@@ -150,8 +150,8 @@ $.getJSON("assets/json/designerProducts.json", function (data) {
               }
               var ajaxData = JSON.parse(data);
               localVar = {
-                svgUrl: uploadsFolder + ajaxData.SVGurl,
-                preview: uploadsFolder + ajaxData.PNGurl,
+                svgUrl: ajaxData.SVGurl,
+                preview: ajaxData.PNGurl,
                 fonts: print.used_fonts,
               };
 
