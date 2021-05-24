@@ -1,0 +1,120 @@
+#dkLabNoteFileForm {
+  display: none;
+}
+#show-fpd {
+  margin-top: 11px;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #7ddcfa;
+  color: #fff;
+  background-color: #7ddcfa;
+}
+
+/* BAND DESIGNER */
+.band-designer-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 100000;
+  background: rgba(0, 0, 0, 0.9);
+  padding-top: 60px;
+}
+
+.band-designer-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+#band-designer {
+  height: 100% !important;
+}
+
+.fpd-container .fpd-main-wrapper {
+  background: #fff !important;
+}
+
+.fpd-navigation > div[data-module="designs"] {
+  display: none;
+}
+
+.fpd-modal-download .fpd-checkbox {
+  display: none;
+}
+
+.band-designer-close:before {
+  content: "\E912";
+  font-family: shoptet;
+  color: #fff;
+}
+
+.band-designer-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.band-designer-close:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.band-designer-warning {
+  text-align: center;
+}
+
+.band-designer-action {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.band-designer-action > .btn.btn-conversion {
+  background-color: #027bbf;
+  border-color: #027bbf;
+  color: #fff;
+  cursor: pointer;
+}
+
+.band-designer-action > .btn.btn-conversion:hover {
+  background-color: #fff;
+  border-color: #027bbf;
+  color: #027bbf;
+}
+
+.in-vlastni-motiv .p-detail-inner .detail-parameters > .variant-list:first-of-type {
+  display: none;
+}
+
+button#show-fpd {
+  width: 100%;
+  margin-left: 94px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #027bbf;
+  border-color: #fff;
+  color: #fff;
+  font-size: 16px;
+}
+
+button#show-fpd:hover {
+  background-color: #fff;
+  border-color: #027bbf;
+  color: #027bbf;
+}
+
+@media (max-width: 767px) {
+  button#show-fpd {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+}

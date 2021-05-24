@@ -13,17 +13,17 @@ $("body").append(`
   </div>
 </div>`);
 
+$(".add-to-cart").hide();
+
 let designerInitialized = false;
 
 $.getJSON("assets/json/designerProducts.json", function (data) {
   let prodJson = data;
   $("#show-fpd").click(() => {
-    /*
-      if ($("body").hasClass("disabled-add-to-cart")) {
-        $(".add-to-cart-button").trigger("click");
-        return;
-      }
-      */
+    if ($("body").hasClass("disabled-add-to-cart")) {
+      $(".add-to-cart-button").trigger("click");
+      return;
+    }
     $(".band-designer-modal").show();
     let def = "default";
     if (!designerInitialized) {
@@ -117,18 +117,16 @@ $.getJSON("assets/json/designerProducts.json", function (data) {
       $(".band-designer-action>button").click(() => {
         $(".band-designer-modal").hide();
         let print = fancyInit.getPrintOrderData();
-        console.log(print);
         print.preview = fancyInit.getViewsDataURL();
-        console.log(print.preview);
         fancyInit.getProductDataURL(function (preview) {
           print.preview = preview;
-          console.log(JSON.stringify(print));
           $.ajax({
             url: "https://slusarcik.cz/shoptet/luvcase/save-svg.php",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify(print),
             success: function (data) {
+              console.log(data);
               if (data.status == "success") {
                 console.log("Success AJAX");
               }
@@ -155,17 +153,18 @@ $.getJSON("assets/json/designerProducts.json", function (data) {
                 preview: uploadsFolder + data + ".png",
                 fonts: print.used_fonts,
               };
-              $(".p-image.image > a.p-main-image").attr("href", uploadsFolder + data + ".png");
-              $(".p-image.image > a.p-main-image > img").attr("src", uploadsFolder + data + ".png");
-              $(".p-image.image > a.p-main-image > img").addClass("designer-preview-img");
               */
+              var ajaxData = JSON.parse(data);
+              $(".p-image > a.p-main-image").attr("href", ajaxData.PNGurl);
+              $(".p-image > a.p-main-image > img").attr("src", ajaxData.PNGurl);
+              $(".p-image > a.p-main-image > img").addClass("designer-preview-img");
             },
             error: function () {
               console.log("Cannot upload SVG to server..");
             },
           });
           $("#show-fpd").text("Upravit návrh");
-          //$(".add-to-cart").show();
+          $(".add-to-cart").show();
         });
       });
     }
