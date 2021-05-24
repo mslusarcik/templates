@@ -1,0 +1,55 @@
+{
+  "default": {
+    "productJson": [
+      [
+        {
+          "title": "VLASTNÍ DESIGN KRYTU",
+          "thumbnail": "http://www.dapfresh.cz/user/documents/designer/images/frame.png",
+          "options": {
+            "stageWidth": 410,
+            "stageHeight": 615
+          },
+          "elements": [
+            {
+              "type": "image",
+              "source": "http://www.dapfresh.cz/user/documents/designer/images/logo2.png",
+              "title": "Logo",
+              "parameters": {
+                "z": 2,
+                "topped": true,
+                "scaleX": 0.43,
+                "scaleY": 0.43,
+                "autoCenter": true
+              }
+            },
+            {
+              "type": "image",
+              "source": "http://www.dapfresh.cz/user/documents/designer/images/frame2.png",
+              "title": "Frame",
+              "parameters": {
+                "z": 1,
+                "topped": true,
+                "scaleX": 0.43,
+                "scaleY": 0.43,
+                "autoCenter": true
+              }
+            },
+            {
+              "type": "image",
+              "source": "http://www.dapfresh.cz/user/documents/designer/images/plate4.svg",
+              "title": "Plate",
+              "parameters": {
+                "z": 0,
+                "scaleX": 0.43,
+                "scaleY": 0.43,
+                "autoCenter": true,
+                "fill": "#fff",
+                "colors": 1
+              }
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,269 @@
+<style>
+  .cart-inner > h4:not(.custom-gifts-heading) {
+    display: none;
+  }
+  h4.custom-gifts-heading {
+    color: #000;
+    visibility: visible !important;
+    margin-bottom: 18px !important;
+    font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    h4.custom-gifts-heading {
+      margin-bottom: 0 !important;
+    }
+  }
+  .custom-gifts {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  @media (max-width: 767px) {
+    .custom-gifts {
+      flex-direction: column;
+    }
+  }
+  .custom-gifts .single-gift {
+    display: flex;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+  .custom-gifts .single-gift:last-child {
+    border-right: 0;
+  }
+  @media (max-width: 767px) {
+    .custom-gifts .single-gift {
+      margin-top: 20px;
+      border-right: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+  .custom-gifts .single-gift .gift-image {
+    width: 55px;
+    height: 60px;
+    background-color: #fff;
+  }
+  .custom-gifts .single-gift .gift-image > img {
+    display: block;
+    max-height: 60px;
+    margin: 0 auto;
+  }
+  .custom-gifts .single-gift .gift-content {
+    margin-left: 10px;
+  }
+  .custom-gifts .single-gift .gift-content > .gift-heading {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .custom-gifts .single-gift .gift-content .gift-desc {
+    font-size: 11px;
+    color: #989898;
+    margin-bottom: 0;
+  }
+  .custom-gifts .single-gift .gift-content .gift-btn {
+    color: green;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+  .custom-gifts .single-gift .gift-content .gift-btn > span {
+    background-color: lightgreen;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 6px;
+  }
+
+  .custom-present .quantity .increase,
+  .custom-present .quantity .decrease {
+    background-color: #eee;
+    cursor: default;
+  }
+</style>
+
+<script>
+  /* *********************
+   * Variable
+   * definition
+   *********************** */
+
+  var presents = {
+    present1: "38/40",
+    present1Img:
+      "https://cdn.myshoptet.com/usr/www.cityzenwear.cz/user/shop/big/81_bambusove-ponozky-cerne.gif?5e456a2a",
+    present1Title: "Bambusové ponožky",
+    present1Desc: "Vel. 38-42 | Černé",
+    present2: "38/42",
+    present2Img:
+      "https://cdn.myshoptet.com/usr/www.cityzenwear.cz/user/shop/big/81_bambusove-ponozky-cerne.gif?5e456a2a",
+    present2Title: "Bambusové ponožky",
+    present2Desc: "Vel. 43-46 | Černé",
+  };
+
+  /* *********************
+   * Function checks if there is
+   * conditions met for presents
+   *********************** */
+
+  function checkPresentAvailability() {
+    var prodAmount = 0;
+    insertedHtml = false;
+    var presentInCart = false;
+
+    $(".cart-table > tbody > tr").each(function (index) {
+      var productPrice = $(this).find(".p-total > .price-final").text();
+      productPrice = productPrice.replace("Kč", "");
+      productPrice = parseInt(productPrice);
+      console.log(productPrice);
+      if (productPrice >= 1) {
+        var currentAmount = $(this)
+          .find(".quantity-form .quantity > input[name=amount]")
+          .val();
+        currentAmount = parseInt(currentAmount);
+        prodAmount = prodAmount + currentAmount;
+      } else {
+        hidePresents();
+        $(this).addClass("custom-present");
+        $(this).find(".quantity > input.amount").attr("disabled", true);
+        presentInCart = true;
+      }
+    });
+
+    if (prodAmount >= 2) {
+      console.log("Calling showPresents()");
+      if (!insertedHtml) {
+        if (presentInCart == false) {
+          insertPresents();
+        } else {
+          hidePresents();
+        }
+      } else {
+        if (presentInCart == false) {
+          showPresents();
+        } else {
+          hidePresents();
+        }
+      }
+    } else {
+      console.log(
+        "You don't have enough products in cart. Calling hidePresents()"
+      );
+      hidePresents();
+      removeItem();
+    }
+  }
+
+  /* *********************
+   * Function adds products in cart
+   * after click on .gift-btn
+   *********************** */
+
+  function addPresentToCart() {
+    $(".gift-btn > span").click(function () {
+      var prodCode = $(this).data("p-code");
+      console.log(prodCode);
+      if (prodCode) {
+        shoptet.cartShared.addToCart({ productCode: prodCode });
+      }
+    });
+  }
+
+  /* *********************
+   * Function removes
+   * products from cart
+   *********************** */
+
+  function removeItem() {
+    jQuery(
+      ".removeable[data-micro-sku='" +
+        presents.present1 +
+        "'] .p-total > form button.remove-item"
+    ).click();
+    jQuery(
+      ".removeable[data-micro-sku='" +
+        presents.present2 +
+        "'] .p-total > form button.remove-item"
+    ).click();
+  }
+
+  /* *********************
+   * Function dynamically adds
+   * custom html on load to the cart
+   *********************** */
+
+  function insertPresents() {
+    var presentsHtml =
+      '<h4 class="myh4 custom-gifts-heading">Vyberte si dárek</h4>';
+    presentsHtml += '<div class="custom-gifts">';
+    presentsHtml += '<div class="single-gift">';
+    presentsHtml += '<div class="gift-image">';
+    presentsHtml += '<img src="' + presents.present1Img + '" />';
+    presentsHtml += "</div>";
+    presentsHtml += '<div class="gift-content">';
+    presentsHtml +=
+      '<h5 class="gift-heading">' + presents.present1Title + "</h5>";
+    presentsHtml += '<p class="gift-desc">' + presents.present1Desc + "</p>";
+    presentsHtml +=
+      '<p class="gift-btn">Zdarma k objednávce<span data-p-code="' +
+      presents.present1 +
+      '">+</span></p>';
+    presentsHtml += "</div>";
+    presentsHtml += "</div>";
+    presentsHtml += '<div class="single-gift">';
+    presentsHtml += '<div class="gift-image">';
+    presentsHtml += '<img src="' + presents.present2Img + '" />';
+    presentsHtml += "</div>";
+    presentsHtml += '<div class="gift-content">';
+    presentsHtml +=
+      '<h5 class="gift-heading">' + presents.present2Title + "</h5>";
+    presentsHtml += '<p class="gift-desc">' + presents.present2Desc + "</p>";
+    presentsHtml +=
+      '<p class="gift-btn">Zdarma k objednávce<span data-p-code="' +
+      presents.present2 +
+      '">+</span></p>';
+    presentsHtml += "</div>";
+    presentsHtml += "</div>";
+    presentsHtml += "</div>";
+
+    $(presentsHtml).insertBefore($(".cart-inner > .row.summary"));
+    addPresentToCart();
+  }
+
+  /* *********************
+   * Function shows
+   * presents in cart
+   *********************** */
+
+  function showPresents() {
+    $("custom-gifts").attr("display", "flex");
+  }
+
+  /* *********************
+   * Function hides
+   * presents in cart
+   *********************** */
+
+  function hidePresents() {
+    $("custom-gifts").attr("display", "none");
+  }
+
+  /* *********************
+   * INIT for functions
+   * whenever cart is updated
+   *********************** */
+  $(function () {
+    document.addEventListener("ShoptetDOMCartContentLoaded", function () {
+      checkPresentAvailability();
+    });
+    if ($("body").hasClass("in-kosik")) {
+      checkPresentAvailability();
+    }
+  });
+</script>
