@@ -29,8 +29,8 @@ $.getJSON("/assets/json/designerProducts.json", function (data) {
     if (!designerInitialized) {
       var bandDesignerObj = $("#band-designer"),
         designerSetup = {
-          templatesDirectory: "/assets/html/",
-          langJSON: "/lang/default.json",
+          templatesDirectory: "assets/html/",
+          langJSON: "lang/default.json",
           productsJSON: prodJson[def].productJson,
           stageWidth: 1200,
           editorMode: false,
