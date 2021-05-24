@@ -4,7 +4,7 @@
       [
         {
           "title": "VLASTNÍ DESIGN KRYTU",
-          "thumbnail": "/assets/images/frame.png",
+          "thumbnail": "assets/images/frame.png",
           "options": {
             "stageWidth": 410,
             "stageHeight": 615
@@ -12,7 +12,7 @@
           "elements": [
             {
               "type": "image",
-              "source": "/assets/images/logo2.png",
+              "source": "assets/images/logo2.png",
               "title": "Logo",
               "parameters": {
                 "z": 2,
@@ -24,7 +24,7 @@
             },
             {
               "type": "image",
-              "source": "/assets/images/frame2.png",
+              "source": "assets/images/frame2.png",
               "title": "Frame",
               "parameters": {
                 "z": 1,
@@ -36,7 +36,7 @@
             },
             {
               "type": "image",
-              "source": "/assets/images/plate4.svg",
+              "source": "assets/images/plate4.svg",
               "title": "Plate",
               "parameters": {
                 "z": 0,
