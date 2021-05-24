@@ -158,6 +158,7 @@ $.getJSON("assets/json/designerProducts.json", function (data) {
               $(".p-image > a.p-main-image").attr("href", ajaxData.PNGurl);
               $(".p-image > a.p-main-image > img").attr("src", ajaxData.PNGurl);
               $(".p-image > a.p-main-image > img").addClass("designer-preview-img");
+              alert("Toto okno je pouze pro testovací účely. Váš design najdete na adrese: " + ajaxData.PNGurl);
             },
             error: function () {
               console.log("Cannot upload SVG to server..");
