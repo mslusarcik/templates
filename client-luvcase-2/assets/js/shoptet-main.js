@@ -130,7 +130,7 @@ $.getJSON("assets/json/designerProducts.json", function (data) {
               if (data.status == "success") {
                 console.log("Success AJAX");
               }
-              /*
+
               if (JSON.stringify(localVar) == "{}") {
                 $(".add-to-cart-button").click(h);
                 function h(e) {
@@ -148,13 +148,13 @@ $.getJSON("assets/json/designerProducts.json", function (data) {
                   $(this).click(h);
                 }
               }
+              var ajaxData = JSON.parse(data);
               localVar = {
-                svgUrl: uploadsFolder + data + ".svg",
-                preview: uploadsFolder + data + ".png",
+                svgUrl: uploadsFolder + ajaxData.SVGurl,
+                preview: uploadsFolder + ajaxData.PNGurl,
                 fonts: print.used_fonts,
               };
-              */
-              var ajaxData = JSON.parse(data);
+
               $(".p-image > a.p-main-image").attr("href", ajaxData.PNGurl);
               $(".p-image > a.p-main-image > img").attr("src", ajaxData.PNGurl);
               $(".p-image > a.p-main-image > img").addClass("designer-preview-img");
