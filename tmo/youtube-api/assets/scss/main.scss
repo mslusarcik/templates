@@ -1,0 +1,93 @@
+@import "parts/helpers.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  font-size:16px;
+  font-family:Arial;
+  background-color: rgb(228, 231, 231);
+  box-sizing: border-box;
+}
+
+div.blank {
+  color: azure;
+}
+
+.p-5 {
+  padding:2.5rem;
+}
+.pr-6, .px-6 {
+  padding-right:5rem;
+}
+.pl-6, .px-6 {
+  padding-left:5rem;
+}
+.pt-6, .py-6 {
+  padding-top:5rem;
+}
+.pb-6, .py-6 {
+  padding-bottom:5rem;
+}
+.p-6 {
+  padding: 5rem;
+}
+
+.square-corners {
+  border-radius:6px;
+}
+
+#video {
+  margin-top: 25px;
+  margin: 25px auto;
+  display: block;
+  width: 100%;
+}
+
+#video iframe {
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+.js-yt-vids {
+  margin-bottom:40px;
+  .video-item {
+    display: flex;
+    flex-grow: 1;
+  }
+  .item {
+    background-color:#fff;
+    margin-top:30px;
+    border-radius:6px;
+    color:#090909;
+    //box-shadow: 0px 0px 12px rgba(0, 0, 0, .2);
+    transition: all 0.2s linear;
+    border-color:#e20e7e;
+    &:hover {
+      box-shadow:0 0 0 2px rgba(226,14,126, 1);
+      cursor: pointer;
+    }
+  }
+  .item > img {
+    width:100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .item .details {
+    padding:14px;
+  } 
+  .item h4 {
+    font-size:17px;
+    line-height:24px;
+    margin-top:11px;
+    margin-bottom:11px;
+  }
+  .item p {
+    font-size:14px;
+    line-height:19px;
+  }
+}
