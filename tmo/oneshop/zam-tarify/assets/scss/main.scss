@@ -1,0 +1,151 @@
+@import "parts/tmo-custom.scss";
+@import "parts/tmo-custom-child.scss";
+@import "parts/helpers.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.hero-image {
+  background: transparent;
+  position: relative;
+  height: 585px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background-image: url(/assets/images/hero-banner.png);
+    -moz-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    display: block;
+    width: 100%;
+    max-width: 2000px;
+    height: 1500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero-image {
+    height: 325px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    background: url(/assets/images/hero-banner-mobile.png);
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 720px;
+    align-items: flex-end;
+    padding-bottom: 90px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-380 {
+    width: 380px;
+  }
+}
+
+@media (min-width: 768px) {
+  .theme-v1 .tab-body {
+    padding-top: 35px;
+  }
+}
+
+.plus-minus-symbol {
+  font-size: 32px;
+  line-height: 20px;
+  float: right;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  padding: 5px 6px;
+  color: #707070;
+}
+
+.panel.panel-faq {
+  border-top: 2px solid #e3e3e3;
+}
+
+.panel.panel-faq:last-child {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+.collapse.collapse-content {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.max-w-800 {
+  max-width: 800px;
+}
+
+.m-w-280 {
+  max-width: 280px;
+}
+
+.h-10 {
+  height: 10px;
+}
+
+@media (max-width: 767.8px) {
+  .m-w-xs-320 {
+    max-width: 320px;
+  }
+  .m-w-xs-380 {
+    max-width: 380px;
+  }
+  .w-xs-40 {
+    width: 40px;
+  }
+}
+
+.tab-list-item {
+  flex-basis: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .active > .tab-list-link,
+  .tab-list-link:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  .tab-list-link {
+    border: 0;
+    border-bottom: 2px solid #cbcbcb;
+    border-radius: 0;
+    line-height: inherit;
+  }
+  .theme-v1 .tab-body {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-100 {
+    width: 100%;
+  }
+}
