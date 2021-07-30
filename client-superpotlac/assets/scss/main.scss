@@ -1,0 +1,20 @@
+@import "parts/helpers.scss";
+@import "parts/buttons.scss";
+@import "parts/designer.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+div.blank {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  color: azure;
+}
