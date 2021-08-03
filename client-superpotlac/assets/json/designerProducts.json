@@ -12,18 +12,6 @@
           "elements": [
             {
               "type": "image",
-              "source": "assets/images/logo2.png",
-              "title": "Logo",
-              "parameters": {
-                "z": 2,
-                "topped": true,
-                "scaleX": 0.43,
-                "scaleY": 0.43,
-                "autoCenter": true
-              }
-            },
-            {
-              "type": "image",
               "source": "assets/images/frame2.png",
               "title": "Frame",
               "parameters": {

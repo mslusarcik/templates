@@ -1,9 +1,10 @@
 function loadFPD(){
-  var showFpdButtonHtml = `<a href="#" class="btn btn-primary text-center" id="show-fpd">Navrhnout motiv</a>`
-  jQuery(showFpdButtonHtml).insertAfter(jQuery("body .p-to-cart-block"));
+  var showFpdButtonHtml = `<a href="#" class="btn btn-primary" id="show-fpd">Vytvořit design</a>`
+  jQuery(jQuery(".p-detail .add-to-cart")).append(showFpdButtonHtml);
   jQuery("body").addClass("fpd-loaded");
 }
 
+/*
 function saveNote(){
 	if(jQuery("body").hasClass("in-krok-2")){
     var storageDesigns = JSON.parse(localStorage.getItem("designs"));
@@ -24,6 +25,7 @@ function saveNote(){
     }
   }
 }
+*/
 
 function changeLinkToProduct(){
 	var targetProduct = jQuery("ul.menu-level-1 > .menu-item-3518 > a");
@@ -33,14 +35,16 @@ function changeLinkToProduct(){
 }
 
 jQuery(function () {
-  if (jQuery("body").hasClass("in-vlastni-design-krytu")) {
+  if (jQuery("body").hasClass("in-vlastna-potlac")) {
     loadFPD();
     fancyDesignerHandler();
   }
-  changeLinkToProduct();
+  //changeLinkToProduct();
 });
 
+/*
 shoptet.custom.postSuccessfulValidation = function(form) {
   saveNote();
   return true;
 }
+*/
