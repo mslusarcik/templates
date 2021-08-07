@@ -130,7 +130,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("css", ["sass", "autoprefixer", "cssmin"]);
-  grunt.registerTask("public", ["purgecss", "copy"]);
+  grunt.registerTask("public", ["copy"]);
   grunt.registerTask("default", ["connect", "watch"]);
 
   // Load up tasks

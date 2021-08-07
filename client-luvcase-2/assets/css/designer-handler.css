@@ -1,0 +1,68 @@
+#dkLabNoteFileForm {
+  display: none;
+}
+#show-fpd {
+  margin-top: 11px;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #7ddcfa;
+  color: #fff;
+  background-color: #7ddcfa;
+}
+#band-designer {
+  height: 100% !important;
+}
+.band-designer-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.band-designer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  z-index: 10000;
+}
+.band-designer-wrapper .fpd-main-wrapper {
+  background: #fff !important;
+}
+.fpd-modal-download .fpd-checkbox,
+.fpd-navigation > div:nth-child(4) {
+  display: none;
+}
+.band-designer-close:before {
+  content: "\E912";
+  font-family: shoptet;
+  font-size: 16px;
+  color: #eee;
+}
+.band-designer-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
+.band-designer-close:hover:before {
+  cursor: pointer;
+  color: #fff;
+}
+.band-designer-warning {
+  text-align: center;
+}
+.band-designer-action {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.band-designer-action > .btn.btn-conversion {
+  padding: 9px 26px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}

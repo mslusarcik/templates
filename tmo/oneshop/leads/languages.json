@@ -1,0 +1,15 @@
+  
+{
+	"cz": {
+		"langdesc": "Czech",
+		"inputErrorMessage": "Toto pole je povinné",
+		"formSuccessMessage": "Děkujeme za odeslání formuláře",
+        "formErrorMessage": "Formulář se nepodařilo odeslat, sorry jako!"
+	},
+	"en": {
+		"langdesc": "English",
+        "inputErrorMessage": "This field is required",
+		"formSuccessMessage": "Thank you very much for submitting this form.",
+        "formErrorMessage": "Olalala, something must went wrong!"
+	}
+}

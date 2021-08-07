@@ -1,0 +1,21 @@
+@import "parts/tmo-custom.scss";
+@import "parts/tmo-custom-child.scss";
+
+html, body {
+  margin:0;
+  padding:0;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+html {
+  font-size:10px;
+}
+
+.color-grey-v29 {
+  color:#666;
+}
+
+.color-grey-v30 {
+  color:#6C6C6C;
+}

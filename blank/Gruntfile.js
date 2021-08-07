@@ -3,6 +3,16 @@ module.exports = function (grunt) {
   const sass = require("node-sass");
 
   grunt.initConfig({
+    purgecss: {
+      my_target: {
+        options: {
+          content: ['*.html']
+        },
+        files: {
+          'assets/css/main.css': ['assets/css/main-ready.css']
+        }
+      }
+    },
     sass: {
       options: {
         implementation: sass,
@@ -106,11 +116,22 @@ module.exports = function (grunt) {
         files: ["**/*.html"],
       },
     },
+    copy: {
+      main: {
+        files: [
+          // includes files within path
+          {expand: true, src: ['*.html'], dest: 'public/', filter: 'isFile'},
+          {expand: true, src: ['assets/css/min/*.min.css'], dest: 'public/', filter: 'isFile'},
+          {expand: true, src: ['assets/js/min/*.min.js'], dest: 'public/', filter: 'isFile'},
+          {expand: true, src: ['assets/images/min/*.min.png', 'assets/images/min/*.min.jpg'], dest: 'public/', filter: 'isFile'},
+        ],
+      },
+    },
   });
 
-  grunt.registerTask("css", ["sass", "autoprefixer", "cssmin"]);
+  grunt.registerTask("css", ["sass", "autoprefixer", "purgecss", "cssmin"]);
+  grunt.registerTask("public", ["copy"]);
   grunt.registerTask("default", ["connect", "watch"]);
-  //grunt.registerTask("server", ["connect", "watch"]);
 
   // Load up tasks
   grunt.loadNpmTasks("grunt-sass");
@@ -120,4 +141,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-autoprefixer");
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-purgecss');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 };

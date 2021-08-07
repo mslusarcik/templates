@@ -1,6 +1,8 @@
+/*
 #dkLabNoteFileForm {
   display: none;
 }
+*/
 #show-fpd {
   margin-top: 11px;
   display: block;
@@ -89,9 +91,11 @@
   color: #027bbf;
 }
 
+/*
 .in-vlastni-motiv .p-detail-inner .detail-parameters > .variant-list:first-of-type {
   display: none;
 }
+*/
 
 button#show-fpd {
   width: 100%;
