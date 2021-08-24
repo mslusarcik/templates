@@ -1,0 +1,125 @@
+.header {
+  min-height:850px;
+  background-image: url(../../images/hero-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+
+  .logo-header {
+    max-height:30px;
+    margin:25px 0;
+  }
+
+  .header-inner {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    flex: 100%;
+  
+    .page-title {
+      font-size: 48px;
+      line-height: 1.3;
+      margin-bottom:15px;
+      font-weight:400;
+    }
+
+    .page-subtitle {
+      font-size:20px;
+      font-weight: 200;
+      line-height: 1.5;
+    }
+    
+    .header-cta {
+      margin-top: 32px;
+    }
+
+    .header-cta .btn {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      background-color: #f2ca01;
+      border-color: #f2ca01;
+      border-radius: 25px;
+      padding:12px 28px;
+    }
+
+    .header-cta .btn:hover { 
+      background-color: #c5a503;
+      border-color: #c5a503;
+    }
+
+    .form-wrapper {
+      background-color: #fff;
+      padding: 35px;
+      border-radius: 10px;
+      max-width: 380px;
+    }
+
+    .form-wrapper input {
+      margin: 6px 0;
+      width: 100%;
+      border-radius: 6px;
+      outline: 0;
+      border: 0;
+      background: #eee;
+      padding: 12px 10px;
+      border:1px solid #eee;
+    }
+
+    .form-wrapper input[type=submit] {
+      background-color:#f2ca01;
+      border-color: #f2ca01;
+      color:#fff; 
+      font-weight: bold;
+    }
+
+    .form-wrapper input:focus {
+      border:1px solid #f2ca01;
+    }
+  }
+}
+
+.animated {            
+  animation: pulse 0.7s;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus, .btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  color: #fff;
+  background-color: #f2ca01;
+  border-color: #f2ca01;
+  box-shadow: none;
+}
+
+body .ui-widget.ui-widget-content {
+  border: none;
+  padding: 0;
+}
+
+body .ui-timepicker-standard .ui-state-hover {
+  background-image: none;
+  background-color: #dedede;
+  border: 0;
+}
+
+body .ui-widget {
+  font-size: 16px;
+  text-align: left;
+}
+
+body .ui-datepicker {
+  width: 19.4em;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(242, 202, 1, 1);
+  }
+  100% {
+    box-shadow: 0px 0px 5px 25px rgba(242, 202, 1, 0);
+  }
+}
