@@ -4,11 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background: linear-gradient(to right,#d43030cb, #d43030cb), url(../../images/hero-bannerv2.png) no-repeat center center;
   display: flex;
   flex-direction: column;
 
   .logo-header {
-    max-height:30px;
     margin:25px 0;
   }
 
@@ -58,7 +58,7 @@
       max-width: 380px;
     }
 
-    .form-wrapper input {
+    .form-wrapper input, .form-wrapper textarea {
       margin: 6px 0;
       width: 100%;
       border-radius: 6px;
@@ -67,6 +67,11 @@
       background: #eee;
       padding: 12px 10px;
       border:1px solid #eee;
+    }
+
+    .form-wrapper textarea {
+      max-height: 140px;
+      min-height: 50px;
     }
 
     .form-wrapper input[type=submit] {
@@ -80,10 +85,6 @@
       border:1px solid #f2ca01;
     }
   }
-}
-
-.animated {            
-  animation: pulse 0.7s;
 }
 
 .btn-check:focus+.btn-primary, .btn-primary:focus, .btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
@@ -111,15 +112,4 @@ body .ui-widget {
 
 body .ui-datepicker {
   width: 19.4em;
-}
-
-
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0px 0px 0px 0px rgba(242, 202, 1, 1);
-  }
-  100% {
-    box-shadow: 0px 0px 5px 25px rgba(242, 202, 1, 0);
-  }
 }
