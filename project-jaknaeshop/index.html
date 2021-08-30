@@ -30,9 +30,14 @@
     <!-- #AOS CSS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- #Roboto font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- #Icofont init -->
+    <link rel="stylesheet" href="assets/fonts/icofont.min.css">
     <!-- #Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css" />
   </head>
@@ -44,18 +49,26 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <p class="logo-header text-white d-flex flex-row align-items-center">
+              <p class="logo-header text-white d-flex flex-row align-items-center" 
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine">
                 <span class="logo-image-wrapper">
-                  <img src="assets/images/profile.jpg" class="img-responsive rounded-circle" width="auto" height="50">
+                  <img
+                    src="assets/images/profile.jpg"
+                    class="img-responsive rounded-circle"
+                    width="auto"
+                    height="50"
+                  />
                   <!--<img src="assets/images/logo-placeholder.png" alt="Logo - Jak na e-shop" class="logo-header" />-->
                 </span>
                 <span class="logo-image-content mx-3">
-                  <span style="letter-spacing: 3px;font-size:20px;line-height:20px">
-                    <span style="font-weight: bold;">JAK</span>
-                    <span style="font-weight: bold;">NA</span>
-                    <strong style="font-weight: bold;">E-SHOP</strong>
-                  </span><br/>
-                  <span style="font-weight: 200;font-size:16px;letter-spacing: 1.3px;">MIROSLAV SLUSARČÍK</span>
+                  <span style="letter-spacing: 3px; font-size: 20px; line-height: 20px">
+                    <span style="font-weight: bold">JAK</span>
+                    <span style="font-weight: bold">NA</span>
+                    <strong style="font-weight: bold">E-SHOP</strong> </span
+                  ><br />
+                  <span style="font-weight: 200; font-size: 16px; letter-spacing: 1.3px">MIROSLAV SLUSARČÍK</span>
                 </span>
               </p>
             </div>
@@ -83,7 +96,8 @@
                 data-aos-delay="200"
                 data-aos-easing="ease-in-sine"
               >
-                Jsem kodér a do 19. září vyberu 2&nbsp;klienty, kterým udělám úpravy do&nbsp;10&nbsp;hodin na&nbsp;e&#8209;shopu úplně zdarma. Stačí se&nbsp;přihlásit a&nbsp;jste ve&nbsp;hře!
+                Jsem kodér a do 19. září vyberu 2&nbsp;klienty, kterým udělám úpravy do&nbsp;10&nbsp;hodin
+                na&nbsp;e&#8209;shopu úplně zdarma. Stačí se&nbsp;přihlásit a&nbsp;jste ve&nbsp;hře!
               </p>
               <p
                 class="header-cta"
@@ -104,7 +118,7 @@
               data-aos-easing="ease-in-sine"
             />
             <h2 class="text-black h3">Včera bylo pozdě!</h2>
-            <p class="text-black mb-3">Vyplňte formulář a posuneme to dál.</p>
+            <p class="text-black mb-3">Vyplňte formulář a čekejte na losování.</p>
             <form method="POST" class="header-form">
               <input placeholder="Jméno a příjmení" type="text" />
               <input placeholder="E-mail" type="email" />
@@ -115,7 +129,10 @@
               <input class="timepicker timepicker-with-dropdown" autocomplete="off" placeholder="Čas" />
               -->
               <input type="submit" class="btn btn-primary" value="Přihlásit se" />
-              <p class="text-black fs-12 lh-18 mt-2 color-grey-v10 mb-0">Odesláním formuláře souhlasíte s <a href="#" class="link-underline">podmínkami ochrany osobních údajů</a>.</p>
+              <p class="text-black fs-12 lh-18 mt-2 color-grey-v10 mb-0">
+                Odesláním formuláře souhlasíte s
+                <a href="#" class="link-underline">podmínkami ochrany osobních údajů</a>.
+              </p>
             </form>
           </div>
         </div>
@@ -123,18 +140,76 @@
     </header>
     <!-- /HEADER -->
 
+    <!-- #SECTION INTRODUCTION -->
     <section class="introduction">
       <article>
         <div class="container">
           <div class="row">
             <div class="col-6 mx-auto">
               <p class="text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
-                We Always Take Attention to <strong>Every Details</strong> Within Work. We Care to Deliver and Craft Adaptive Services and Solutions to Our Customers to <strong>Achieve and Satisfy</strong> Their Needs.
+                We Always Take Attention to <strong>Every Details</strong> Within Work. We Care to Deliver and
+                Craft Adaptive Services and Solutions to Our Customers to
+                <strong>Achieve and Satisfy</strong> Their Needs.
               </p>
             </div>
           </div>
         </div>
       </article>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <hr class="line-divider" />
+
+    <!-- SECTION BENEFITS ? -->
+    <section class="benefits bs-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="benefit-wrapper">
+              <div class="text-center mb-3">
+                <span class="rounded-circle background-red mx-auto d-inline-block p-3"><i class="icofont-badge fs-38 text-white"></i></span>
+              </div>
+              <div class="benefit-content">
+                <h2 class="fs-24 lh-30 text-center">Technological Innovation</h2>
+                <p class="fs-16 lh-20 text-center">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna eu erat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="benefit-wrapper">
+              <div class="text-center mb-3">
+                <span class="rounded-circle background-red mx-auto d-inline-block p-3"><i class="icofont-badge fs-38 text-white"></i></span>
+              </div>
+              <div class="benefit-content">
+                <h2 class="fs-24 lh-30 text-center">Technological Innovation</h2>
+                <p class="fs-16 lh-20 text-center">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna eu erat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="benefit-wrapper">
+              <div class="text-center mb-3">
+                <span class="rounded-circle background-red mx-auto d-inline-block p-3"><i class="icofont-badge fs-38 text-white"></i></span>
+              </div>
+              <div class="benefit-content">
+                <h2 class="fs-24 lh-30 text-center">Technological Innovation</h2>
+                <p class="fs-16 lh-20 text-center">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna eu erat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="benefit-wrapper">
+              <div class="text-center mb-3">
+                <span class="rounded-circle background-red mx-auto d-inline-block p-3"><i class="icofont-badge fs-38 text-white"></i></span>
+              </div>
+              <div class="benefit-content">
+                <h2 class="fs-24 lh-30 text-center">Technological Innovation</h2>
+                <p class="fs-16 lh-20 text-center">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna eu erat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
     </section>
 
     <!-- #jQuery JS CDN -->

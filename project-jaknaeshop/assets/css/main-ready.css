@@ -683,11 +683,8 @@
 
 .header {
   min-height: 850px;
-  background-image: url(../../images/hero-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   background: linear-gradient(to right, #d43030cb, #d43030cb), url(../../images/hero-bannerv2.png) no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-direction: column; }
   .header .logo-header {
@@ -767,13 +764,19 @@ body .ui-widget {
 body .ui-datepicker {
   width: 19.4em; }
 
-section.introduction {
+section {
   padding: 80px 0; }
-  section.introduction p {
+  section p {
     font-size: 30px;
     line-height: 1.5;
     color: #222;
     font-weight: 200; }
+
+.line-divider {
+  background-color: #dcdcdc;
+  height: 2px;
+  max-width: 1320px;
+  margin: 0 auto; }
 
 html, body {
   margin: 0;
@@ -792,6 +795,9 @@ a:hover {
 
 .animated {
   animation: pulse 0.7s; }
+
+.background-red {
+  background-color: #F45A50; }
 
 @keyframes pulse {
   0% {

@@ -683,15 +683,12 @@
 
 .header {
   min-height: 850px;
-  background-image: url(../../images/hero-banner.png);
-  background-repeat: no-repeat;
-  -moz-background-size: cover;
-       background-size: cover;
-  background-position: center center;
   background: -webkit-gradient(linear, left top, right top, from(#d43030cb), to(#d43030cb)), url(../../images/hero-bannerv2.png) no-repeat center center;
   background: -webkit-linear-gradient(left, #d43030cb, #d43030cb), url(../../images/hero-bannerv2.png) no-repeat center center;
   background: -moz- oldlinear-gradient(left, #d43030cb, #d43030cb), url(../../images/hero-bannerv2.png) no-repeat center center;
   background: linear-gradient(to right, #d43030cb, #d43030cb), url(../../images/hero-bannerv2.png) no-repeat center center;
+  -moz-background-size: cover;
+       background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -807,13 +804,19 @@ body .ui-widget {
 body .ui-datepicker {
   width: 19.4em; }
 
-section.introduction {
+section {
   padding: 80px 0; }
-  section.introduction p {
+  section p {
     font-size: 30px;
     line-height: 1.5;
     color: #222;
     font-weight: 200; }
+
+.line-divider {
+  background-color: #dcdcdc;
+  height: 2px;
+  max-width: 1320px;
+  margin: 0 auto; }
 
 html, body {
   margin: 0;
@@ -838,6 +841,9 @@ a:hover {
   -webkit-animation: pulse 0.7s;
      -moz-animation: pulse 0.7s;
           animation: pulse 0.7s; }
+
+.background-red {
+  background-color: #F45A50; }
 
 @-webkit-keyframes pulse {
   0% {

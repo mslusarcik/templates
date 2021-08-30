@@ -1,10 +1,7 @@
 .header {
   min-height:850px;
-  background-image: url(../../images/hero-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   background: linear-gradient(to right,#d43030cb, #d43030cb), url(../../images/hero-bannerv2.png) no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 

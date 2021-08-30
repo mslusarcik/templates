@@ -1,4 +1,4 @@
-section.introduction {
+section {
   padding:80px 0;
 
   p {
@@ -7,4 +7,11 @@ section.introduction {
     color: #222;
     font-weight: 200;
   }
+}
+
+.line-divider {
+  background-color: #dcdcdc;
+  height: 2px;
+  max-width: 1320px;
+  margin: 0 auto;
 }
