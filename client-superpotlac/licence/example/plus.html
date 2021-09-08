@@ -34,7 +34,7 @@
 
 	    	var $yourDesigner = $('#clothing-designer'),
 	    		pluginOpts = {
-		    		productsJSON: 'json/products.json',
+		    		productsJSON: 'json/products_categories.json',
 		    		stageWidth: 1200,
 		    		editorMode: false,
 		    		fonts: [
@@ -68,12 +68,8 @@
 						'bottom': ['undo','redo'],
 						'left': ['manage-layers','info','save','load']
 					},
-					mainBarModules: ['names-numbers', 'drawing', 'products'],
+					mainBarModules: ['products', 'images', 'text', 'manage-layers'],
 					colorSelectionPlacement: 'inside-br',
-					namesNumbersDropdown: ['S', 'M', 'L', 'XL'],
-					namesNumbersEntryPrice: 10,
-					bulkVariationsPlacement: '#my-variations',
-					bulkVariations: {'Size': ['XL', 'L', 'M', 'S'], 'Color': ['Red', 'Blue']}
 	    		},
 	    	yourDesigner = new FancyProductDesigner($yourDesigner, pluginOpts);
 
@@ -92,10 +88,6 @@
           	<div id="clothing-designer" class="fpd-container fpd-shadow-2 fpd-sidebar fpd-tabs fpd-tabs-side fpd-top-actions-centered fpd-bottom-actions-centered fpd-views-inside-left"></div>
 
 		  	<br /><br />
-		  	<div class="fpd-right">
-			  	<span class="price badge badge-inverse"><span id="thsirt-price"></span> $</span>
-		  	</div>
-		  	<div id="my-variations"></div>
 
 
     	</div>

@@ -1,0 +1,18 @@
+.swiper-pagination-clickable {
+  .swiper-pagination-bullet {
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #fff;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    border: 1px solid;
+    border-color: #fff;
+  }
+}
+.multibanner .carousel-caption {
+  bottom: 95px;
+}

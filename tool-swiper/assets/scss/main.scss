@@ -1,0 +1,13 @@
+@import "parts/tmo-custom.scss";
+@import "parts/tmo-custom-child.scss";
+@import "parts/custom-swiper.scss";
+//@import "parts/helpers.scss";
+//@import "bootstrap/bootstrap-grid.scss";
+
+html, body {
+  background-color: #fff;
+}
+
+.inner-link {
+  z-index: 15;
+}
