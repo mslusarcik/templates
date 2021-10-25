@@ -1,0 +1,31 @@
+/*
+ * SLIDERS
+ * ******* */
+
+.dots-inside .slick-dots {
+  bottom:10px;
+}
+
+.dots-big .slick-dots li button:before {
+  content:'';
+  background-color: #fff;
+  border-radius: 50%;
+  opacity:.55;
+  width: 15px;
+  height: 15px;
+}
+
+.dots-big .slick-dots li.slick-active button:before {
+  background-color: #000;
+  opacity:1;
+}
+
+/*
+ * INTRO SECTION
+ * ************* */
+.art-logo {
+  max-width: 350px;
+  width: 100%;
+  display: block;
+  margin:0 auto 35px;
+}

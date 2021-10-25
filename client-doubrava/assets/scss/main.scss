@@ -1,0 +1,40 @@
+/*
+ * BOOTSTRAP
+ * ********* */
+@import 'bootstrap/bootstrap.scss';
+
+/*
+ * FONTS
+ * ***** */
+@import 'parts/fonts.scss';
+
+html, body {
+  margin:0;
+  padding:0;
+  font-size:16px;
+  font-family:AvenirNextDemi;
+  overflow-x: hidden;
+}
+
+.bs-section {
+  padding:30px 0;
+}
+
+.bs-section.padding-md {
+  padding:45px 0;
+}
+
+/*
+ * HEADER PART
+ * *********** */
+@import 'parts/header.scss';
+
+/* 
+ * MAIN SECTION
+ * ************ */
+@import 'parts/main-section.scss';
+
+/*
+ * HELPERS
+ * ******* */
+@import 'parts/helpers.scss';

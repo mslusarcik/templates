@@ -1,0 +1,14 @@
+@font-face {
+  font-family: AvenirNextBold;
+  src:  url('../../fonts/avenir-bold.woff') format('woff'),
+        url('../../fonts/avenir-bold.woff2') format('woff2'),
+}
+@font-face {
+  font-family: AvenirNextDemi;
+  src:  url('../../fonts/avenir-demi.woff') format('woff'),
+        url('../../fonts/avenir-demi.woff2') format('woff2'),
+}
+
+.bold, .text-bold, .font-bold, strong, b {
+  font-family: AvenirNextBold;
+}
