@@ -8,7 +8,7 @@ $(function() {
   $('.mobile-basic-carousel').slick({
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     mobileFirst: true,
     responsive: [
       {
