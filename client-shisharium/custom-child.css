@@ -1,0 +1,71 @@
+body.in-kosik .cart-content.checkout-box-wrapper:first-child {
+  padding: 0;
+  border: 0;
+}
+body.in-kosik .cart-content.checkout-box-wrapper > div:first-child {
+  display: none;
+}
+body.in-krok-1 #checkoutSidebar > .cart-content > .order-summary > .checkout-box, body.in-krok-2 #checkoutSidebar > .cart-content > .order-summary > .checkout-box {
+  display:none;
+}
+.sign #additionalInformation {
+  width: 100%;
+}
+form#register-form > div#additionalInformation > .box-sm > h4:before {
+  content: '2. ';
+}
+form#register-form .company-shopping {
+  display:none;
+}
+body.in-registrace #register-form { 
+  max-width: 625px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+.custom-disabled-button {
+  background-color:#eee;
+}
+.datepicker.birthdate {
+  position: relative;
+  z-index: 8;
+}
+@media (max-width: 767px){
+  .sign .validator-msg.msg-error, .sign .validator-msg.msg-warning, .sign .js-validator-msg.msg-error, .sign .validator-msg.msg-info {
+    top: 5px;
+  }
+}
+@media (min-width: 768px){
+  .validator-msg.msg-error, .validator-msg.msg-warning, .js-validator-msg.msg-error, .validator-msg.msg-info {
+    position:relative;
+    top:5px !important;
+  }
+}
+@media (min-width: 1200px) {
+  ul.manufacturers ul li {
+    flex-basis: 15%;
+    align-self: center;
+  }
+}
+.manufacturers a > img {
+  max-width: 90px;
+}
+ul.manufacturers ul li {
+  margin-bottom: 16px;
+}
+@media (min-width: 480px) {
+  ul.manufacturers ul {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 479px) {
+  ul.manufacturers ul {
+    padding-left: 24px;
+    margin-top: 15px;
+  }
+}
+#register-form .btn-login {
+  background-color:#60c700;
+}
+#register-form .btn-login:hover {
+  background-color:#006d00 !important;
+}

@@ -62,7 +62,14 @@
                         "z": -1,
                         "fill": false,
                         "colors": [
-                            "#b33939"
+                            "#b33939",
+                            "#BB9B7E",
+                            "#443F15"
+                        ],
+                        "colorPickerPalette": [
+                            "#b33939",
+                            "#BB9B7E",
+                            "#443F15"
                         ],
                         "colorLinkGroup": "base",
                         "draggable": 0,

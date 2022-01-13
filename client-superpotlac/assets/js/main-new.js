@@ -175,4 +175,5 @@ jQuery(function () {
   if (jQuery("body").hasClass("fpd-loaded")) {
     //fancyDesignerHandler();
   }
+  console.log("WORKS");
 });

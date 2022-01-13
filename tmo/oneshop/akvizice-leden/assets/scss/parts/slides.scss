@@ -1,0 +1,79 @@
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden; }
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; }
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  display: none; }
+
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px; }
+
+.slides::-webkit-scrollbar-track {
+  background: transparent; }
+
+.slides > li.slide-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  padding-right: 70px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px; }
+
+.slider-arrow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #BCBCBC;
+  border-radius: 50%;
+  top: auto;
+  bottom: 14px; }
+
+.slider-left {
+  left: auto;
+  right: 80px; }
+
+.slider-right {
+  right: -10px; }
+
+.slider-arrow > svg {
+  width: 35px;
+  height: auto;
+  position: relative;
+  top: 18px;
+  right: -5px; }
+
+@media (max-width: 768px) {
+  .slides > li.slide-item {
+    padding: 10px; }
+  .slider-arrow {
+    width: 39px;
+    height: 39px; }
+  .slider-arrow > svg {
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    right: 1px; }
+  .slider-left {
+    left: calc(42% - 20px);
+    right: auto; }
+  .slider-right {
+    right: calc(42% - 20px); } }

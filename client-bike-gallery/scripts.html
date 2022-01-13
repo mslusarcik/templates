@@ -1,0 +1,91 @@
+<script>
+var productsObj = $("#products");
+function productAvailabilitiesHandler(){
+  var productsAll = [];
+  var successCustomCallback = function(response) {
+    var stockCodes = shoptet.stockAvailabilities.content = response.getPayload();
+    var stockCodes = stockCodes.products;
+    renameStockAvailability(stockCodes);
+  };
+
+  $(productsObj.find(".product .p")).each(function(i) {
+    productsAll.push($(this).data("micro-product-id"));
+  });
+  
+  shoptet.ajax.makeAjaxRequest(
+    shoptet.config.stockAmountUrl+"?ids[]="+productsAll.join("&ids[]="),
+    shoptet.ajax.requestTypes.get,"",{
+      'success': successCustomCallback
+    },
+    {
+      "X-Shoptet-XHR":"Shoptet_Coo7ai"
+    }
+  )
+}
+function renameStockAvailability(stockCodes){
+  $.each(stockCodes, function(key) {
+    var changeItSwitcher = false;
+    //console.log("Key: " + key);
+    var stockVariants = (stockCodes[key].codes);
+    $.each(stockVariants, function(){
+      if(this["amount"] == '1'){
+        //console.log('Has amount 1!');
+        changeItSwitcher = true;
+        return false;
+      }
+    });
+    if(changeItSwitcher){
+      var targetProduct = jQuery(".product .p[data-micro-product-id='"+key+"']");
+      var targetProductAvailability = targetProduct.find(".availability > span")
+      if(targetProductAvailability.text().indexOf('dodavatele') > -1){
+        console.log("Přepsáno!");
+        targetProductAvailability.text("Skladem na prodejně");
+      };
+    }
+  });
+}
+function addHeadlineToFilter(){
+  var stockInput = jQuery(".filter-sections input#stock");
+  if(stockInput !== null){
+    jQuery("<h4><span>Dostupnost</span></h4>").insertBefore(stockInput);
+  }
+}
+
+$(function() {
+  if($("body").hasClass("type-category")){
+    if(productsObj !== null) {
+      productAvailabilitiesHandler();
+    }
+    addHeadlineToFilter();
+  }
+});
+
+// Newly supported code
+document.addEventListener('ShoptetDOMPageContentLoaded', function() {
+  if($("body").hasClass("type-category")){
+    if(productsObj !== null) {
+      productAvailabilitiesHandler();
+    }
+  }
+});
+
+// Newly supported code
+document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function() {
+  if($("body").hasClass("type-category")){
+    if(productsObj !== null) {
+      productAvailabilitiesHandler();
+    }
+  }
+});
+</script>
+
+<style>
+body.type-category #filters label[for="stock"]{
+  font-size: 17px;
+  line-height: 24px;
+  padding-left: 26px;
+}
+body.type-category .product .availability > .availability-amount {
+  display:none;
+}
+</style>

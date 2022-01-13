@@ -1,0 +1,126 @@
+@import "parts/tmo-custom.scss";
+@import "parts/tmo-custom-child.scss";
+
+.color-grey-v29 {
+  color: #6e6e73;
+}
+
+html,
+body {
+  background-color: #fff;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+.border-grey {
+  border-color: #d7d9e5;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-left-grey {
+  border-left: 1px solid #d7d9e5;
+}
+
+.border-radius-none {
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .w-md-auto {
+    width:auto;
+  }
+}
+
+@media (max-width: 767.97px) {
+  .fs-xs-25 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  html .text-left-md {
+    text-align: left; 
+  } 
+}
+
+@media (max-width: 767.98px) {
+  .border-none-xs {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .w-xs-55 {
+    width:55px;
+  }
+  .w-xs-70 {
+    width:70px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .watches-listing {
+    .image-section {
+      width:45%;
+    }
+    > div:nth-child(2) {
+      width:55%;
+      text-align: left;
+    }
+  }
+}
+
+.mx-w-300 {
+  max-width: 300px;
+}
+
+.top-n-85 {
+  top:-85px;
+}
+
+@media (max-width: 767.98px){
+  .mx-w-xs-300 {
+    max-width: 300px;
+  }
+  .mx-w-xs-350 {
+    max-width: 350px;
+  }
+  .mx-w-xs-390 {
+    max-width: 390px;
+  }
+  .w-xs-10p {
+    width:20%;
+  }
+  .w-xs-90p {
+    width:80%;
+  }
+}
+
+@media (min-width: 768px){
+  .mx-w-md-none {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 993px){
+  .bottom-lg-n-85 {
+    bottom: -85px;
+  }
+}
+
+@media (max-width: 767.97px) {
+  .fs-xs-47 {
+    font-size: 47px;
+    line-height: 52px;
+  }
+}

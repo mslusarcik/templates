@@ -1,6 +1,9 @@
 {
   "name": "templates.github.io",
   "devDependencies": {
+    "@lodder/grunt-postcss": "^3.1.1",
+    "autoprefixer": "^10.0.2",
+    "cssnano": "^5.0.10",
     "grunt": "^1.4.0",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-contrib-connect": "^3.0.0",
@@ -8,7 +11,14 @@
     "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-cssnano": "^3.0.0",
+    "grunt-postcss": "^0.9.0",
     "grunt-sass": "^3.1.0",
-    "node-sass": "^6.0.0"
+    "node-sass": "^7.0.1",
+    "postcss": "^8.3.11",
+    "postcss-flexbugs-fixes": "^5.0.2"
+  },
+  "dependencies": {
+    "gulp-dart-sass": "^1.0.2"
   }
 }

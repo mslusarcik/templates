@@ -1,0 +1,11 @@
+.tooltip-inner {
+  background: rgb(0, 0, 0); /* The Fallback */
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #fff !important;
+  text-align: left !important;
+  padding: 12px 12px;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: rgb(0, 0, 0); /* The Fallback */
+  border-top-color: rgba(0, 0, 0, 0.8) !important;
+}

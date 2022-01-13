@@ -1,0 +1,28 @@
+.deco-container {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .deco-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 570px);
+    z-index: 1;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .deco-container .deco-left {
+    position: absolute;
+    left: -140px;
+    top: 166px;
+  }
+
+  .deco-container .deco-right {
+    position: absolute;
+    right: -215px;
+    top: -110px;
+  }
+}

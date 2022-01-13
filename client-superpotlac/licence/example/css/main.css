@@ -19,3 +19,7 @@ body {
 	font-size: 25px !important;
 	line-height: 26px !important;
 }
+
+body .fpd-element-toolbar-smart .fpd-sub-panel {
+	top: 350px;
+}

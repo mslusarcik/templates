@@ -1,0 +1,14 @@
+@import "parts/tmo-custom.scss";
+@import "parts/tmo-custom-child.scss";
+
+.badge-discount {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 992px) {
+  .badge-discount {
+    width: 140px;
+    height: 140px;
+  }
+}

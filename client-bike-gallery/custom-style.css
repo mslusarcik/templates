@@ -1,0 +1,14 @@
+body.type-category .flag-doprava-zdarma {
+	background-color: rgb(192 214 66 / 70%) !important;
+}
+body.type-category .product .availability > .availability-amount {
+  display:none;
+}
+body.type-category .filter-sections .filter-section:first-child {
+  border-color: #B1B1B1;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+body.type-category .filter-section label[for="stock"]{
+	text-transform:uppercase;
+}

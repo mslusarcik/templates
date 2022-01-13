@@ -36,6 +36,7 @@ function changeLinkToProduct(){
 
 jQuery(function () {
   if (jQuery("body").hasClass("in-vlastna-potlac")) {
+    console.log("WORKS");
     loadFPD();
     fancyDesignerHandler();
   }

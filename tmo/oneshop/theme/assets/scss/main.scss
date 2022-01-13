@@ -1,0 +1,2177 @@
+@import "parts/tmo-custom.scss";
+@import "parts/tmo-custom-child.scss";
+@import "parts/os-theme.scss";
+@import "parts/os.scss";
+@import "parts/slider.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: TeleNeo;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
+}
+
+/* PLACE FOR NEW CUSTOM CSS */
+/*
+.plus-minus-symbol {
+  font-weight: 100;
+  font-size: 42px;
+  line-height: 0px;
+  float: right; 
+  position: relative;
+  top: 3px;
+}
+
+.panel.panel-faq {
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+.panel.panel-faq:last-child {
+  border-bottom: 2px solid #eee; 
+}
+
+.collapse.collapse-content {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+*/
+.pointer {
+  cursor: pointer;
+}
+
+.bg-grey-v1 {
+  background-color: #f5f9f9;
+}
+
+.lead-wrapper iframe {
+  width: 100%;
+  min-height: 449px;
+}
+
+@media (max-width: 992.8px) {
+  .lead-wrapper iframe {
+    width: 100%;
+    min-height: 546px;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left;
+  }
+}
+
+.square-corners {
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .square-corners-md-none {
+    border-radius: 0;
+  }
+}
+
+.border-top-light {
+  border-top: 1px solid #e9e9e9;
+}
+
+.border-top-white {
+  border-top: 1px solid #ffffff;
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .max-w-xs-300 {
+    max-width: 300px;
+  }
+}
+
+.max-w-800 {
+  max-width: 800px;
+}
+
+.icon-check {
+  float: left;
+  padding-right: 15px;
+  margin-top: 7px;
+  width: 35px;
+}
+
+.color-grey-v29 {
+  color: #7a7a7a;
+}
+
+.color-grey-v30 {
+  color: #9f9f9f;
+}
+
+.bs-section,
+.bs-section-theme {
+  font-weight: 300;
+}
+
+.bs-section-theme {
+  padding: 100px 0;
+}
+
+.bs-section-theme .section-name {
+  color: #e20074;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+
+.panel.panel-faq {
+  background: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-content > .tab-pane {
+  transition: all 0.3s ease;
+}
+
+.bst-bg-shape {
+  background-size: 110%;
+}
+
+.box-img-bgr.v2 .badge {
+  position: absolute;
+  top: 175px;
+  left: -30px;
+}
+
+.badge:not(.badge-inbox-top).theme-badge-v4 {
+  background-color: #262626;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .w-160 {
+    width: 160px;
+  }
+}
+
+.inner-content.theme-ic-v11 {
+  min-height: 211px;
+}
+
+.spark-green,
+.spark-orange,
+.spark-blue,
+.spark-tyrkys {
+  border: 1px solid;
+  border-radius: 40px;
+  line-height: 16px;
+  text-align: center;
+  padding: 6px 9px 5px;
+  min-width: 60px;
+}
+
+.spark-green {
+  color: #32a032;
+  border-color: #32a032;
+}
+
+.spark-orange {
+  color: #fc9a55;
+  border-color: #fc9a55;
+}
+
+.spark-blue {
+  color: #339ec5;
+  border-color: #339ec5;
+}
+
+.spark-tyrkys {
+  color: #19b4aa;
+  border-color: #19b4aa;
+}
+
+.inner-content.theme-ic-v11 {
+  -webkit-box-shadow: 0 6px 15px #e8e8e8;
+  box-shadow: 0 6px 15px #e8e8e8;
+}
+
+.theme-v1 .faq-link {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.theme-v1 .faq-link.collapsed {
+  color: #000;
+}
+
+.theme-v1 .faq-link.collapsed [class*="collapse-icon"] svg {
+  fill: #000;
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] {
+  width: 30px;
+  height: 30px;
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"]:after {
+  content: "";
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] svg {
+  display: none;
+}
+
+.theme-v1 .faq-link:hover,
+.theme-v1 .faq-link:focus,
+.theme-v1 .faq-link:active {
+  color: #e20074;
+}
+
+@media (max-width: 767.98px) {
+  .theme-v1 .faq-link {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+.theme-v2 .faq-link.collapsed {
+  color: #000;
+}
+
+.theme-v2 .faq-link.collapsed [class*="collapse-icon"] svg {
+  fill: #e20074;
+}
+
+.theme-v2 .faq-link:hover,
+.theme-v2 .faq-link:focus,
+.theme-v2 .faq-link:active {
+  color: #e20074;
+}
+
+.faq-link.color-white.collapsed {
+  color: #fff;
+}
+
+.faq-link.color-white.collapsed [class*="collapse-icon"] svg {
+  fill: #fff;
+}
+
+.theme-v1 .faq-heading {
+  padding-right: 50px;
+}
+
+.panel-faq.faq-border-top {
+  border-top: 1px solid #bfbfbf !important;
+}
+
+.panel-faq.border-top-none {
+  border-top: 0;
+}
+
+.panel-faq.border-bottom-grey {
+  border-bottom-color: #bfbfbf;
+}
+
+.show-more-content .panel-faq:first-child {
+  border-top: 0;
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] img {
+  display: none;
+}
+
+.collapse {
+  transition: all 2s ease;
+}
+
+.row-faq.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] {
+  content: " ";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #e20074;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 48px;
+  display: block;
+  position: relative;
+}
+
+.panel .collapse-icon-image {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.jstabs-inner-image1,
+.jstabs-inner-image2 {
+  background-size: contain;
+  width: 100%;
+  padding-bottom: 32.25%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.jsphonepanel-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.grid-slider-item img {
+  min-width: 40px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.bg-grey-v1 {
+  background-color: #f5f5f9;
+}
+
+.sub-theme-tl-v5 .active > .tab-list-link {
+  font-weight: 700;
+}
+
+.grid-slider-item img.jspanes-benefit5-ico {
+  min-width: 33px;
+  height: 45px;
+}
+
+.measure-box-header img {
+  width: 18px;
+  height: 16px;
+}
+
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto;
+  max-width: 920px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.modal-close-button {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.aljazeeraenglish {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -144px;
+  width: 40px;
+  height: 40px;
+}
+
+.amc {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -144px;
+  width: 40px;
+  height: 40px;
+}
+
+.animalplanethd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -144px;
+  width: 40px;
+  height: 40px;
+}
+
+.arenaspor2thd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -144px;
+  width: 40px;
+  height: 40px;
+}
+
+.arenasport1hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -216px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.arenasporthd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -216px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.arte {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -216px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.automotorsporthd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -216px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.axn {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -191px;
+  width: 40px;
+  height: 40px;
+}
+
+.axnblack {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -191px;
+  width: 40px;
+  height: 40px;
+}
+
+.axnwhite {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -191px;
+  width: 40px;
+  height: 40px;
+}
+
+.babytv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -191px;
+  width: 40px;
+  height: 40px;
+}
+
+.barrandovfamily {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -191px;
+  width: 40px;
+  height: 40px;
+}
+
+.barrandovkrimi {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -263px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.barrandovtv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -263px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.barrandovtvhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -263px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.bbcearth {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -263px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.bbcearthhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -263px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.bbcworldnews {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -238px;
+  width: 40px;
+  height: 40px;
+}
+
+.bloomberg {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -238px;
+  width: 40px;
+  height: 40px;
+}
+
+.boomerang {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -238px;
+  width: 40px;
+  height: 40px;
+}
+
+.brazzerseurope {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -238px;
+  width: 40px;
+  height: 40px;
+}
+
+.brazzerstveurope {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -238px;
+  width: 40px;
+  height: 40px;
+}
+
+.canal24horas {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -238px;
+  width: 40px;
+  height: 40px;
+}
+
+.cannal24horas {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -310px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.cartoonnetwork {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -310px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.cbsreality {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -310px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.cctvnews {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -310px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.ceskoslovenskohd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -310px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.cgtndocumentary {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -310px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.cinemax {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -285px;
+  width: 40px;
+  height: 40px;
+}
+
+.cinemax2 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -285px;
+  width: 40px;
+  height: 40px;
+}
+
+.cinemax2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -285px;
+  width: 40px;
+  height: 40px;
+}
+
+.cinemaxhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -285px;
+  width: 40px;
+  height: 40px;
+}
+
+.classica {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -285px;
+  width: 40px;
+  height: 40px;
+}
+
+.cnbc {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -285px;
+  width: 40px;
+  height: 40px;
+}
+
+.cnn {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -285px;
+  width: 40px;
+  height: 40px;
+}
+
+.cnnprimanews {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.comedyhouse {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.comedyhousehd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.crimeinvestigation {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.csfilm {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.cshistory {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.cshorror {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px -282px;
+  width: 40px;
+  height: 40px;
+}
+
+.csmystery {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -332px;
+  width: 40px;
+  height: 40px;
+}
+
+.chucktv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.ct1hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -332px;
+  width: 40px;
+  height: 40px;
+}
+
+.ct1jmhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -332px;
+  width: 40px;
+  height: 40px;
+}
+
+.ct1smhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -332px;
+  width: 40px;
+  height: 40px;
+}
+
+.ct24hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -332px;
+  width: 40px;
+  height: 40px;
+}
+
+.ct2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -332px;
+  width: 40px;
+  height: 40px;
+}
+
+.ct3 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -332px;
+  width: 40px;
+  height: 40px;
+}
+
+.ctarthd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png") !important;
+  background-position: -404px -0px !important;
+  width: 40px;
+  height: 40px;
+}
+
+.ctdhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.ctsporthd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.novasport3hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.novasport4hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.premiersport2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.discovery {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.discoverychannel {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -282px;
+  width: 40px;
+  height: 40px;
+}
+
+.discoveryscience {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -404px -329px;
+  width: 40px;
+  height: 40px;
+}
+
+.discoveryturboxtrahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.disneychannel {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.djazz {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.docubox {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -1px;
+  width: 40px;
+  height: 40px;
+}
+
+.doq {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.dorceltvhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.dorcelxxx {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.dorcelxxxhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.dtx {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -329px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.ducktv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -376px -379px;
+  width: 40px;
+  height: 40px;
+}
+
+.dusktv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.dvojkahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.epicdramahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.eroxxx {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.euronews {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.eurosport1hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.eurosport2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -282px;
+  width: 40px;
+  height: 40px;
+}
+
+.extremesportchannel {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -329px;
+  width: 40px;
+  height: 40px;
+}
+
+.extremesportschannel {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -451px -376px;
+  width: 40px;
+  height: 40px;
+}
+
+.fashiontv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.fightboxhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmbox {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmboxextra {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmboxextrahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmboxfamily {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmboxplus {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmboxpremiumhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -329px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmeurope {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -376px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmeuropehd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -423px -426px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmeuropeplus {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.filmplus {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.fine-living {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.fineliving {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.foodnetwork {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.france24 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.ginx {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -282px;
+  width: 40px;
+  height: 40px;
+}
+
+.golfchannelhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -329px;
+  width: 40px;
+  height: 40px;
+}
+
+.golfhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -376px;
+  width: 40px;
+  height: 40px;
+}
+
+.hbo2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -498px -423px;
+  width: 40px;
+  height: 40px;
+}
+
+.hbo3hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.hbohd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.hbokomplet-balicek {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px 0px;
+  width: 65px;
+  height: 65px;
+}
+
+.hbozaklad-balicek {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -144px 0px;
+  width: 65px;
+  height: 65px;
+}
+
+.historyhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.inedittv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.infotvbrno {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.investigationdiscovery {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.jednotkahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.jihoceskatv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -329px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.jimjam {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -376px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.jojcinema {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -423px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.jojfamily {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -470px -473px;
+  width: 40px;
+  height: 40px;
+}
+
+.jojfamilyhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.kinobarrandov {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.lalatv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.leogoldhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.leotvextasy {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.leotvgoldhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.magentahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -282px;
+  width: 40px;
+  height: 40px;
+}
+
+.magentat {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -329px;
+  width: 40px;
+  height: 40px;
+}
+
+.markizainternational {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -376px;
+  width: 40px;
+  height: 40px;
+}
+
+.minimax {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -423px;
+  width: 40px;
+  height: 40px;
+}
+
+.moozdancehd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -470px;
+  width: 40px;
+  height: 40px;
+}
+
+.mtv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.mtvdance {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.mtvhits {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.mtvrocks {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.natgeowildhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.nationalgeographichd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.nickelodeon {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.nickjr {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -329px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.nicktoons {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -376px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.nova2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -423px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.novaactionhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -470px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.novacinemahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -517px -520px;
+  width: 40px;
+  height: 40px;
+}
+
+.novagoldhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.novahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.novasport1hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.novasport2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.ocko-express {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.ocko {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.ockoblack {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -282px;
+  width: 40px;
+  height: 40px;
+}
+
+.ockoexpres {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -329px;
+  width: 40px;
+  height: 40px;
+}
+
+.ockostar {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -376px;
+  width: 40px;
+  height: 40px;
+}
+
+.orf1 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -423px;
+  width: 40px;
+  height: 40px;
+}
+
+.playboytv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -470px;
+  width: 40px;
+  height: 40px;
+}
+
+.polartv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -592px -517px;
+  width: 40px;
+  height: 40px;
+}
+
+.prahatv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.premiersport {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.premiersporthd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primacomedy {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primacool {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primacoolhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primakrimi {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -329px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primalovehd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -376px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primamax {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -423px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primamaxhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -470px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primazoomhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -517px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.primastar {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -545px -330px;
+  width: 40px;
+  height: 40px;
+}
+
+.prodospele-balicek {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -72px 0px;
+  width: 65px;
+  height: 65px;
+}
+
+.publicatv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -564px -567px;
+  width: 40px;
+  height: 40px;
+}
+
+.rebel-tv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.rebel {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.regionalnitvcz {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.regionalnitvtvs {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.relax {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.retro {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.retromusic {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -282px;
+  width: 40px;
+  height: 40px;
+}
+
+.senzi {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -329px;
+  width: 40px;
+  height: 40px;
+}
+
+.settopbox-balicek {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -144px -72px;
+  width: 65px;
+  height: 65px;
+}
+
+.slagrtv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -376px;
+  width: 40px;
+  height: 40px;
+}
+
+.slagr2 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -236px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.slagrpremium {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -517px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.spektrumhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -423px;
+  width: 40px;
+  height: 40px;
+}
+
+.spektrumhome {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -470px;
+  width: 40px;
+  height: 40px;
+}
+
+.sport1hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -517px;
+  width: 40px;
+  height: 40px;
+}
+
+.sport2hd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -639px -564px;
+  width: 40px;
+  height: 40px;
+}
+
+.sport5 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.ta3 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -47px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.televizeseznam {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -94px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.thefishingandhuntingchannel {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -141px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.tlc {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -188px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.tmvrocks {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -235px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.travelchannelhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -282px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.travelhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -329px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.travelxphd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -376px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.trojkahd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -423px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.tv-paprika {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -470px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.tv5mode {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -517px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.tv5monde {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -564px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.tvbrno1 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -611px -614px;
+  width: 40px;
+  height: 40px;
+}
+
+.tvnoe {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.tvpaprika {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -47px;
+  width: 40px;
+  height: 40px;
+}
+
+.upnetwork {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -94px;
+  width: 40px;
+  height: 40px;
+}
+
+.utv {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -141px;
+  width: 40px;
+  height: 40px;
+}
+
+.vh-1 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -188px;
+  width: 40px;
+  height: 40px;
+}
+
+.vh1 {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.mtv80s {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -189px;
+  width: 40px;
+  height: 40px;
+}
+
+.viasatexplore {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -329px;
+  width: 40px;
+  height: 40px;
+}
+
+.viasatexplorehd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -376px;
+  width: 40px;
+  height: 40px;
+}
+
+.viasathistoryhd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -423px;
+  width: 40px;
+  height: 40px;
+}
+
+.viasatnature {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -470px;
+  width: 40px;
+  height: 40px;
+}
+
+.viasatnaturehd {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -517px;
+  width: 40px;
+  height: 40px;
+}
+
+.videoteka-balicek {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: 0px -72px;
+  width: 65px;
+  height: 65px;
+}
+
+.xmo {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -564px;
+  width: 40px;
+  height: 40px;
+}
+
+.zahranici-balicek {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -72px -72px;
+  width: 65px;
+  height: 65px;
+}
+
+.zdf {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -686px -611px;
+  width: 40px;
+  height: 40px;
+}
+
+.eurosport4k {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -216px -49px;
+  width: 40px;
+  height: 40px;
+}
+
+.travelxp4k {
+  background-image: url("https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/a1911732-c16c-4bc1-9b28-bb66158af247.png");
+  background-position: -357px -49px;
+  width: 40px;
+  height: 40px;
+}
+
+.tooltip-inner {
+  background: rgb(0, 0, 0); /* The Fallback */
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #fff !important;
+  text-align: left !important;
+  padding: 12px 12px;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: rgb(0, 0, 0); /* The Fallback */
+  border-top-color: rgba(0, 0, 0, 0.8) !important;
+}
+.cta-image-inner {
+  top: 22px;
+}
+@media (max-width: 767px) {
+  .cta-image-inner {
+    top: 11px;
+  }
+}
+
+.icon-box.rounded {
+  flex-basis: 100px !important;
+}
+
+@media screen and (min-width: 1360px) {
+  .cta-image.theme-v1 {
+    right: -10px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cta-image.theme-v1 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .cta-image.theme-v1 {
+    padding-bottom: 100% !important;
+  }
+}
+
+.theme-v1 .cta-icon,
+.cta-icon.pos-right-down {
+  top: 150px !important;
+  right: -115px !important;
+  bottom: 0 !important;
+  transform: rotate(0deg) !important;
+}
+
+@media (min-width: 768px) {
+  .badge-hero-image {
+    left: 550px !important;
+  }
+}
+
+.badge-hero-image {
+  width: 170px;
+  height: 170px;
+  right: -50px !important;
+  top: -50px !important;
+}
+
+@media (min-width: 992px) {
+  .badge-hero-image {
+    right: -30px !important;
+    top: -30px !important;
+  }
+}
+
+@media (max-width: 1401px) {
+  .cta-icon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 730px) {
+  .badge-hero-image {
+    display: none !important;
+  }
+}
+
+@media (max-width: 411px) {
+  .bg-white.text-center.small-inner-content.square-corners.box-shadow-v1 {
+    min-height: 335px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .badge-hero-image {
+    right: -35px !important;
+    width: 170px;
+    height: 170px;
+    top: -50px !important;
+    left: unset !important;
+  }
+}
+
+.sleva-na-telefon-wrap {
+  height: 155px;
+}
+
+.sleva-na-telefon-wrap img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  display: none;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > li.slide-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > li.slide-item:target {
+/*   transform: scale(0.8); */
+}
+
+.slider-arrow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #BCBCBC;
+  border-radius: 50%;
+  top: auto;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.slider-left {
+  left: auto;
+  right: 80px;
+}
+
+.slider-right {
+  right: -10px;
+}
+
+.slider-arrow > svg {
+  width: 35px;
+  height: auto;
+}
+
+@media (max-width: 768px){
+  .slides>li.slide-item {
+    padding: 10px;
+  }
+  .slider-arrow {
+    width: 39px;
+    height: 39px;
+  }
+  .slider-arrow > svg {
+    width: 20px;
+    height: auto;
+  }
+  .slider-left {
+    left: calc(42% - 20px);
+    right: auto;
+  }
+  
+  .slider-right {
+    right: calc(42% - 20px);
+  }
+}
+
+.btn-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn, .input-lg:not(.bootstrap-select) {
+  padding-top: 14px;
+}

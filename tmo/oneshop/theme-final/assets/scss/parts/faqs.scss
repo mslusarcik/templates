@@ -1,0 +1,115 @@
+.panel.panel-faq {
+  background: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.theme-v1 .faq-link {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.theme-v1 .faq-link.collapsed {
+  color: #000;
+}
+
+.theme-v1 .faq-link.collapsed [class*="collapse-icon"] svg {
+  fill: #000;
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] {
+  width: 30px;
+  height: 30px;
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"]:after {
+  content: "";
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] svg {
+  display: none;
+}
+
+.theme-v1 .faq-link:hover,
+.theme-v1 .faq-link:focus,
+.theme-v1 .faq-link:active {
+  color: #e20074;
+}
+
+@media (max-width: 767.98px) {
+  .theme-v1 .faq-link {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+.theme-v2 .faq-link.collapsed {
+  color: #000;
+}
+
+.theme-v2 .faq-link.collapsed [class*="collapse-icon"] svg {
+  fill: #e20074;
+}
+
+.theme-v2 .faq-link:hover,
+.theme-v2 .faq-link:focus,
+.theme-v2 .faq-link:active {
+  color: #e20074;
+}
+
+.faq-link.color-white.collapsed {
+  color: #fff;
+}
+
+.faq-link.color-white.collapsed [class*="collapse-icon"] svg {
+  fill: #fff;
+}
+
+.theme-v1 .faq-heading {
+  padding-right: 50px;
+}
+
+.panel-faq.faq-border-top {
+  border-top: 1px solid #bfbfbf !important;
+}
+
+.panel-faq.border-top-none {
+  border-top: 0;
+}
+
+.panel-faq.border-bottom-grey {
+  border-bottom-color: #bfbfbf;
+}
+
+.show-more-content .panel-faq:first-child {
+  border-top: 0;
+}
+
+.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] img {
+  display: none;
+}
+
+.collapse {
+  transition: all 2s ease;
+}
+
+.row-faq.theme-v1 .faq-link:not(.collapsed) .collapse-icon[class*="plus"] {
+  content: " ";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #e20074;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 48px;
+  display: block;
+  position: relative;
+}
+
+.panel .collapse-icon-image {
+  max-width: 16px;
+  max-height: 16px;
+}
