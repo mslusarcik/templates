@@ -74,7 +74,55 @@
   position: relative;
   width: 14px;
   height: 14px;
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.151 14.151'%3E%3Cpath id='Path_632' data-name='Path 632' d='M0,0V8.007H8.007' transform='translate(7.076 12.737) rotate(-135)' fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.icon-angle-right.primary {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 14px;
+  height: 14px;
   background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.151 14.151'%3E%3Cpath id='Path_632' data-name='Path 632' d='M0,0V8.007H8.007' transform='translate(7.076 12.737) rotate(-135)' fill='none' stroke='%23e20074' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.icon-angle-left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14.151 14.151' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='Path_632' data-name='Path 632' d='M 3.072 11.079 L 3.072 3.072 L 11.08 3.072' fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='matrix(0.707107, -0.707107, 0.707107, 0.707107, -2.930622, 7.075853)'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.icon-angle-left.primary {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14.151 14.151' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='Path_632' data-name='Path 632' d='M 3.072 11.079 L 3.072 3.072 L 11.08 3.072' fill='none' stroke='%23e20074' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='matrix(0.707107, -0.707107, 0.707107, 0.707107, -2.930622, 7.075853)'/%3E%3C/svg%3E");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

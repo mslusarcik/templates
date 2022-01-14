@@ -44,7 +44,7 @@ function checkOneshopScripts() {
       );
     }
     
-    console.log(carouselWidth, cardWidth, cardMarginRight, maxX);
+    console.warn(carouselWidth, cardWidth, cardMarginRight, maxX);
 
     // Add the click events
     leftButton.addEventListener("click", function () {
@@ -100,7 +100,7 @@ function checkOneshopScripts() {
           ((cardCount -1) * cardWidth + (cardMarginRight * (cardCount - 1)))
         );
       
-      console.log(carouselWidth, cardWidth, cardMarginRight, maxX);
+      console.warn(carouselWidth, cardWidth, cardMarginRight, maxX);
 
       // Add the click events
       leftButton.addEventListener("click", function () {
@@ -149,15 +149,15 @@ function checkOneshopScripts() {
       for (var i = 0; i < elements.length; i++) {
         elements[i].addEventListener("click", function (e) {
           var currentItem = this.getAttribute("data-target");
-          console.log(currentItem);
+          console.warn(currentItem);
           var targetItem = mainObj.querySelectorAll(currentItem)[0];
 
           if (targetItem.classList.contains('in')) {
-            console.log("TRUE");
+            console.warn("TRUE");
             this.classList.add('collapsed');
             targetItem.classList.remove('in');
           } else {
-            console.log("ELSE");
+            console.warn("ELSE");
             this.classList.remove('collapsed')
             targetItem.style.maxHeight = "auto";
             targetItem.classList.add('in');
@@ -201,7 +201,7 @@ function checkOneshopScripts() {
             this.className += " active";
             //get data-tab attribute of what has been clicked
             var matchingTab = this.getAttribute("data-tab");
-            console.log(matchingTab);
+            console.warn(matchingTab);
             //add current class to the tabContent element thats id matches the data-tab of the clicked tab
             mainObj.querySelector("#"+matchingTab).className += " active";
           },
@@ -336,7 +336,7 @@ function checkOneshopScripts() {
         // When the user clicks the button, open the modal
         modals[l].onclick = function (e) {
           var modal = mainObj.querySelector(e.target.getAttribute("data-modal-id"));
-          //console.log(modal);
+          //console.warn(modal);
           var modalCloseBtn = modal.getElementsByClassName("modal-close-button")[0];
           modal.style.display = "block";
           document.body.style.overflowY = "hidden";
@@ -363,7 +363,7 @@ function checkOneshopScripts() {
         switchObjects[s].onclick = function (e) {
           var modalWrapper = this.closest('.modal-wrapper');
           var targetModal = modalWrapper.getElementsByClassName("js-switch-modals")[0].getAttribute("data-modal-id");
-          console.log(targetModal);
+          console.warn(targetModal);
           if (document.body.classList.contains('modal-open')) {
             modalWrapper.getElementsByClassName("modal-close-button")[0].click();
             mainObj.querySelectorAll('.modal[data-modal-id="'+targetModal+'"]')[0].click();
@@ -405,7 +405,7 @@ function checkOneshopScripts() {
         function () {
           //find closest wrapper
           var targetContentId = this.getAttribute("data-switch-target-id");
-          console.log(targetContentId);
+          console.warn(targetContentId);
           var targetContentObj = mainObj.querySelector("#" + targetContentId);
           currentActiveContent.classList.remove("active");
           currentActiveContent = targetContentObj;
@@ -421,84 +421,89 @@ function checkOneshopScripts() {
   function scrollerManagment(mainObj){
     var scrollers = mainObj.querySelectorAll(".scroller-wrapper");
     for (var t = 0; t < scrollers.length; t++) {
-      console.log("Scroller found: " + t);
+      console.warn("Scroller found: " + t);
       var currentScroller = scrollers[t];
-      console.log(currentScroller);
       var scrollerButtons = currentScroller.querySelector(".slider-navigation-buttons");
+      var nameOfSlider = scrollerButtons.getAttribute("data-slider-name");
       var scrollerPrev = scrollerButtons.querySelector(".slider-prev");
       var scrollerNext = scrollerButtons.querySelector(".slider-next");
       var currentPath = window.location.pathname;
-      var currentSlide;
-      var scrollBeforePrevSlide;
+      var currentSlide = scrollerButtons.getAttribute("data-current-slide")
       
       //FIRST INIT
-      // scrollerPrev.setAttribute("data-prev-slide", scrollers[t].querySelector("#" + scrollerNext.getAttribute("data-first-slide")).getAttribute("data-prev"));
-      var scrollBeforeNextSlide = scrollerButtons.getAttribute("data-next-slide"); //slider-data-3
-      var scrollNextSlide = scrollers[t].querySelector("#" + scrollerButtons.getAttribute("data-next-slide")).getAttribute("data-next"); //slider-data-4
-      scrollerButtons.setAttribute("data-next-slide", scrollNextSlide); //SET SLIDER-DATA-4
+      var scrollNextSlide = scrollers[t].querySelector("#" + currentSlide).getAttribute("data-next"); //slider-data-4
+      var scrollFirstSlide = scrollerButtons.getAttribute("data-first-slide")
+      var scrollLastSlide = scrollerButtons.getAttribute("data-last-slide")
 
       //DEFAULT
       scrollerButtons.style.display = "flex";
       scrollerPrev.href = currentPath + "#" + scrollerButtons.getAttribute("data-prev-slide"); //SET NEXT SLIDER /index.html#slider-data-1
-      scrollerNext.href = currentPath + "#" + scrollBeforeNextSlide; //SET NEXT SLIDER /index.html#slider-data-3
+      scrollerNext.href = currentPath + "#" + scrollNextSlide; //SET NEXT SLIDER /index.html#slider-data-3
       scrollerPrev.style.display = "none";
-      
 
-      //scrollerLastSlide = scrollerPrev.getAttribute("data-last-slide");
-      
-
-
-      scrollerPrev.addEventListener("click", function (thus) {
-        console.log("Prev clicked.");
+      scrollerPrev.addEventListener("click", function (eventus) {
+        console.warn("Prev clicked.");
         setTimeout(function() {
           //get
-          scrollBeforePrevSlide = scrollerButtons.getAttribute("data-prev-slide"); //slider-data-2
-          console.log(scrollBeforePrevSlide);
-          currentSlide = scrollerButtons.getAttribute("data-current-slide"); //slider-data-4
-          console.log(currentSlide);
-          scrollPrevSlide = currentScroller.querySelector("#" + scrollBeforePrevSlide).getAttribute("data-prev"); //slider-data-1
-          console.log(scrollPrevSlide);
-          scrollNextSlide = currentScroller.querySelector("#" + scrollBeforePrevSlide).getAttribute("data-next"); //slider-data-4
-          console.log(scrollNextSlide);
+          clickedObj = eventus.explicitOriginalTarget || eventus.path[0];
+          scrollerButtons = clickedObj.closest(".slider-navigation-buttons");
+          console.warn(scrollerButtons);
+          scrollerNext = scrollerButtons.querySelector(".slider-next");
+
+          currentSlide = scrollerButtons.getAttribute("data-prev-slide");
+          console.warn("Current: " + currentSlide);
+          scrollPrevSlide = mainObj.querySelector("#" + currentSlide).getAttribute("data-prev");
+          console.warn("Prev: " + scrollPrevSlide);
+          scrollNextSlide = mainObj.querySelector("#" + currentSlide).getAttribute("data-next");
+          console.warn("Next: " + scrollNextSlide);
+          scrollFirstSlide = scrollerButtons.getAttribute("data-first-slide");
 
           //set
-          scrollerButtons.setAttribute("data-current-slide", scrollBeforePrevSlide); //slider-data-2
+          scrollerButtons.setAttribute("data-current-slide", currentSlide); //slider-data-2
           scrollerButtons.setAttribute("data-prev-slide", scrollPrevSlide); //slider-data-1
           scrollerButtons.setAttribute("data-next-slide", scrollNextSlide); //slider-data-4
-          thus.target.href = currentPath + "#" + scrollPrevSlide; // /index.html#slider-data-1
-          scrollerNext.href = currentPath + "#" + scrollNextSlide; // /index.html#slider-data-4
+          scrollerNext.href = currentPath + "#" + scrollNextSlide;
+          clickedObj.href = currentPath + "#" + scrollPrevSlide;
 
           //settings
           scrollerNext.style.display = "flex";
-          if(currentSlide === scrollPrevSlide){
-            scrollerPrev.style.display = "none";
+          if(scrollerButtons.getAttribute("data-current-slide") === scrollFirstSlide){
+            clickedObj.style.display = "none";
           }
         }, 500);
 
         return true;
       });
-      scrollerNext.addEventListener("click", function (thus) {
-        console.log("Next clicked.");
+
+      scrollerNext.addEventListener("click", function (eventus) {
+        console.warn("Next clicked.");
         setTimeout(function() {
-          //set-before
-          scrollerButtons.setAttribute("data-current-slide", scrollBeforeNextSlide);
-          scrollerButtons.setAttribute("data-next-slide", scrollNextSlide);
-
           //get
-          scrollBeforeNextSlide = scrollerButtons.getAttribute("data-next-slide");
-          currentSlide = scrollerButtons.getAttribute("data-current-slide");
-          scrollNextSlide = currentScroller.querySelector("#" + currentSlide).getAttribute("data-next");
-          scrollPrevSlide = currentScroller.querySelector("#" + currentSlide).getAttribute("data-prev");
+          clickedObj = eventus.explicitOriginalTarget || eventus.path[0];
+          scrollerButtons = clickedObj.closest(".slider-navigation-buttons");
+          console.warn(scrollerButtons);
+          scrollerPrev = scrollerButtons.querySelector(".slider-prev");
           
-          //set-after
-          thus.target.href = currentPath + "#" + scrollNextSlide;
+          console.warn(scrollerButtons);
+          currentSlide = scrollerButtons.getAttribute("data-next-slide");
+          console.warn("Current: " + currentSlide);
+          scrollPrevSlide = mainObj.querySelector("#" + currentSlide).getAttribute("data-prev");
+          console.warn("Prev: " + scrollPrevSlide);
+          scrollNextSlide = mainObj.querySelector("#" + currentSlide).getAttribute("data-next");
+          console.warn("Next: " + scrollNextSlide);
+          scrollLastSlide = scrollerButtons.getAttribute("data-last-slide");
+          
+          //set
+          scrollerButtons.setAttribute("data-current-slide", currentSlide); //slider-data-2
+          scrollerButtons.setAttribute("data-prev-slide", scrollPrevSlide); //slider-data-1
+          scrollerButtons.setAttribute("data-next-slide", scrollNextSlide); //slider-data-4
           scrollerPrev.href = currentPath + "#" + scrollPrevSlide;
-          scrollerButtons.setAttribute("data-prev-slide", scrollPrevSlide);
+          clickedObj.href = currentPath + "#" + scrollNextSlide;
 
-          //setings
+          //settings
           scrollerPrev.style.display = "flex";
-          if(currentSlide === scrollNextSlide){
-            scrollerNext.style.display = "none";
+          if(scrollerButtons.getAttribute("data-current-slide") === scrollLastSlide){
+            clickedObj.style.display = "none";
           }
         }, 500);
 
@@ -623,7 +628,7 @@ function checkOneshopScripts() {
        * SCROLLER 
        * INIT
        * ***************** */
-      if (mainObj.querySelectorAll(".scroller-wrapper")[0]) {
+      if (mainObj.querySelectorAll(".scroller-wrapper")[0] && window.matchMedia('(min-width: 768px)').matches) {
         scrollerManagment(mainObj);
       }
     }
