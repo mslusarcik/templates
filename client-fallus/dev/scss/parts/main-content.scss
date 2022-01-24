@@ -1,0 +1,11 @@
+.main-content {
+  padding: 25px 0;
+
+  .bs-section {
+    padding: 50px 0;
+
+    &::first-child {
+      padding-top: 25px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+body.mobile-menu-triggered {
+  overflow: hidden;
+}
+
+header.header {
+  background: #fff;
+  height: 48px;
+  border-bottom: 1px solid #242424;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+
+    > div {
+      align-self: center;
+    }
+
+    .navigation__items {
+
+      span.navigation__list_close_button,
+      span.navigation__list_heading {
+        display: none;
+      }
+
+      .navigation__menu_icon {
+        display: block;
+        width: 28px;
+        height: 14px;
+        background-size: contain;
+        background-image: url(/assets/images/hamburger_menu.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 10;
+
+        &::after {
+          display: none;
+        }
+
+        .navigation__menu_icon {
+          display: none;
+        }
+
+        .navigation__list {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 290px;
+          font-size: 18px;
+          font-weight: 400;
+          text-align: center;
+
+          > span.navigation__list_close_button {
+            background-image: url(/assets/images/ico-close.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: block;
+            width: 29px;
+            height: 29px;
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            z-index: 15;
+          }
+
+          > span.navigation__list_heading {
+            display: block;
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 40px;
+          }
+
+          li.navigation__list_item {
+            > a.navigation__list_link {
+              text-decoration: none;
+              color: #242424;
+              padding: 10px 0;
+              display: block;
+
+              &.active {
+                text-decoration: underline;
+                text-underline-offset: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .navigation__list {
+        display: none;
+      }
+    }
+  }
+}

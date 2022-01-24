@@ -1,0 +1,19 @@
+@import "bootstrap/bootstrap-grid.scss";
+@import "bootstrap/utilities/spacing.scss";
+@import "parts/base.scss";
+@import "parts/helpers.scss";
+@import "parts/fonts.scss";
+@import "parts/header.scss";
+@import "parts/hero-section.scss";
+@import "parts/main-content.scss";
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
