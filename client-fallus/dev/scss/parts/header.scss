@@ -18,35 +18,39 @@ header.header {
       align-self: center;
     }
 
+    .navigation__menu_icon {
+      display: block;
+      width: 28px;
+      height: 14px;
+      background-size: contain;
+      background-image: url(../../../assets/images/hamburger_menu.svg);
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
     .navigation__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fff;
+      z-index: -1;
+      opacity: 0;
+      transition: 0.3s;
 
       span.navigation__list_close_button,
       span.navigation__list_heading {
         display: none;
       }
 
-      .navigation__menu_icon {
-        display: block;
-        width: 28px;
-        height: 14px;
-        background-size: contain;
-        background-image: url(../../../assets/images/hamburger_menu.svg);
-        background-repeat: no-repeat;
-        cursor: pointer;
-      }
-
       &.active {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 40px;
-        font-weight: bold;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #fff;
+        opacity: 1;
         z-index: 10;
 
         &::after {

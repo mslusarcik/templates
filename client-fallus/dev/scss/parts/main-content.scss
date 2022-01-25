@@ -1,5 +1,5 @@
 .main-content {
-  padding: 50px 0 25px;
+  padding: 50px 0 0;
 
   .bs-section {
     padding: 50px 0;
@@ -117,5 +117,91 @@
         padding: 15px;
       }
     }
+  }
+}
+
+/*
+ * BUSINESS PROGRESS SECTION
+ * ************************* */
+
+.business-progress-section {
+  .business-progress-section__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-image: url(../../../assets/images/how-it-works.png);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      width: 100%;
+      height: calc(100% + 175px);
+      position: absolute;
+      top: -94px;
+      left: 0;
+      z-index: -1;
+    }
+
+    .business-progress-section__item {
+      display: flex;
+      flex-basis: 50%;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+
+      > span {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+/*
+ * BLOG SECTION
+ * ************************* */
+
+.blog-section {
+
+  .blog-section__subheadline {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+/*
+ * FOOTER SECTION
+ * ************************* */
+
+.footer-section {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    background-image: url(../../../assets/images/how-it-works.png);
+    background-position: center 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: calc(100% + 120px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .footer-section__contact {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .footer-section__copyright {
+    font-size: 15px;
+    line-height: 20px;
   }
 }
