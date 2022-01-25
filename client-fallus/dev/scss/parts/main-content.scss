@@ -1,11 +1,121 @@
 .main-content {
-  padding: 25px 0;
+  padding: 50px 0 25px;
 
   .bs-section {
     padding: 50px 0;
+  }
+}
 
-    &::first-child {
-      padding-top: 25px;
+/*
+ * SERVICE SECTION
+ * ************** */
+
+.services-slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 34px;
+
+  &.slick-dotted.slick-slider {
+    margin-bottom: 45px;
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+
+  .slick-list {
+    padding: 0 30% 0 0 !important;
+  }
+
+  .slick-slide {
+    height: inherit !important;
+
+    > div {
+      height: 100%;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .services-slider__item {
+    display: flex !important;
+    height: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 85%;
+    background-image: linear-gradient(#e7ddf0, #bcebee);
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 45px;
+    max-width: 80%;
+
+    .services-slider__image {
+      margin: 14px 0;
+    }
+  }
+}
+
+/*
+ * REVIWS SECTION
+ * ************** */
+
+.reviews-section {
+  .reviews-section__slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .reviews-section__slider_item {
+    margin-top: 32px;
+    min-width: 260px;
+    display: block;
+
+    .reviews-section__heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .reviews-section__image {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+    }
+
+    .reviews-section__content {
+      display: block;
+      max-width: 70%;
+      margin:0 auto;
+      text-align: center;
+    }
+  }
+}
+
+/*
+ * PARTNERS SECTION
+ * **************** */
+
+.partners-section {
+
+  .partners-section__slider {
+
+    .partners-section__slider_item {
+      display: flex !important;
+      justify-content: center;
+      height: 85px;
+
+      .partners-section__logo {
+        max-width: 80%;
+        padding: 15px;
+      }
     }
   }
 }

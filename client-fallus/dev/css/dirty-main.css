@@ -2067,6 +2067,36 @@ h4,
   font-size: 25px;
   line-height: 32px; }
 
+a {
+  text-decoration: none; }
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 6px 20px;
+  line-height: 1.5;
+  border-radius: 25px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+
+.btn-primary {
+  color: #242424;
+  background-color: #fff;
+  border-color: #fff; }
+
+.slick-dots {
+  bottom: -45px; }
+  .slick-dots .slick-active button::before {
+    opacity: 1 !important;
+    color: #242424 !important; }
+  .slick-dots button::before {
+    font-size: 12px !important;
+    opacity: 1 !important;
+    color: #646464 !important; }
+
 .text-center {
   text-align: center; }
 
@@ -2074,6 +2104,33 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.2; }
+
+.font-thin {
+  font-weight: 100; }
+
+.font-extra-light {
+  font-weight: 200; }
+
+.font-light {
+  font-weight: 300; }
+
+.font-regular {
+  font-weight: 400; }
+
+.font-medium {
+  font-weight: 500; }
+
+.font-semibold {
+  font-weight: 600; }
+
+.font-bold {
+  font-weight: 700; }
+
+.font-extra {
+  font-weight: 800; }
+
+.font-black {
+  font-weight: 900; }
 
 body.mobile-menu-triggered {
   overflow: hidden; }
@@ -2156,7 +2213,8 @@ header.header {
 .hero-section .hero-section__image {
   margin-left: -15px;
   margin-right: -15px;
-  width: 107.5%; }
+  width: 100%;
+  width: calc(100% + 30px); }
 
 .hero-section .hero-section__content {
   color: #242424;
@@ -2174,11 +2232,84 @@ header.header {
   display: block; }
 
 .main-content {
-  padding: 25px 0; }
+  padding: 50px 0 25px; }
   .main-content .bs-section {
     padding: 50px 0; }
-    .main-content .bs-section::first-child {
-      padding-top: 25px; }
+
+/*
+ * SERVICE SECTION
+ * ************** */
+.services-slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 34px; }
+  .services-slider.slick-dotted.slick-slider {
+    margin-bottom: 45px; }
+  .services-slider .slick-arrow {
+    display: none !important; }
+  .services-slider .slick-list {
+    padding: 0 30% 0 0 !important; }
+  .services-slider .slick-slide {
+    height: inherit !important; }
+    .services-slider .slick-slide > div {
+      height: 100%; }
+  .services-slider .slick-track {
+    display: flex; }
+  .services-slider .services-slider__item {
+    display: flex !important;
+    height: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 85%;
+    background-image: linear-gradient(#e7ddf0, #bcebee);
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 45px;
+    max-width: 80%; }
+    .services-slider .services-slider__item .services-slider__image {
+      margin: 14px 0; }
+
+/*
+ * REVIWS SECTION
+ * ************** */
+.reviews-section .reviews-section__slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.reviews-section .reviews-section__slider_item {
+  margin-top: 32px;
+  min-width: 260px;
+  display: block; }
+  .reviews-section .reviews-section__slider_item .reviews-section__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; }
+  .reviews-section .reviews-section__slider_item .reviews-section__image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; }
+  .reviews-section .reviews-section__slider_item .reviews-section__content {
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center; }
+
+/*
+ * PARTNERS SECTION
+ * **************** */
+.partners-section .partners-section__slider .partners-section__slider_item {
+  display: flex !important;
+  justify-content: center;
+  height: 85px; }
+  .partners-section .partners-section__slider .partners-section__slider_item .partners-section__logo {
+    max-width: 80%;
+    padding: 15px; }
 
 *,
 html,
