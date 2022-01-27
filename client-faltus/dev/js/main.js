@@ -54,16 +54,16 @@ $(function() {
     $('.services-slider').slick({
       dots: true,
       arrows: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToShow: 2,
+      slidesToScroll: 2,
       cssEase: 'linear',
       infinite: false,
       responsive: [
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
         }
       ]
