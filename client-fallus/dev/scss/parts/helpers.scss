@@ -1,3 +1,37 @@
 .text-center {
   text-align: center;
 }
+
+.order-1 {order: 1}
+.order-2 {order: 2}
+.order-3 {order: 3}
+.order-4 {order: 4}
+.order-5 {order: 5}
+
+@include media-breakpoint-up(md) {
+  .order-md-1 {order: 1}
+  .order-md-2 {order: 2}
+  .order-md-3 {order: 3}
+  .order-md-4 {order: 4}
+  .order-md-5 {order: 5}
+}
+
+@include media-breakpoint-up(lg) {
+  .order-lg-1 {order: 1}
+  .order-lg-2 {order: 2}
+  .order-lg-3 {order: 3}
+  .order-lg-4 {order: 4}
+  .order-lg-5 {order: 5}
+}
+
+@include media-breakpoint-up(xl) {
+  .order-xl-1 {order: 1}
+  .order-xl-2 {order: 2}
+  .order-xl-3 {order: 3}
+  .order-xl-4 {order: 4}
+  .order-xl-5 {order: 5}
+}
+
+.max-w-100 {
+  max-width: 100%;
+}

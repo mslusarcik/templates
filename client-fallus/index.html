@@ -5,63 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Softos - Specialisté v IT a Softwaru</title>
+    <!-- SLICK SLIDER -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- TALIWIND -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navigation">
-              <div class="navigation__icons">
-                <img src="assets/images/ico-phone.svg" class="navigation__icon_item" alt="Zavolejte nám" />
-              </div>
-              <div class="navigation__logo">
-                <img src="assets/images/softos_logo.png" alt="Softos logo" />
-              </div>
-              <span class="navigation__menu_icon"></span>
-              <div class="navigation__items">
-                <ul class="navigation__list">
-                  <span class="navigation__list_close_button"></span>
-                  <span class="navigation__list_heading">Menu</span>
-                  <li class="navigation__list_item">
-                    <a href="#" class="navigation__list_link active">
-                      Služby
-                    </a>
-                  </li>
-                  <li class="navigation__list_item">
-                    <a href="#" class="navigation__list_link">
-                      Recenze
-                    </a>
-                  </li>
-                  <li class="navigation__list_item">
-                    <a href="#" class="navigation__list_link">
-                      Kontakt
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+      <nav class="navigation">
+        <div class="navigation__icons">
+          <img src="assets/images/ico-phone.svg" class="navigation__icon_item" alt="Zavolejte nám" />
         </div>
-      </div>
+        <div class="navigation__logo">
+          <img src="assets/images/softos_logo.png" alt="Softos logo" />
+        </div>
+        <span class="navigation__menu_icon"></span>
+        <div class="navigation__items">
+          <ul class="navigation__list">
+            <span class="navigation__list_close_button"></span>
+            <span class="navigation__list_heading">Menu</span>
+            <li class="navigation__list_item">
+              <a href="#" class="navigation__list_link active js-scroll">
+                Služby
+              </a>
+            </li>
+            <li class="navigation__list_item">
+              <a href="#" class="navigation__list_link js-scroll">
+                Reference
+              </a>
+            </li>
+            <li class="navigation__list_item">
+              <a href="#" class="navigation__list_link js-scroll">
+                Blog
+              </a>
+            </li>
+            <li class="navigation__list_item navigation__promo_item">
+              <a href="#" class="navigation__list_link js-scroll">
+                Kontakt
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section class="hero-section">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <img src="assets/images/header-background.png" alt="Softos - Specialisté v IT a softwaru" class="hero-section__image" />
+          <div class="col-12 col-md-6 order-md-2">
+            <img src="assets/images/header-image.png" alt="Softos - Specialisté v IT a softwaru" class="hero-section__image d-block d-md-none" />
+            <img src="assets/images/hero-header-desktop-background.png" alt="Softos - Specialisté v IT a softwaru" class="hero-section__image d-none d-md-block max-w-100" />
           </div>
-          <div class="col-12 col-md-6 hero-section__content">
-            <h1 class="mx-4">Jsme specialisté <br class="d-block d-md-none" />v&nbsp;IT a&nbsp;softwaru</h1>
-            <p class="mx-5">Zaměřujeme se&nbsp;na&nbsp;efektivní e&#8209;commerce řešení. Pomáháme vám zrealizovat 
+          <div class="col-12 col-md-6 hero-section__content order-md-1">
+            <h1 class="mx-4 mx-md-0">Jsme specialisté <br class="d-block" />v&nbsp;IT a&nbsp;softwaru</h1>
+            <p class="mx-5 mx-md-0 mt-md-2">Zaměřujeme se&nbsp;na&nbsp;efektivní e&#8209;commerce řešení. Pomáháme vám zrealizovat 
               digitální projekt od&nbsp;myšlenky až&nbsp;po&nbsp;doručení zákazníkovi. Shoptet, aplikace, 
               weby, integrace systémů – to&nbsp;je oč&nbsp;tu běží!</p>
           </div>
-          <div class="col-12 text-center">
+          <div class="col-12 text-center order-md-3">
             <a href="#start" class="hero-section__scroll_link js-scroll">
               <img src="assets/images/ico-arrow-down.svg" alt="Scroll button icon" class="hero-section__scroll_button" />
             </a>
@@ -71,192 +75,305 @@
     </section>
     <main class="main-content" id="start">
       <!-- SERVICES-->
-      <h2 class="h1 text-center">Služby</h2>
+      <h2 class="h1 text-center d-block d-xl-none">Služby</h2>
       <div class="services-slider theme-v1">
         <section class="bs-section services-slider__item">
-          <h3 class="services-slider__heading">E-shop</h3>
-          <img src="assets/images/ecommerce_service.png" class="services-slider__image">
-          <a href="#" class="btn btn-primary">Zjistit více</a>
+          <div class="services-slider__content_wrapper">
+            <span class="services-slider__n_prefix">01</span>
+            <h3 class="services-slider__heading">E-shop <span class="d-none d-xl-block">na míru</span></h3>
+            <img src="assets/images/ecommerce_service.png" class="services-slider__image d-block d-xl-none">
+            <p class="mt-xl-4 pt-xl-3">
+              <a href="#" class="btn btn-primary d-block d-xl-none">Zjistit více</a>
+              <a href="#" class="btn btn-secondary mr-xl-3 d-none d-xl-inline-block">Zjistit více</a>
+              <a href="#" class="btn btn-transparent ml-xl-4 d-none d-xl-inline-block">Poptat</a>
+            </p>
+          </div>
+          <div class="services-slider__image_wrapper d-none d-xl-block">
+            <img src="assets/images/store_fy.png" class="services-slider__image">
+          </div>
         </section>
         <section class="bs-section services-slider__item">
-          <h3 class="services-slider__heading">Marketing a&nbsp;design</h3>
-          <img src="assets/images/marketing_service.png" class="services-slider__image">
-          <a href="#" class="btn btn-primary">Zjistit více</a>
+          <div class="services-slider__content_wrapper order-xl-2">
+            <span class="services-slider__n_prefix">02</span>
+            <h3 class="services-slider__heading">Marketing <br class="d-none d-xl-block">&&nbsp;design</h3>
+            <img src="assets/images/marketing_service.png" class="services-slider__image d-block d-xl-none">
+            <p class="mt-xl-4 pt-xl-3">
+              <a href="#" class="btn btn-primary d-block d-xl-none">Zjistit více</a>
+              <a href="#" class="btn btn-secondary mr-xl-3 d-none d-xl-inline-block">Zjistit více</a>
+              <a href="#" class="btn btn-transparent ml-xl-4 d-none d-xl-inline-block">Poptat</a>
+            </p>
+          </div>
+          <div class="services-slider__image_wrapper d-none d-xl-block order-xl-1">
+            <img src="assets/images/marketing_design.png" class="services-slider__image">
+          </div>
         </section>
         <section class="bs-section services-slider__item">
-          <h3 class="services-slider__heading">Ecommerce poradenství</h3>
-          <img src="assets/images/ecommerce_consulting_service.png" class="services-slider__image">
-          <a href="#" class="btn btn-primary">Zjistit více</a>
+          <div class="services-slider__content_wrapper">
+            <span class="services-slider__n_prefix">03</span>
+            <h3 class="services-slider__heading">Ecommerce poradenství</h3>
+            <img src="assets/images/ecommerce_consulting_service.png" class="services-slider__image d-block d-xl-none">
+            <p class="mt-xl-4 pt-xl-3">
+              <a href="#" class="btn btn-primary d-block d-xl-none">Zjistit více</a>
+              <a href="#" class="btn btn-secondary mr-xl-3 d-none d-xl-inline-block">Zjistit více</a>
+              <a href="#" class="btn btn-transparent ml-xl-4 d-none d-xl-inline-block">Poptat</a>
+            </p>
+          </div>
+          <div class="services-slider__image_wrapper d-none d-xl-block">
+            <img src="assets/images/ecommerce_consult.png" class="services-slider__image">
+          </div>
         </section>
         <section class="bs-section services-slider__item">
-          <h3 class="services-slider__heading">Integrace systému a&nbsp;software architektura</h3>
-          <img src="assets/images/ecommerce_architecture.png" class="services-slider__image">
-          <a href="#" class="btn btn-primary">Zjistit více</a>
+          <div class="services-slider__content_wrapper order-xl-2">
+            <span class="services-slider__n_prefix">04</span>
+            <h3 class="services-slider__heading">Integrace <br class="d-none d-xl-block" />systému a&nbsp;software architektura</h3>
+            <img src="assets/images/ecommerce_architecture.png" class="services-slider__image d-block d-xl-none">
+            <p class="mt-xl-4 pt-xl-3">
+              <a href="#" class="btn btn-primary d-block d-xl-none">Zjistit více</a>
+              <a href="#" class="btn btn-secondary mr-xl-3 d-none d-xl-inline-block">Zjistit více</a>
+              <a href="#" class="btn btn-transparent ml-xl-4 d-none d-xl-inline-block">Poptat</a>
+            </p>
+          </div>
+          <div class="services-slider__image_wrapper d-none d-xl-block order-xl-1">
+            <img src="assets/images/software_architecture.png" class="services-slider__image">
+          </div>
         </section>
         <section class="bs-section services-slider__item">
-          <h3 class="services-slider__heading">Aplikace</h3>
-          <img src="assets/images/ecommerce_apps.png" class="services-slider__image">
-          <a href="#" class="btn btn-primary">Zjistit více</a>
+          <div class="services-slider__content_wrapper">
+            <span class="services-slider__n_prefix">05</span>
+            <h3 class="services-slider__heading">Aplikace</h3>
+            <img src="assets/images/ecommerce_apps.png" class="services-slider__image d-block d-xl-none">
+            <p class="mt-xl-4 pt-xl-3">
+              <a href="#" class="btn btn-primary d-block d-xl-none">Zjistit více</a>
+              <a href="#" class="btn btn-secondary mr-xl-3 d-none d-xl-inline-block">Zjistit více</a>
+              <a href="#" class="btn btn-transparent ml-xl-4 d-none d-xl-inline-block">Poptat</a>
+            </p>
+          </div>
+          <div class="services-slider__image_wrapper d-none d-xl-block">
+            <img src="assets/images/apps.png" class="services-slider__image">
+          </div>
         </section>
       </div>
       <!-- /SERVICES -->
 
-      <!-- REVIEWS -->
-      <section class="bs-section reviews-section">
-        <h2 class="h1 text-center">Recenze</h2>
-        <div class="reviews-section__slider reviews-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, dots: true, infinite: true, arrows: false,}'>
-          <div class="reviews-section__slider_item">
-            <div class="reviews-section__heading">
-              <img src="assets/images/profile_picture.png" alt="Ivana Velká" class="reviews-section__image">
-              <h3 class="ml-3">
-                Ivana Velká <br/>
-                <span class="font-light">Nákupčí NIKE</span>
-              </h3>
+      <div class="reviews-partners-wrapper">
+        <!-- REVIEWS -->
+        <section class="bs-section reviews-section" id="reviews">
+          <h2 class="h1 text-center">Recenze</h2>
+          <div class="reviews-section__slider reviews-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, dots: true, infinite: true, arrows: false,}'>
+            <div class="reviews-section__slider_item">
+              <div class="reviews-section__heading">
+                <img src="assets/images/profile_picture.png" alt="Ivana Velká" class="reviews-section__image">
+                <h3 class="ml-3">
+                  Ivana Velká <br/>
+                  <span class="font-light">Nákupčí NIKE</span>
+                </h3>
+              </div>
+              <div class="reviews-section__content">
+                <p class="font-light">
+                  Od společnosti jsme nechali udělat design stránek 
+                  a nastavili jsme nový kampaně.
+                </p>
+              </div>
             </div>
-            <div class="reviews-section__content">
-              <p class="font-light">
-                Veliká spokojenost! Od společnosti jsme nechali udělat design stránek 
-                a nastavili jsme nový kampaně. Náš zisk se zvýšil o 100%.
-              </p>
+            <div class="reviews-section__slider_item">
+              <div class="reviews-section__heading">
+                <img src="assets/images/profile_picture.png" alt="Ivana Velká" class="reviews-section__image">
+                <h3 class="ml-3">
+                  Ivana Velká <br/>
+                  <span class="font-light">Nákupčí NIKE</span>
+                </h3>
+              </div>
+              <div class="reviews-section__content">
+                <p class="font-light">
+                  Veliká spokojenost! Od společnosti jsme nechali udělat design.
+                </p>
+              </div>
+            </div>
+            <div class="reviews-section__slider_item">
+              <div class="reviews-section__heading">
+                <img src="assets/images/profile_picture.png" alt="Ivana Velká" class="reviews-section__image">
+                <h3 class="ml-3">
+                  Ivana Velká <br/>
+                  <span class="font-light">Nákupčí NIKE</span>
+                </h3>
+              </div>
+              <div class="reviews-section__content">
+                <p class="font-light">
+                  Veliká spokojenost! Náš zisk se zvýšil o 100%.
+                </p>
+              </div>
+            </div>
+            <div class="reviews-section__slider_item">
+              <div class="reviews-section__heading">
+                <img src="assets/images/profile_picture.png" alt="Ivana Velká" class="reviews-section__image">
+                <h3 class="ml-3">
+                  Ivana Velká <br/>
+                  <span class="font-light">Nákupčí NIKE</span>
+                </h3>
+              </div>
+              <div class="reviews-section__content">
+                <p class="font-light">
+                  Veliká spokojenost!
+                </p>
+              </div>
             </div>
           </div>
-          <div class="reviews-section__slider_item">
-            <div class="reviews-section__heading">
-              <img src="assets/images/profile_picture.png" alt="Ivana Velká" class="reviews-section__image">
-              <h3 class="ml-3">
-                Ivana Velká <br/>
-                <span class="font-light">Nákupčí NIKE</span>
-              </h3>
-            </div>
-            <div class="reviews-section__content">
-              <p class="font-light">
-                Veliká spokojenost! Od společnosti jsme nechali udělat design stránek 
-                a nastavili jsme nový kampaně. Náš zisk se zvýšil o 100%.
-              </p>
-            </div>
-          </div>
-          <div class="reviews-section__slider_item">
-            <div class="reviews-section__heading">
-              <img src="assets/images/profile_picture.png" alt="Ivana Velká" class="reviews-section__image">
-              <h3 class="ml-3">
-                Ivana Velká <br/>
-                <span class="font-light">Nákupčí NIKE</span>
-              </h3>
-            </div>
-            <div class="reviews-section__content">
-              <p class="font-light">
-                Veliká spokojenost! Od společnosti jsme nechali udělat design stránek 
-                a nastavili jsme nový kampaně. Náš zisk se zvýšil o 100%.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /REVIEWS -->
+        </section>
+        <!-- /REVIEWS -->
 
-      <!-- PARTNERS -->
-      <section class="bs-section partners-section">
-        <h2 class="h1 text-center">Spolupráce</h2>
-        <div class="partners-section__slider partners-slider">
-          <div class="partners-section__slider_item">
-            <img src="assets/images/douglas_logo.svg" alt="" class="partners-section__logo">
+        <!-- PARTNERS -->
+        <section class="bs-section partners-section">
+          <h2 class="h1 text-center">Spolupráce</h2>
+          <div class="partners-section__slider partners-slider">
+            <div class="partners-section__slider_item">
+              <img src="assets/images/douglas_logo.svg" alt="" class="partners-section__logo">
+            </div>
+            <div class="partners-section__slider_item">
+              <img src="assets/images/forbes_logo.svg" alt="" class="partners-section__logo">
+            </div>
+            <div class="partners-section__slider_item">
+              <img src="assets/images/wolt_logo.svg" alt="" class="partners-section__logo">
+            </div>
+            <div class="partners-section__slider_item">
+              <img src="assets/images/rossman_logo.svg" alt="" class="partners-section__logo">
+            </div>
+            <div class="partners-section__slider_item">
+              <img src="assets/images/specialized_logo.svg" alt="" class="partners-section__logo">
+            </div>
+            <div class="partners-section__slider_item">
+              <img src="assets/images/cosmopolitan_logo.svg" alt="" class="partners-section__logo">
+            </div>
+            <div class="partners-section__slider_item">
+              <img src="assets/images/bazaar_logo.svg" alt="" class="partners-section__logo">
+            </div>
+            <div class="partners-section__slider_item">
+              <img src="assets/images/esquire_logo.svg" alt="" class="partners-section__logo">
+            </div>
           </div>
-          <div class="partners-section__slider_item">
-            <img src="assets/images/forbes_logo.svg" alt="" class="partners-section__logo">
+        </section>
+        <!-- /PARTNERS -->
+      </div>
+
+      <section class="bs-section are-you-interested-section d-none d-lg-block">
+        <h2>Máte zájem o naše služby?</h2>
+        <div class="are-you-interested-section__tags_wrapper">
+          <div class="are-you-interested-section__tag_item">
+            Grafika
           </div>
-          <div class="partners-section__slider_item">
-            <img src="assets/images/wolt_logo.svg" alt="" class="partners-section__logo">
+          <div class="are-you-interested-section__tag_item">
+            Reklama
           </div>
-          <div class="partners-section__slider_item">
-            <img src="assets/images/rossman_logo.svg" alt="" class="partners-section__logo">
+          <div class="are-you-interested-section__tag_item">
+            Aplikace
           </div>
-          <div class="partners-section__slider_item">
-            <img src="assets/images/specialized_logo.svg" alt="" class="partners-section__logo">
+          <div class="are-you-interested-section__tag_item">
+            Marketing
           </div>
-          <div class="partners-section__slider_item">
-            <img src="assets/images/cosmopolitan_logo.svg" alt="" class="partners-section__logo">
+          <hr>
+          <div class="are-you-interested-section__tag_item">
+            Shoptet
           </div>
-          <div class="partners-section__slider_item">
-            <img src="assets/images/bazaar_logo.svg" alt="" class="partners-section__logo">
+          <div class="are-you-interested-section__tag_item">
+            E-shop
           </div>
-          <div class="partners-section__slider_item">
-            <img src="assets/images/esquire_logo.svg" alt="" class="partners-section__logo">
+          <div class="are-you-interested-section__tag_item">
+            Sítě
+          </div>
+          <div class="are-you-interested-section__tag_item">
+            Design
+          </div>
+          <div class="are-you-interested-section__tag_item">
+            Ecommerce
           </div>
         </div>
+        <p>
+          <a href="#" class="btn btn-transparent mt-5">Napište nám</a>
+        </p>
       </section>
-      <!-- /PARTNERS -->
 
       <!-- STEPS -->
       <section class="bs-section business-progress-section">
-        <h2 class="h1 text-center">Jak to u nás <br/>chodí?</h2>
-        <div class="business-progress-section__list">
-          <div class="business-progress-section__item">
-            <span class="font-bold pr-2">01</span>
-            <p>
-              Odeslání <br/>
-              Poptávky
-            </p>
-          </div>
-          <div class="business-progress-section__item">
-            <span class="font-bold pr-2">02</span>
-            <p>
-              Call nebo<br/>
-              schůzka
-            </p>
-          </div>
-          <div class="business-progress-section__item">
-            <span class="font-bold pr-2">03</span>
-            <p>
-              Analýza
-            </p>
-          </div>
-          <div class="business-progress-section__item">
-            <span class="font-bold pr-2">04</span>
-            <p>
-              Potvrzení
-            </p>
-          </div>
-          <div class="business-progress-section__item">
-            <span class="font-bold pr-2">05</span>
-            <p>
-              Vyhotovení
-            </p>
-          </div>
-          <div class="business-progress-section__item">
-            <span class="font-bold pr-2">06</span>
-            <p>
-              Otestování <br/>
-              a předání
-            </p>
+        <div class="container">
+          <h2 class="h1 text-center">Jak to u nás <br class="d-block d-lg-none"/>chodí?</h2>
+          <div class="business-progress-section__list">
+            <div class="business-progress-section__item">
+              <span class="font-bold pr-2 pr-lg-3">01</span>
+              <p>
+                Odeslání <br class="d-block d-lg-none" />
+                Poptávky
+              </p>
+            </div>
+            <div class="business-progress-section__item">
+              <span class="font-bold pr-2 pr-lg-3">02</span>
+              <p>
+                Call nebo<br class="d-block d-lg-none"/>
+                schůzka
+              </p>
+            </div>
+            <div class="business-progress-section__item">
+              <span class="font-bold pr-2 pr-lg-3">03</span>
+              <p>
+                Analýza
+              </p>
+            </div>
+            <div class="business-progress-section__item">
+              <span class="font-bold pr-2 pr-lg-3">04</span>
+              <p>
+                Potvrzení
+              </p>
+            </div>
+            <div class="business-progress-section__item">
+              <span class="font-bold pr-2 pr-lg-3">05</span>
+              <p>
+                Vyhotovení
+              </p>
+            </div>
+            <div class="business-progress-section__item">
+              <span class="font-bold pr-2 pr-lg-3">06</span>
+              <p>
+                Otestování <br class="d-block d-lg-none"/>
+                a předání
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!-- /STEPS -->
 
       <!-- BLOG -->
-      <section class="bs-section blog-section">
-        <h2 class="h1 text-center">Co se děje <br/>v našem světě?</h2>
-        <p class="text-center mt-3 blog-section__subheadline">Informace, novinky a mnohem <br class="d-block d-md-none" />více ze světa online prostředí.</p>
-        <p class="text-center mt-3">
-          <a href="#" class="btn btn-secondary">Zjistit více</a>
-        </p>
+      <section class="bs-section blog-section" id="blog">
+        <div class="container">
+          <h2 class="h1 text-center">Co se děje <br/>v našem světě?</h2>
+          <p class="text-center mt-3 mt-lg-4 blog-section__subheadline">Informace, novinky a mnohem <br class="d-block d-md-none" />více ze světa online prostředí.</p>
+          <p class="text-center mt-3">
+            <a href="#" class="btn btn-transparent mt-lg-4">Zjistit více</a>
+          </p>
+        </div>
       </section>
       <!-- /BLOG -->
 
       <!-- FOOTER -->
-      <footer class="bs-section footer-section pb-4">
-        <h2 class="h1 text-center footer-section__heading">Kontakty?</h2>
-        <p class="text-center mt-3 pt-1 footer-section__contact font-regular">
-          +420 736 642 278 <br />
-          email: info@brandeus.cz <br />
-          www.softos.cz
-        </p>
-        <p class="text-center mt-4 footer-section__copyright font-light">
-          Provozovatel: <br />
-          © 2020 - 2022 Brandeus. <br />
-          All Rights Reserved. <br />
-          IČ: 08529159
-        </p>
+      <footer class="bs-section footer-section pb-4" id="contact">
+        <div class="container">
+          <h2 class="h1 text-center footer-section__heading">Kontakty</h2>
+          <div class="row mt-lg-4 pt-lg-3">
+            <div class="col-12 col-lg-6">
+              <p class="text-center mt-3 pt-1 pt-lg-3 footer-section__contact font-regular">
+                +420 736 642 278 <br />
+                email: info@brandeus.cz <br />
+                www.softos.cz
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="text-center mt-4 mt-lg-3 pt-lg-1 footer-section__copyright font-light">
+                Provozovatel: <br />
+                © 2020 - 2022 Brandeus. <br />
+                All Rights Reserved. <br />
+                IČ: 08529159
+              </p>
+            </div>
+          </div>
+        </div>
       </footer>
       <!-- /FOOTER -->
     </main>

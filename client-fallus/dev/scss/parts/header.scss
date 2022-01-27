@@ -6,6 +6,12 @@ header.header {
   background: #fff;
   height: 48px;
   border-bottom: 1px solid #242424;
+  position: relative;
+  padding: 0 15px;
+
+  .col-12 {
+    position: inherit;
+  }
 
   nav {
     display: flex;
@@ -69,6 +75,7 @@ header.header {
           font-size: 18px;
           font-weight: 400;
           text-align: center;
+          list-style-type: none;
 
           > span.navigation__list_close_button {
             background-image: url(../../../assets/images/ico-close.svg);
@@ -108,6 +115,98 @@ header.header {
 
       .navigation__list {
         display: none;
+        list-style-type: none;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .navigation__icons {
+        display: none;
+      }
+      .navigation__menu_icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  header.header {
+    display: flex;
+    height: 105px;
+    justify-content: center;
+
+    nav {
+      height: 105px;
+      width: 100%;
+
+      .navigation__items {
+        background-color: #fff;
+        display: flex;
+        flex-direction: unset;
+        font-size: unset;
+        font-weight: unset;
+        height: calc(100% - 2px);
+        width: 100%;
+        position: relative;
+        top: unset;
+        left: unset;
+        justify-content: flex-end;
+        align-items: center;
+        opacity: 1;
+        z-index: 1;
+        transition: 0s;
+
+        .navigation__list {
+          display: flex;
+          flex-direction: row;
+
+          > li {
+            margin:0;
+
+            > a {
+              display: inline-block;
+              padding: 6px 24px;
+              font-size: 20px;
+            }
+
+            &.navigation__promo_item {
+
+              > a {
+                background-color: #242424;
+                color:#fff;
+                border-radius: 19px;
+              }
+            }
+
+            &:last-child {
+              padding-left: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  header.header {
+
+    > nav {
+      max-width: 1140px;
+
+      .navigation__items {
+
+        .navigation__list {
+
+          > li {
+            padding:0 17px;
+            
+            &:last-child {
+              padding-left:200px;
+            }
+          }
+        }
       }
     }
   }

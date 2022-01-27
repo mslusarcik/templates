@@ -30,6 +30,13 @@ h4,
 
 a {
   text-decoration: none;
+  color: #242424;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #000;
 }
 
 .btn {
@@ -51,7 +58,35 @@ a {
   border-color: #fff;
 }
 
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  color: #000;
+}
+
 .btn-secondary {
+  color: #fff;
+  background-color: #242424;
+  border-color: #242424;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-transparent {
+  color: #242424;
+  background-color: transparent;
+  border-color: #242424;
+}
+
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:focus {
   color: #fff;
   background-color: #242424;
   border-color: #242424;

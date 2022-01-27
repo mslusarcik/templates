@@ -50,19 +50,32 @@ $(function() {
     });
   };
   $('.js-scroll').jsScroll();
-  if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.matchMedia("(max-width: 1200px)").matches) {
     $('.services-slider').slick({
-      //Empty as a nutshell
       dots: true,
       arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      cssEase: 'linear',
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
     });
     $('.reviews-slider').slick({
-      //Empty as a nutshell
       dots: true,
       arrows: false,
+      slidesToShow: 1, 
+      slidesToScroll: 1, 
+      infinite: true, 
     });
     $('.partners-slider').slick({
-      //Empty as a nutshell
       slidesToShow: 2, 
       slidesToScroll: 2,
       dots: true,
