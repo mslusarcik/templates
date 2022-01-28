@@ -2099,6 +2099,9 @@ html {
 .max-w-100 {
   max-width: 100%; }
 
+.underline {
+  text-decoration: underline; }
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700; }
@@ -2220,6 +2223,9 @@ body {
 
 .font-black {
   font-weight: 900; }
+
+.font-italic {
+  font-style: italic; }
 
 body.mobile-menu-triggered {
   overflow: hidden; }
@@ -2443,7 +2449,7 @@ header.header {
       height: 57px; } }
 
 .main-content {
-  padding: 50px 0 0; }
+  padding: 0; }
   .main-content .bs-section {
     padding: 50px 0; }
 
@@ -2505,7 +2511,7 @@ header.header {
       margin-right: auto;
       background-image: none;
       flex-direction: row;
-      padding: 80px 15px; }
+      padding: 45px 15px; }
       .services-slider .services-slider__item .services-slider__content_wrapper {
         flex: 0 0 50%;
         text-align: left;
@@ -2772,6 +2778,41 @@ header.header {
       flex-direction: column;
       align-items: center;
       font-weight: 300; } }
+
+/*
+ * STYLING FOR BLOG CATEGORY
+ * ************************* */
+.blog-type h1 {
+  display: none; }
+
+.blog-type .blog-type__item {
+  padding: 20px 0; }
+  .blog-type .blog-type__item h2 {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center; }
+  .blog-type .blog-type__item .blog-type__item_excerpt {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center; }
+
+@media (min-width: 992px) {
+  .blog-type h1 {
+    display: block;
+    font-size: 55px;
+    line-height: 65px;
+    margin-top: 50px; }
+  .blog-type .blog-type__item h2 {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center; }
+  .blog-type .blog-type__item .blog-type__item_excerpt {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left; }
+  .blog-type .blog-type__item .btn-show-more {
+    font-size: 20px;
+    line-height: 26px; } }
 
 *,
 html,
