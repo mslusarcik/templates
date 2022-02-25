@@ -99,15 +99,11 @@ header.header {
 
           li.navigation__list_item {
             > a.navigation__list_link {
-              text-decoration: none;
               color: #242424;
               padding: 10px 0;
               display: block;
 
-              &.active {
-                text-decoration: underline;
-                text-underline-offset: 4px;
-              }
+              
             }
           }
         }
@@ -116,6 +112,14 @@ header.header {
       .navigation__list {
         display: none;
         list-style-type: none;
+      }
+    }
+
+    a.navigation__list_link {
+
+      &.active {
+        text-decoration: underline;
+        text-underline-offset: 4px;
       }
     }
 

@@ -1,3 +1,14 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @import "bootstrap/bootstrap-grid.scss";
 @import "bootstrap/utilities/spacing.scss";
 @import "parts/helpers.scss";
@@ -9,14 +20,3 @@
 @import "parts/blog-page.scss";
 @import "parts/services-page.scss";
 @import "parts/contact-page.scss";
-
-*,
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}

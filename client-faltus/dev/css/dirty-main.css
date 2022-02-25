@@ -1,10 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @-ms-viewport {
   width: device-width; }
 
@@ -2617,6 +2626,27 @@ a:focus {
     opacity: 1 !important;
     color: #646464 !important; }
 
+label {
+  font-size: 16px; }
+
+input[type=text] {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #252525;
+  min-height: 45px;
+  margin-bottom: 30px;
+  font-size: 14px; }
+
+input[type=text]:focus {
+  outline: 0; }
+
+@media (min-width: 992px) {
+  label {
+    font-size: 20px; }
+  input[type=text] {
+    font-size: 18px;
+    margin-bottom: 50px; } }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -2730,16 +2760,15 @@ header.header {
             font-weight: 600;
             margin-bottom: 40px; }
           header.header nav .navigation__items.active .navigation__list li.navigation__list_item > a.navigation__list_link {
-            text-decoration: none;
             color: #242424;
             padding: 10px 0;
             display: block; }
-            header.header nav .navigation__items.active .navigation__list li.navigation__list_item > a.navigation__list_link.active {
-              text-decoration: underline;
-              text-underline-offset: 4px; }
       header.header nav .navigation__items .navigation__list {
         display: none;
         list-style-type: none; }
+    header.header nav a.navigation__list_link.active {
+      text-decoration: underline;
+      text-underline-offset: 4px; }
     @media (min-width: 768px) {
       header.header nav .navigation__icons {
         display: none; }
@@ -3218,13 +3247,13 @@ header.header {
 .blog-type h1 {
   display: none; }
 
-.blog-type .blog-type__item {
+.blog-type__item {
   padding: 20px 0; }
-  .blog-type .blog-type__item h2 {
+  .blog-type__item h2 {
     font-size: 22px;
     line-height: 28px;
     text-align: center; }
-  .blog-type .blog-type__item .blog-type__item_excerpt {
+  .blog-type__item .blog-type__item_excerpt {
     font-size: 14px;
     line-height: 20px;
     text-align: center; }
@@ -3235,15 +3264,15 @@ header.header {
     font-size: 55px;
     line-height: 65px;
     margin-top: 50px; }
-  .blog-type .blog-type__item h2 {
+  .blog-type__item h2 {
     font-size: 34px;
     line-height: 42px;
     text-align: left; }
-  .blog-type .blog-type__item .blog-type__item_excerpt {
+  .blog-type__item .blog-type__item_excerpt {
     font-size: 20px;
     line-height: 26px;
     text-align: left; }
-  .blog-type .blog-type__item .btn-show-more {
+  .blog-type__item .btn-show-more {
     font-size: 20px;
     line-height: 26px; } }
 
@@ -3329,6 +3358,9 @@ header.header {
     line-height: 28px;
     text-align: left; } }
 
+.contact-page.bs-section {
+  padding: 40px 0; }
+
 .contact-page h2 {
   font-size: 28px;
   line-height: 38px; }
@@ -3337,38 +3369,12 @@ header.header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .contact-form label {
-    font-size: 16px; }
-  .contact-form input[type=text] {
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid #252525;
-    min-height: 45px;
-    margin-bottom: 30px;
-    font-size: 14px; }
-  .contact-form input[type=text]:focus {
-    outline: 0; }
 
 @media (min-width: 992px) {
+  .contact-page.bs-section {
+    padding: 80px 0; }
   .contact-page h2 {
     font-size: 55px;
     line-height: 65px; }
   .contact-page .contact-form {
-    margin-left: 45px; }
-    .contact-page .contact-form label {
-      font-size: 20px; }
-    .contact-page .contact-form input[type=text] {
-      font-size: 18px;
-      margin-bottom: 50px; } }
-
-.contact-page.bs-section {
-  padding: 80px 0; }
-
-*,
-html,
-body {
-  margin: 0;
-  padding: 0; }
-
-html {
-  scroll-behavior: smooth; }
+    margin-left: 45px; } }

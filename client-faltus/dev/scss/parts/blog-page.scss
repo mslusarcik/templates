@@ -5,21 +5,21 @@
   h1 {
     display: none;
   }
+}
 
-  .blog-type__item {
-    padding:20px 0;
+.blog-type__item {
+  padding:20px 0;
 
-    h2 {
-      font-size: 22px;
-      line-height: 28px;
-      text-align: center;
-    }
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+  }
 
-    .blog-type__item_excerpt {
-      font-size: 14px;
-      line-height: 20px;
-      text-align: center;
-    }
+  .blog-type__item_excerpt {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
   }
 }
 
@@ -31,24 +31,23 @@
       line-height: 65px;
       margin-top: 50px;
     }
+  }
+  .blog-type__item {
+    h2 {
+      font-size: 34px;
+      line-height: 42px;
+      text-align: left;
+    }
 
-    .blog-type__item {
-      h2 {
-        font-size: 34px;
-        line-height: 42px;
-        text-align: left;
-      }
+    .blog-type__item_excerpt {
+      font-size: 20px;
+      line-height: 26px;
+      text-align: left;
+    }
 
-      .blog-type__item_excerpt {
-        font-size: 20px;
-        line-height: 26px;
-        text-align: left;
-      }
-
-      .btn-show-more {
-        font-size: 20px;
-        line-height: 26px;
-      }
+    .btn-show-more {
+      font-size: 20px;
+      line-height: 26px;
     }
   }
 }
