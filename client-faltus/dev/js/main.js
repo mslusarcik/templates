@@ -1,5 +1,10 @@
 $(function() {
   jQuery("body").addClass("jquery-loaded");
+  $(".target").toggle();
+  $(".read-more-button").click(function(e){
+    $(this).parent().find("span").toggle();
+    e.preventDefault;
+  });
   $.fn.openMobileMenu = function(){
     var thus = $(this);
     $("body").addClass("mobile-menu-triggered");
