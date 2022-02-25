@@ -76,7 +76,7 @@
 
         &::after {
           content: '';
-          background-image: url(/assets/images/services/services-background.png);
+          background-image: url(../../images/services/services-background.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -94,7 +94,7 @@
 
       &:first-child {
         .services-section__inner_content {
-          background-image: url(/assets/images/services/services-background-first-only.png);
+          background-image: url(../../images/services/services-background-first-only.png);
           background-position: center bottom;
           background-repeat: no-repeat;
           padding-bottom: 240px;
@@ -129,17 +129,6 @@
         font-size: 22px;
         line-height: 28px;
         text-align: left; 
-      }
-  
-      .reviews-slider {
-  
-        .slick-list {
-
-        }
-  
-        .reviews-slider__item {
-          
-        }
       }
     }
   }

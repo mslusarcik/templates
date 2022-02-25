@@ -3119,7 +3119,7 @@ header.header {
     position: relative; }
     .main-content .business-progress-section .business-progress-section__list::after {
       content: "";
-      background-image: url(../../../assets/images/how-it-works.png);
+      background-image: url(../../images/how-it-works.png);
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -3144,7 +3144,7 @@ header.header {
     position: relative; }
     .main-content .business-progress-section::after {
       content: '';
-      background-image: url(../../../assets/images/how-it-works-background.png);
+      background-image: url(../../images/how-it-works-background.png);
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -3200,7 +3200,7 @@ header.header {
   overflow: hidden; }
   .footer-section::after {
     content: "";
-    background-image: url(../../../assets/images/how-it-works.png);
+    background-image: url(../../images/how-it-works.png);
     background-position: center 15px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3224,7 +3224,7 @@ header.header {
   .footer-section {
     padding-bottom: 85px !important; }
     .footer-section::after {
-      background-image: url(../../../assets/images/contact_background.png);
+      background-image: url(../../images/contact_background.png);
       top: 20px;
       left: 4.6%;
       left: calc(50% - 950px); }
@@ -3321,7 +3321,7 @@ header.header {
     background-image: none; }
     .services-type .services-section .services-section__inner_content::after {
       content: '';
-      background-image: url(/assets/images/services/services-background.png);
+      background-image: url(../../images/services/services-background.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -3335,7 +3335,7 @@ header.header {
       top: -20%;
       z-index: -1; }
   .services-type .services-section:first-child .services-section__inner_content {
-    background-image: url(/assets/images/services/services-background-first-only.png);
+    background-image: url(../../images/services/services-background-first-only.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     padding-bottom: 240px;
