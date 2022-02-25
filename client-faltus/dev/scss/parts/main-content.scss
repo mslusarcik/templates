@@ -1,9 +1,10 @@
 .main-content {
   padding: 0;
+  overflow-x: hidden;
+}
 
-  .bs-section {
-    padding: 50px 0;
-  }
+.bs-section {
+  padding: 50px 0;
 }
 
 /*
@@ -313,8 +314,8 @@
  * BUSINESS PROGRESS SECTION
  * ************************* */
 
-.business-progress-section {
-  padding: 50px 0;
+.main-content .business-progress-section {
+  padding: 75px 0;
 
   .business-progress-section__list {
     display: flex;
@@ -333,7 +334,6 @@
       position: absolute;
       top: -94px;
       margin-left: -15px;
-      width: calc(100% + 30px);
       left: 0;
       z-index: -1;
     }
@@ -353,7 +353,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .business-progress-section {
+  .main-content .business-progress-section {
     position: relative;
 
     &::after {
@@ -363,10 +363,13 @@
       background-repeat: no-repeat;
       background-size: cover;
       display: block;
-      height: calc(100% + 20px);
-      width: 100%;
+      height: 105%;
+      height: calc(100% + 25px);
+      left: 4.6%;
+      left: calc(50% - 960px);
+      width: calc(100% + 30px);
+      max-width: 1920px;
       position: absolute;
-      left: 0;
       top: 20px;
       z-index: -1;
     }
@@ -441,7 +444,9 @@
     background-size: cover;
     display: block;
     width: 100%;
-    height: calc(100% + 120px);
+    max-width: 1920px;
+    height: 125%;
+    height: calc(100% + 150px);
     position: absolute;
     top: 0;
     left: 0;
@@ -466,6 +471,8 @@
     &::after {
       background-image: url(../../../assets/images/contact_background.png);
       top: 20px;
+      left: 4.6%;
+      left: calc(50% - 950px);
     }
 
     h2 {

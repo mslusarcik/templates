@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+@include media-breakpoint-up(md) {
+  .text-md-left {
+    text-align: left;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@include media-breakpoint-up(lg) {
+  .border-left-lg-dark {
+    border-left: 1px solid #242424;
+  }
+}
+
 .order-1 {order: 1}
 .order-2 {order: 2}
 .order-3 {order: 3}
@@ -32,10 +48,64 @@
   .order-xl-5 {order: 5}
 }
 
-.max-w-100 {
-  max-width: 100%;
-}
-
 .underline {
   text-decoration: underline;
 }
+
+/* MAX-WIDTH FUNCTION */
+@mixin max-width() {
+
+  $max-width-list: 25 50 60 65 70 75 80 85 90 95 100;
+
+  @each $value in $max-width-list {
+    .max-w-#{$value}p {
+      max-width: percentage($value / 100);
+    }
+  }
+}
+
+@include max-width();
+
+/* FONT SIZE FUNCTION */
+@mixin font-size() {
+
+  $font-size-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60;
+
+  @each $value in $font-size-list {
+    .fs-#{$value} {
+      font-size: $value + px;
+    }
+  }
+
+  @each $value in $font-size-list {
+    @media(max-width:767.8px){
+      .fs-xs-#{$value} {
+        font-size: $value + px;
+      }
+    }
+  }
+}
+
+@include font-size();
+
+/* LINE HEIGHT FUNCTION */
+@mixin line-height() {
+
+  $line-height-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60;
+
+  @each $value in $line-height-list {
+    .lh-#{$value} {
+      line-height: $value + px;
+    }
+  }
+
+  @each $value in $line-height-list {
+    @media(max-width:767.8px){
+      .lh-xs-#{$value} {
+        line-height: $value + px;
+      }
+    }
+  }
+}
+
+@include line-height()

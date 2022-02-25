@@ -31,22 +31,22 @@
             <span class="navigation__list_close_button"></span>
             <span class="navigation__list_heading">Menu</span>
             <li class="navigation__list_item">
-              <a href="index.html" class="navigation__list_link js-scroll">
+              <a href="index.html" class="navigation__list_link">
                 Služby
               </a>
             </li>
             <li class="navigation__list_item">
-              <a href="services.html" class="navigation__list_link js-scroll">
+              <a class="navigation__list_link active">
                 Reference
               </a>
             </li>
             <li class="navigation__list_item">
-              <a href="" class="navigation__list_link active js-scroll">
+              <a href="blog.html" class="navigation__list_link">
                 Blog
               </a>
             </li>
             <li class="navigation__list_item navigation__promo_item">
-              <a href="contact.html" class="navigation__list_link js-scroll">
+              <a href="#" class="navigation__list_link">
                 Kontakt
               </a>
             </li>
@@ -54,52 +54,56 @@
         </div>
       </nav>
     </header>
-    <main class="main-content blog-type" id="start">
+    <div class="bs-section contact-page main-content" id="start">
       <div class="container">
-        <h1 class="text-center">Blog</h1>
+        <div class="row">
+          <aside class="col-12 col-lg-4">
+            <h2 class="text-md-left text-center">Kontakt</h2>
+            <div class="mt-5">
+              <p class="fs-20 fs-xs-16 lh-38 lh-xs-24">+420 736 642 278</p>
+              <p class="fs-20 fs-xs-16 lh-38 lh-xs-24">Email: info@brandeus.cz</p>
+              <p class="fs-20 fs-xs-16 lh-38 lh-xs-24">www.softos.cz</p>
+            </div>
+            <div class="mt-md-5 mt-3">
+              <p class="fs-20 fs-xs-16 lh-26 lh-xs-24">Provozovatel: <br/>
+                © 2020 - 2022 Brandeus. <br/>
+                All Rights Reserved. <br/>
+                IČ: 08529159</p>
+            </div>
+          </aside>
+          <main class="col-12 col-lg-8 border-left-lg-dark">
+            <h2 class="text-center">Napište nám</h2>
+            <form class="mt-md-5 mt-3 contact-form">
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <label for="firstname" class="d-block">Jméno:</label>
+                  <input type="text" name="firstname" />
+                </div>
+                <div class="col-lg-6 col-12">
+                  <label for="surname" class="d-block">Příjmení:</label>
+                  <input type="text" name="surname" />
+                </div>
+                <div class="col-lg-6 col-12">
+                  <label for="email" class="d-block">E-mail:</label>
+                  <input type="text" name="email" />
+                </div>
+                <div class="col-lg-6 col-12">
+                  <label for="phone" class="d-block">Telefon:</label>
+                  <input type="text" name="phone" />
+                </div>
+                <div class="col-12">
+                  <label for="message" class="d-block">Zpráva:</label>
+                  <input type="text" name="message" /><br />
+                  <input type="checkbox" id="vehicle1" name="conditions" value="Souhlas" class="mt-4">
+                  <label for="conditions" class="pl-2"> Souhlasím se zpracováním údajů a další informace <a href="#">zde</a>.</label><br>
+                  <submit class="btn btn-transparent pointer mt-5">Odeslat</submit>
+                </div>
+              </div>
+            </form>
+          </main>
+        </div>
       </div>
-      <section class="blog-type__item bs-section pt-md-0 pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-10 mx-auto mt-md-5 pt-md-3">
-              <h2 class="ml-md-3 blog-type__item_heading">Krátký Nadpis nebo dlouhý</h2>
-              <img src="assets/images/blog-thumbnail.png" class="max-w-100p my-md-4 my-3 py-md-2 py-1blog-type__item_image" alt="Obrázek k blogovému článku." />
-              <p class="blog-type__item_excerpt ml-md-3">
-                Krátký popis blogu. Jedná se o to, co se bude psát v blogu nebo o nějaký perex, který si vyplní sám zadavatel. Vždy se nechá jen počet znaků, který bude zobrazen (50 slov). Jakmile se překročí počet znaků bude  za textem … přečíst více a to kurzívou a podtržený. …<a href="#" class="underline font-italic">přečíst více</a>
-              </p>
-              <p><a href="#" class="btn btn-transparent d-none d-md-inline-flex ml-md-3 mt-4 pt-md-2 btn-show-more">Přečíst</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="blog-type__item bs-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-10 mx-auto mt-md-5 pt-md-3">
-              <h2 class="ml-md-3 blog-type__item_heading">Krátký Nadpis nebo dlouhý</h2>
-              <img src="assets/images/blog-thumbnail.png" class="max-w-100p my-md-4 my-3 py-md-2 py-1blog-type__item_image" alt="Obrázek k blogovému článku." />
-              <p class="blog-type__item_excerpt ml-md-3">
-                Krátký popis blogu. Jedná se o to, co se bude psát v blogu nebo o nějaký perex, který si vyplní sám zadavatel. Vždy se nechá jen počet znaků, který bude zobrazen (50 slov). Jakmile se překročí počet znaků bude  za textem … přečíst více a to kurzívou a podtržený. …<a href="#" class="underline font-italic">přečíst více</a>
-              </p>
-              <p><a href="#" class="btn btn-transparent d-none d-md-inline-flex ml-md-3 mt-4 pt-md-2 btn-show-more">Přečíst</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="blog-type__item bs-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-10 mx-auto mt-md-5 pt-md-3">
-              <h2 class="ml-md-3 blog-type__item_heading">Krátký Nadpis nebo dlouhý</h2>
-              <img src="assets/images/blog-thumbnail.png" class="max-w-100p my-md-4 my-3 py-md-2 py-1blog-type__item_image" alt="Obrázek k blogovému článku." />
-              <p class="blog-type__item_excerpt ml-md-3">
-                Krátký popis blogu. Jedná se o to, co se bude psát v blogu nebo o nějaký perex, který si vyplní sám zadavatel. Vždy se nechá jen počet znaků, který bude zobrazen (50 slov). Jakmile se překročí počet znaků bude  za textem … přečíst více a to kurzívou a podtržený. …<a href="#" class="underline font-italic">přečíst více</a>
-              </p>
-              <p><a href="#" class="btn btn-transparent d-none d-md-inline-flex ml-md-3 mt-4 pt-md-2 btn-show-more">Přečíst</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
+    </div>
 
       <!-- FOOTER -->
       <footer class="bs-section footer-section pb-4" id="contact">

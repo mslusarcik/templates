@@ -1,0 +1,146 @@
+.services-type {
+
+  .services-section {
+  
+    .services-section__inner_content {
+      margin: 0 20px;
+      padding:25px 0 40px;
+      background-image: linear-gradient(#e7ddf0,#bcebee);
+      border-radius: 20px;
+    }
+    
+    h2 {
+      font-size: 28px;
+      line-height: 38px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .col-12 {
+
+      > p {
+        text-align: center;
+        @extend .d-block;
+        @extend .mx-auto;
+        @extend .max-w-90p;
+      }
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center; 
+    }
+
+    .reviews-slider {
+      margin-top: 16px;
+      margin-bottom: 24px;
+
+      .slick-next {
+        right: -45px;
+      }
+
+      .slick-list {
+        padding: 0 20px;
+        padding-right: 65px;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+
+      .reviews-slider__item {
+        @extend .max-w-100p;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .services-type {
+
+    .services-section {
+
+      &.bs-section {
+        padding:50px 0;
+      }
+    
+      .services-section__inner_content {
+        margin: 0;
+        padding: 140px 0;
+        margin-bottom: 160px;
+        position: relative;
+        background-image: none;
+
+        &::after {
+          content: '';
+          background-image: url(/assets/images/services/services-background.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 140%;
+          width: 100%;
+          max-width: 1920px;
+          display: block;
+          position: absolute;
+          left: 4.6%;
+          left: calc(50% - 960px);
+          top: -20%;
+          z-index: -1;
+        }
+      }
+
+      &:first-child {
+        .services-section__inner_content {
+          background-image: url(/assets/images/services/services-background-first-only.png);
+          background-position: center bottom;
+          background-repeat: no-repeat;
+          padding-bottom: 240px;
+          padding-top:0;
+          margin-top:0;
+          margin-bottom: 0;
+          
+          &::after {
+            display: none;
+          }
+        }
+      }
+      
+      h2 {
+        font-size: 55px;
+        line-height: 65px;
+        text-align: left;
+      }
+  
+      .col-12 {
+
+        >p {
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          max-width: 80%;
+          @extend .ml-lg-0;
+        }
+      }
+  
+      h3 {
+        font-size: 22px;
+        line-height: 28px;
+        text-align: left; 
+      }
+  
+      .reviews-slider {
+  
+        .slick-list {
+
+        }
+  
+        .reviews-slider__item {
+          
+        }
+      }
+    }
+  }
+}

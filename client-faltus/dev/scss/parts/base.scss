@@ -31,6 +31,7 @@ h4,
 a {
   text-decoration: none;
   color: #242424;
+  cursor: pointer;
 }
 
 a:hover,
@@ -39,17 +40,38 @@ a:focus {
   color: #000;
 }
 
-.btn {
-  display: inline-block;
+.btn {   
+  display: inline-flex;
+  flex-direction: row;
+  min-width: 155px;
+  min-height: 43px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   font-size: 15px;
+  line-height: 15px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   border: 1px solid transparent;
+  border-radius: 20px;
   padding: 6px 20px;
-  line-height: 1.5;
-  border-radius: 25px;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-transparent::after {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 29 29'%3E%3Ccircle id='Ellipse_50' data-name='Ellipse 50' cx='14.5' cy='14.5' r='14.5' fill='%23242424'/%3E%3Cpath id='Path_5' data-name='Path 5' d='M-16014.525-7209.025l7.076,5.85-6.186,6.129' transform='translate(16026.125 7217.466)' fill='none' stroke='%23fff' stroke-width='1'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  margin-left: 10px;
+  transition: all .15s ease-in-out
+}
+
+.btn-transparent:hover::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 29 29'%3E%3Ccircle id='Ellipse_48' data-name='Ellipse 48' cx='14.5' cy='14.5' r='14.5' fill='%23fff'/%3E%3Cpath id='Path_2' data-name='Path 2' d='M-16014.525-7209.025l7.076,5.85-6.186,6.129' transform='translate(16026.125 7217.466)' fill='none' stroke='%23242424' stroke-width='1'/%3E%3C/svg%3E%0A");
 }
 
 .btn-primary {
@@ -68,6 +90,16 @@ a:focus {
   color: #fff;
   background-color: #242424;
   border-color: #242424;
+}
+
+.btn-secondary::after {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 29 29'%3E%3Ccircle id='Ellipse_48' data-name='Ellipse 48' cx='14.5' cy='14.5' r='14.5' fill='%23fff'/%3E%3Cpath id='Path_2' data-name='Path 2' d='M-16014.525-7209.025l7.076,5.85-6.186,6.129' transform='translate(16026.125 7217.466)' fill='none' stroke='%23242424' stroke-width='1'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  margin-left: 10px;
 }
 
 .btn-secondary:hover,

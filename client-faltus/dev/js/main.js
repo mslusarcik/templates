@@ -51,7 +51,7 @@ $(function() {
   };
   $('.js-scroll').jsScroll();
   if (window.matchMedia("(max-width: 1200px)").matches) {
-    $('.services-slider').slick({
+    $('.homepage-type .services-slider').slick({
       dots: true,
       arrows: false,
       slidesToShow: 2,
@@ -68,18 +68,35 @@ $(function() {
         }
       ]
     });
-    $('.reviews-slider').slick({
+    $('.homepage-type .reviews-slider').slick({
       dots: true,
       arrows: false,
       slidesToShow: 1, 
       slidesToScroll: 1, 
       infinite: true, 
     });
-    $('.partners-slider').slick({
+    $('.homepage-type .partners-slider').slick({
       slidesToShow: 2, 
       slidesToScroll: 2,
       dots: true,
       arrows: false,
     });
   }
+  $('.services-type .reviews-slider').slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1, 
+    infinite: false, 
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
 });
