@@ -6,3 +6,8 @@ node_modules_PC/
 #babyweb
 babyweb.exe
 
+#any .zip file
+*.zip
+*.psd
+*.xd
+*.pdf
