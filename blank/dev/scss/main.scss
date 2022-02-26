@@ -1,0 +1,10 @@
+/* FONT STYLING */
+@import 'parts/fonts.scss';
+@import 'parts/spacings.scss';
+@import 'bootstrap/bootstrap-grid.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}

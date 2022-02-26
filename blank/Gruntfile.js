@@ -3,16 +3,6 @@ module.exports = function (grunt) {
   const sass = require("node-sass");
 
   grunt.initConfig({
-    purgecss: {
-      my_target: {
-        options: {
-          content: ['*.html']
-        },
-        files: {
-          'assets/css/main.css': ['assets/css/main-ready.css']
-        }
-      }
-    },
     sass: {
       options: {
         implementation: sass,
@@ -20,7 +10,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          "assets/css/main-ready.css": "assets/scss/main.scss",
+          "dev/css/dirty-main.css": "dev/scss/main.scss",
         },
       },
     },
@@ -30,7 +20,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: "assets/css",
-            src: ["*.css", "!*.min.css", "!main-ready.css"],
+            src: ["*.css", "!*.min.css"],
             dest: "assets/css/min",
             ext: ".min.css",
           },
@@ -40,49 +30,18 @@ module.exports = function (grunt) {
     uglify: {
       target: {
         files: {
-          "assets/js/min/main.min.js": ["assets/js/main.js"],
-        },
-      },
+          'assets/js/min/main.min.js': ['dev/js/main.js']
+        }
+      }
     },
     autoprefixer: {
       options: {
-        browsers: ["ie > 7", "ff > 3.4", "chrome > 3", "safari > 3"],
+        browsers: ['ie > 7', 'ff > 3.4', 'chrome > 3', 'safari > 3'],
       },
-      dist: {
-        // Target
+      dist: { // Target
         files: {
-          "assets/css/main.css": "assets/css/main-ready.css",
-        },
-      },
-    },
-    imagemin: {
-      png: {
-        options: {
-          optimizationLevel: 7,
-        },
-        files: [
-          {
-            expand: true,
-            cwd: "assets/images",
-            src: ["**/*.png", "!**/*.min.png"],
-            dest: "assets/images/min",
-            ext: ".min.png",
-          },
-        ],
-      },
-      jpg: {
-        options: {
-          progressive: true
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'assets/images',
-            src: ['**/*.jpg','**/*.jpeg', "!**/*.min.jpg"],
-            dest: 'assets/images/min',
-            ext: '.min.jpg'
-          }
-        ]
+          'dev/css/prefixed-main.css': 'dev/css/dirty-main.css'
+        }
       }
     },
     connect: {
@@ -94,8 +53,8 @@ module.exports = function (grunt) {
           hostname: "localhost",
           base: ".",
           open: true,
-        },
-      },
+        }
+      }
     },
     watch: {
       options: {
@@ -116,21 +75,24 @@ module.exports = function (grunt) {
         files: ["**/*.html"],
       },
     },
-    copy: {
-      main: {
-        files: [
-          // includes files within path
-          {expand: true, src: ['*.html'], dest: 'public/', filter: 'isFile'},
-          {expand: true, src: ['assets/css/min/*.min.css'], dest: 'public/', filter: 'isFile'},
-          {expand: true, src: ['assets/js/min/*.min.js'], dest: 'public/', filter: 'isFile'},
-          {expand: true, src: ['assets/images/min/*.min.png', 'assets/images/min/*.min.jpg'], dest: 'public/', filter: 'isFile'},
-        ],
-      },
-    },
+    postcss: {
+      options: {
+          map: false,
+          processors: [
+            require('postcss-flexbugs-fixes'),
+            require('autoprefixer')({overrideBrowserslist: ['last 2 versions, > 1%, ie >= 11']}),
+            require('cssnano')({preset: 'default'})
+          ],
+      }, 
+      files: {    
+        src: 'dev/css/dirty-main.css',
+        dest: 'assets/css/min/main.min.css'
+      }
+    }
   });
 
-  grunt.registerTask("css", ["sass", "autoprefixer", "purgecss", "cssmin"]);
-  grunt.registerTask("public", ["copy"]);
+  grunt.registerTask("css", ["sass", "postcss"]);
+  grunt.registerTask("clean", ["sass", "postcss", "uglify"]);
   grunt.registerTask("default", ["connect", "watch"]);
 
   // Load up tasks
@@ -138,9 +100,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-connect");
-  grunt.loadNpmTasks("grunt-contrib-uglify");
-  grunt.loadNpmTasks("grunt-autoprefixer");
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-purgecss');
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('@lodder/grunt-postcss');
 };
