@@ -1,0 +1,27 @@
+/* FONT SIZE FUNCTION */
+@mixin font-size() {
+
+  $font-size-list: 10 11 12 13 14 15 16 17 18 19 20 22 24 26 28 30;
+
+  @each $value in $font-size-list {
+    .fs-#{$value} {
+      font-size: $value + px;
+    }
+  }
+}
+
+@include font-size();
+
+/* FONT SIZE FUNCTION */
+@mixin line-height() {
+
+  $line-height-list: 10 11 12 13 14 15 16 17 18 19 20 22 24 26 28 30;
+
+  @each $value in $line-height-list {
+    .lh-#{$value} {
+      line-height: $value + px;
+    }
+  }
+}
+
+@include line-height();
