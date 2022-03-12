@@ -6074,6 +6074,9 @@ h4 {
   line-height: 24px;
   font-weight: 500; }
 
+i {
+  font-size: 16px; }
+
 p {
   line-height: 25px;
   color: #59788A;
@@ -6344,8 +6347,8 @@ input:focus-visible {
   .box-items-wrapper .box-item {
     background-color: #fff;
     border-radius: 6px;
-    padding: 35px 35px 42px; }
-    .box-items-wrapper .box-item i {
+    padding: 35px 35px 35px; }
+    .box-items-wrapper .box-item > i {
       font-size: 45px; }
     .box-items-wrapper .box-item h2 {
       font-size: 22px;
