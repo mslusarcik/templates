@@ -40,4 +40,13 @@ $(function() {
   var smoothScroll = new SmoothScroll('a[href*="#"]', {
     speed: 600
   });
+  // Focus on input
+  var focusOnForm = function (event) {
+    setTimeout(function() {
+      document.querySelector("input[name=name]").focus();
+    }, 350);
+  };
+
+  // Listen for scroll event
+  document.addEventListener('scrollStop', focusOnForm, false);
 });
