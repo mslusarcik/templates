@@ -38,6 +38,6 @@ $(function() {
     },
   });
   var smoothScroll = new SmoothScroll('a[href*="#"]', {
-    speed: 500
+    speed: 600
   });
 });
