@@ -2,6 +2,10 @@
   padding: 65px 0;
 }
 
+.bs-section.padding-xs {
+  padding: 28px 0;
+}
+
 .bs-section.padding-sm {
   padding: 40px 0;
 }
@@ -23,7 +27,7 @@
 }
 
 .bs-section.pb-sm {
-  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .bs-section.pt-md {
@@ -31,7 +35,7 @@
 }
 
 .bs-section.pb-md {
-  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .bs-section.pt-lg {
@@ -39,7 +43,7 @@
 }
 
 .bs-section.pb-lg {
-  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .bs-section.pt-xlg {
@@ -47,7 +51,7 @@
 }
 
 .bs-section.pb-xlg {
-  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .bs-section.padding-0 {

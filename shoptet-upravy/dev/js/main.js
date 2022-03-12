@@ -29,12 +29,15 @@ $(function() {
   });
   const reviewsSwiper = new Swiper('.reviews-swiper', {
     // Optional parameters
-    loop: true,
+    loop: false,
   
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  });
+  var smoothScroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
   });
 });

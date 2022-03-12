@@ -70,3 +70,39 @@
   right: -50px;
   top: 60px;
 }
+
+/*
+ * CONTACT SECTION
+ * *************** */
+
+.contact-section {
+  .make-first-step {
+    position: absolute;
+    left: -204px;
+    top: -155px;
+  }
+}
+
+/*
+ * FOOTER 
+ * ****** */
+
+
+footer {
+  p {
+    font-size: 13px;
+    line-height: 20px;
+    margin:0;
+    text-align: center;
+
+    &.contacts {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+
+  i {
+    margin-right: 4px;
+  }
+}
