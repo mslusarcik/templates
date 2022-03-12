@@ -1,5 +1,5 @@
 .bs-section {
-  padding: 65px 0;
+  padding: 45px 0;
 }
 
 .bs-section.padding-xs {
@@ -7,15 +7,15 @@
 }
 
 .bs-section.padding-sm {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .bs-section.padding-md {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .bs-section.padding-lg {
-  padding: 100px 0;
+  padding: 55px 0;
 }
 
 .bs-section.padding-xlg {
@@ -64,4 +64,19 @@
 
 .bs-section.pb-0 {
   padding-bottom: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .bs-section {
+    padding: 65px 0;
+  }
+  .bs-section.padding-sm {
+    padding: 40px 0;
+  }
+  .bs-section.padding-md {
+    padding: 80px 0;
+  }
+  .bs-section.padding-lg {
+    padding: 100px 0;
+  }
 }

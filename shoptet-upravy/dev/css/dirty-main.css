@@ -6054,15 +6054,16 @@ h1, h2, h3, h4 {
   margin-bottom: 14px; }
 
 h1 {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 700; }
 
 h2 {
   font-size: 26px;
   line-height: 32px;
   font-weight: 700;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
 
 h3 {
   font-size: 22px;
@@ -6073,6 +6074,23 @@ h4 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 500; }
+
+@media (min-width: 768px) {
+  h1, h2, h3, h4 {
+    margin-top: 14px;
+    margin-bottom: 14px; }
+  h1 {
+    font-size: 40px;
+    line-height: 50px; }
+  h2 {
+    font-size: 26px;
+    line-height: 32px; }
+  h3 {
+    font-size: 22px;
+    line-height: 28px; }
+  h4 {
+    font-size: 18px;
+    line-height: 24px; } }
 
 i {
   font-size: 16px; }
@@ -6155,6 +6173,9 @@ a.link-underline {
 .box-shadow-v1 {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1); }
 
+.max-w-100 {
+  max-width: 100%; }
+
 label {
   color: #666666;
   font-size: 14px;
@@ -6199,19 +6220,19 @@ input:focus-visible {
   color: #ccc; }
 
 .bs-section {
-  padding: 65px 0; }
+  padding: 45px 0; }
 
 .bs-section.padding-xs {
   padding: 28px 0; }
 
 .bs-section.padding-sm {
-  padding: 40px 0; }
+  padding: 30px 0; }
 
 .bs-section.padding-md {
-  padding: 80px 0; }
+  padding: 50px 0; }
 
 .bs-section.padding-lg {
-  padding: 100px 0; }
+  padding: 55px 0; }
 
 .bs-section.padding-xlg {
   padding: 120px 0; }
@@ -6248,6 +6269,16 @@ input:focus-visible {
 
 .bs-section.pb-0 {
   padding-bottom: 0; }
+
+@media (min-width: 768px) {
+  .bs-section {
+    padding: 65px 0; }
+  .bs-section.padding-sm {
+    padding: 40px 0; }
+  .bs-section.padding-md {
+    padding: 80px 0; }
+  .bs-section.padding-lg {
+    padding: 100px 0; } }
 
 .swiper.references-swiper {
   overflow: visible;
@@ -6320,13 +6351,16 @@ input:focus-visible {
  * ******* */
 .benefits-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap; }
   .benefits-wrapper .benefit-item {
     display: flex;
     flex: 0 0 30%;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-top: 35px; }
+    .benefits-wrapper .benefit-item:first-child {
+      margin-top: 0; }
     .benefits-wrapper .benefit-item .icon > i {
       font-size: 40px;
       margin-right: 12px; }
@@ -6342,26 +6376,52 @@ input:focus-visible {
       margin-top: 10px;
       margin-bottom: 0; }
 
+/* 
+ * QUERIES */
+@media (min-width: 768px) {
+  .benefits-wrapper {
+    flex-direction: row; }
+    .benefits-wrapper .benefit-item {
+      margin-top: 0; } }
+
+/*
+ * SERVICES */
 .box-items-wrapper {
-  margin-top: 35px; }
+  position: relative;
+  margin-top: 48px; }
   .box-items-wrapper .box-item {
     background-color: #fff;
     border-radius: 6px;
-    padding: 35px 35px 35px; }
+    padding: 35px 35px 35px;
+    margin-top: 35px; }
     .box-items-wrapper .box-item > i {
       font-size: 45px; }
     .box-items-wrapper .box-item h2 {
       font-size: 22px;
       line-height: 28px;
-      font-weight: 500; }
+      font-weight: 500;
+      margin-top: 14px; }
+
+.services-section .box-items-wrapper {
+  margin-top: 35px; }
+
+@media (min-width: 768px) {
+  .box-items-wrapper {
+    margin-top: 35px; }
+    .box-items-wrapper .benefit-item {
+      margin-top: 0; } }
 
 .reviews-section .box-items-wrapper .box-item {
-  padding: 60px 150px 30px 30px; }
+  padding: 60px 30px 30px 30px; }
+
+@media (min-width: 768px) {
+  .reviews-section .box-items-wrapper .box-item {
+    padding: 60px 150px 30px 30px; } }
 
 .shoptet-badge {
   position: absolute;
   right: -50px;
-  top: 60px; }
+  top: -40px; }
 
 /*
  * CONTACT SECTION

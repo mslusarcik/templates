@@ -15,8 +15,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 700;
 }
 
@@ -25,6 +25,7 @@ h2 {
   line-height: 32px;
   font-weight: 700;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 h3 {
@@ -37,6 +38,33 @@ h4 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
+}
+
+@include media-breakpoint-up(md) {
+  h1, h2, h3, h4 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 i {
@@ -141,6 +169,10 @@ a.link-underline {
 
 .box-shadow-v1 {
   box-shadow: 0 3px 15px rgba(0, 0, 0, .10);
+}
+
+.max-w-100 {
+  max-width: 100%;
 }
 
 label {
