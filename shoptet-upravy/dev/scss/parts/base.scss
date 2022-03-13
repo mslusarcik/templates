@@ -184,13 +184,14 @@ label {
   display: block;
 }
 
-input {
+input[type=text],
+input[type=email] {
   border: 1px solid #CCCCCC;
   border-radius: 6px;
   height: 42px;
   width: 100%;
   margin-bottom: 25px;
-  transition: border-color .25s;
+  transition: border-color .25s linear;
   padding: 0 12px;
   font-size: 14px;
 }
@@ -201,7 +202,7 @@ textarea {
   border-radius: 6px;
   max-height: 110px;
   min-height: 50px;
-  transition: border-color .25s;
+  transition: border-color .25s linear;
   padding: 12px;
   font-size: 14px;
 }

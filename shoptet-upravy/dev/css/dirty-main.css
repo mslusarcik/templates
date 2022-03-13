@@ -6184,13 +6184,14 @@ label {
   margin-bottom: 6px;
   display: block; }
 
-input {
+input[type=text],
+input[type=email] {
   border: 1px solid #CCCCCC;
   border-radius: 6px;
   height: 42px;
   width: 100%;
   margin-bottom: 25px;
-  transition: border-color .25s;
+  transition: border-color .25s linear;
   padding: 0 12px;
   font-size: 14px; }
 
@@ -6200,7 +6201,7 @@ textarea {
   border-radius: 6px;
   max-height: 110px;
   min-height: 50px;
-  transition: border-color .25s;
+  transition: border-color .25s linear;
   padding: 12px;
   font-size: 14px; }
 
@@ -6311,7 +6312,7 @@ input:focus-visible {
 .references-swiper .swiper-button-prev,
 .references-swiper .swiper-button-next {
   color: #E5F6FC;
-  transition: color .25s; }
+  transition: color .25s linear; }
   .references-swiper .swiper-button-prev:hover,
   .references-swiper .swiper-button-next:hover {
     color: #C6ECFB; }
@@ -6340,7 +6341,7 @@ input:focus-visible {
 .reviews-swiper .swiper-button-prev,
 .reviews-swiper .swiper-button-next {
   color: #FF3D30;
-  transition: color .25s;
+  transition: color .25s linear;
   top: 22px; }
   .reviews-swiper .swiper-button-prev:hover,
   .reviews-swiper .swiper-button-next:hover {
@@ -6430,6 +6431,33 @@ input:focus-visible {
   position: absolute;
   left: -204px;
   top: -155px; }
+
+.contact-section .form-success {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-left: 8px solid #28a745;
+  border-radius: 6px;
+  transition: visibility 0s, opacity 0.350s linear;
+  margin-top: 35px;
+  display: none; }
+  .contact-section .form-success .icon {
+    padding: 0 15px; }
+    .contact-section .form-success .icon i {
+      font-size: 40px;
+      color: #28a745; }
+  .contact-section .form-success .content {
+    flex-basis: 100%; }
+    .contact-section .form-success .content h2 {
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 28px; }
+    .contact-section .form-success .content p {
+      font-size: 15px;
+      margin-top: 0px; }
 
 /*
  * FOOTER 

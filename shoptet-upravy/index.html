@@ -229,24 +229,35 @@
         <div class="col-12 col-lg-8 mx-auto">
           <h2 class="text-left text-md-center">Připraveni na spolupráci?</h2>
           <p class="text-left text-md-center">Vyplňte své údaje a já se s vámi nezávazně spojím.</p>
-          <form method="POST" action="" class="mt-5 position-relative">
+          <form method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMz67y20ZLUU1KUOfTn8r9smwcRZJBYOS_QSyK82otdHZyKw/formResponse" class="mt-5 position-relative ajax-form" data-autosubmit="" autocomplete="off">
             <img src="assets/images/prvni_krok.png" class="make-first-step" />
             <div class="row">
               <div class="col-12 col-lg-6">
-                <label for="name">Jméno</label>
-                <input type="text" name="name" placeholder="Zadejte své jméno…" />
+                <label for="entry.1140674996">Jméno</label>
+                <input type="text" name="entry.1140674996" class="focus-on-me" placeholder="Zadejte své jméno…" oninvalid="this.setCustomValidity('Zadejte své jméno nebo název firmy')" oninput="this.setCustomValidity('')" required />
               </div>
               <div class="col-12 col-lg-6">
-                <label for="contact">E-mail</label>
-                <input type="email" name="contact" placeholder="Zadejte svůj e-mail…" />
+                <label for="entry.1682784041">E-mail</label>
+                <input type="email" name="entry.1682784041" placeholder="Zadejte svůj e-mail…" oninvalid="this.setCustomValidity('Zadejte svůj e-mail')" oninput="this.setCustomValidity('')" required />
               </div>
               <div class="col-12">
-                <label for="message">Měl bych vědět něco dalšího? <span class="color-lightgrey font-regular font-small">(nepovinné)</span></label>
-                <textarea type="text" name="message" rows="4" placeholder="Klidně nechte pole prázdné a probereme to později…"></textarea>
-                <p class="text-center mt-4 pt-2"><a href="#" class="btn btn-primary btn-lg">Odeslat formulář</a></p>
+                <label for="entry.789164851">Měl bych vědět něco dalšího? <span class="color-lightgrey font-regular font-small">(nepovinné)</span></label>
+                <textarea type="text" name="entry.789164851" rows="4" placeholder="Klidně nechte pole prázdné a probereme to později…"></textarea>
+                <div class="submit-button mt-4 pt-2 text-center">
+                  <input type="submit" value="Odeslat formulář" class="btn btn-primary btn-lg" />
+                </div>
               </div>
             </div>
           </form>
+          <div class="form-success hidden">
+            <div class="icon">
+              <i class="icofont-check-circled"></i>
+            </div>
+            <div class="content">
+              <h2>Skvělá práce!</h2>
+              <p>Co nevidět se vám ozvu a probereme společně vaše představy.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -264,6 +275,7 @@
   </section>
   <!-- /IG PROMO BANNER -->
 
+  <!-- FOOTER -->
   <footer class="bs-section padding-xs bg-blue-v1 text-center">
     <div class="container">
       <div class="row">
@@ -287,6 +299,7 @@
       </div>
     </div>
   </footer>
+  <!-- /FOOTER -->
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

@@ -1,3 +1,31 @@
+//Send form
+function ajaxFormSender() {
+  console.log("ajaxFormSender is running.");
+  $("form.ajax-form").submit(function (e) {
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var url = form.attr("action");
+
+    $.ajax({
+      type: "POST",
+      dataType: "json",
+      url: url,
+      data: form.serialize(), // serializes the form's elements.
+      success: function (data) {
+        jQuery("form.ajax-form").fadeOut(500);
+        jQuery(".make-first-step").fadeOut(500);
+        jQuery(".form-success").css("display", "flex").hide().delay(600).fadeIn();
+      },
+      error: function () {
+        jQuery("form.ajax-form").fadeOut(500);
+        jQuery(".make-first-step").fadeOut(500);
+        jQuery(".form-success").css("display", "flex").hide().delay(600).fadeIn();
+      }
+    });
+  });
+}
+
 $(function() {
   jQuery("body").addClass("jquery-loaded");
   var swiper = new Swiper(".references-swiper", {
@@ -43,10 +71,12 @@ $(function() {
   // Focus on input
   var focusOnForm = function (event) {
     setTimeout(function() {
-      document.querySelector("input[name=name]").focus();
+      document.querySelector("input.focus-on-me").focus();
     }, 350);
   };
 
   // Listen for scroll event
   document.addEventListener('scrollStop', focusOnForm, false);
+
+  ajaxFormSender();
 });
