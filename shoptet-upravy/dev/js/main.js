@@ -58,7 +58,7 @@ $(function() {
   const reviewsSwiper = new Swiper('.reviews-swiper', {
     // Optional parameters
     loop: false,
-  
+    autoHeight: true,
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',

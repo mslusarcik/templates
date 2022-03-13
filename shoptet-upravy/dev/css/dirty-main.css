@@ -6286,36 +6286,38 @@ input:focus-visible {
   max-width: 770px;
   margin: 0 auto; }
 
-.references-swiper .box-item {
-  border-radius: 6px; }
-  .references-swiper .box-item > img {
-    margin-bottom: 11px;
+.references-swiper {
+  overflow: visible;
+  max-width: 770px;
+  margin: 0 auto; }
+  .references-swiper .box-item {
     border-radius: 6px; }
-  .references-swiper .box-item .box-inner-content {
-    padding: 25px; }
-    .references-swiper .box-item .box-inner-content > h2 {
-      margin-top: 0;
-      font-size: 22px;
-      line-height: 28px;
-      font-weight: 500; }
-
-.references-swiper .swiper-horizontal > .swiper-pagination-bullets,
-.references-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -48px; }
-
-.references-swiper .swiper-button-prev {
-  left: -72px; }
-
-.references-swiper .swiper-button-next {
-  right: -72px; }
-
-.references-swiper .swiper-button-prev,
-.references-swiper .swiper-button-next {
-  color: #E5F6FC;
-  transition: color .25s linear; }
-  .references-swiper .swiper-button-prev:hover,
-  .references-swiper .swiper-button-next:hover {
-    color: #C6ECFB; }
+    .references-swiper .box-item > img {
+      margin-bottom: 11px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+    .references-swiper .box-item .box-inner-content {
+      padding: 20px 25px 25px 25px; }
+      .references-swiper .box-item .box-inner-content > h2 {
+        margin-top: 0;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500; }
+  .references-swiper .swiper-horizontal > .swiper-pagination-bullets,
+  .references-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -48px; }
+  .references-swiper .swiper-button-prev {
+    left: -72px; }
+  .references-swiper .swiper-button-next {
+    right: -72px; }
+  .references-swiper .swiper-button-prev,
+  .references-swiper .swiper-button-next {
+    color: #E5F6FC;
+    transition: color .25s linear; }
+    .references-swiper .swiper-button-prev:hover,
+    .references-swiper .swiper-button-next:hover {
+      color: #C6ECFB; }
 
 .reviews-swiper .swiper-button-next:after,
 .reviews-swiper .swiper-button-prev:after {
@@ -6417,7 +6419,7 @@ input:focus-visible {
 
 @media (min-width: 768px) {
   .reviews-section .box-items-wrapper .box-item {
-    padding: 60px 150px 30px 30px; } }
+    padding: 30px 150px 30px 30px; } }
 
 .shoptet-badge {
   position: absolute;
