@@ -30,6 +30,7 @@ $(function() {
   jQuery("body").addClass("jquery-loaded");
   var swiper = new Swiper(".references-swiper", {
     spaceBetween: 250,
+    autoHeight: false,
     effect: "coverflow",
     coverflowEffect: {
       rotate: 0,
