@@ -41,11 +41,17 @@ function fillObject(){
 
 function renderObject(){
   var faqContentHtml = '';
-  $.each( faqList, function( index, value ){
+  $.each(faqList, function( index, value ){ 
+    var isFirstQ = '';
+    var isFirstA = '';
+    if(index === 0){
+      isFirstQ = ' active';
+      isFirstA = ' style="display: block;"';
+    }
     faqContentHtml += 
       '  <div class="accordion-container">\n' +
-      '    <button class="accordion">'+faqList[index].question+'</button>\n' +
-      '    <div class="panel">\n' +
+      '    <button class="accordion'+isFirstQ+'">'+faqList[index].question+'</button>\n' +
+      '    <div class="panel"'+isFirstA+'>\n' +
             faqList[index].answer +
       '    </div>\n' +
       '  </div>\n';
@@ -122,6 +128,10 @@ function copyToClip(str) {
   document.addEventListener("copy", listener);
   document.execCommand("copy");
   document.removeEventListener("copy", listener);
+  var copyButton = document.querySelector("#copyButton");
+  copyButton.textContent = "Zkopírováno";
+  setTimeout(() => {copyButton.textContent = "Zkopírovat kód a resetovat";}, 2000);
+  clearCode();
 };
 
 /*
@@ -130,40 +140,51 @@ function copyToClip(str) {
 
 // handle links with @href started with '#' only
 $('a.js-scroll[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 350, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+    && 
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 350, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
     }
-  });
+  }
+});
+
+/*
+ * CLEAR CODE
+ * ********** */
+
+function clearCode(){
+  jQuery(".place-for-code > pre").fadeOut(200).html("Pomocí formuláře níže vygenerujte další kód..").fadeIn(200);
+  jQuery(".accordion-wrapper").fadeOut(200).remove();
+  jQuery(".preview-section").hide();
+  faqList = [];
+}
 
 /*
  * INIT
