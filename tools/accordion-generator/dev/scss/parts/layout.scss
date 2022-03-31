@@ -1,0 +1,22 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding:65px 0;
+  width: 100%;
+}
+
+section.bg-grey {
+  background-color: #F4F4F9;
+} 
+
+section.pt-0 {
+  padding-top: 0;
+}

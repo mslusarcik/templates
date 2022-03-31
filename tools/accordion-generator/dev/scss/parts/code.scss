@@ -1,0 +1,17 @@
+$color-code-background: #1D2832;
+$color-code-color: #fff;
+
+pre {
+  color: $color-code-color;
+}
+
+.place-for-code {
+  position: relative;
+  width: 100%;
+  max-width: 770px;
+  min-height: 160px;
+  margin: 0 auto;
+  padding: 25px 25px 60px;
+  border-radius: 2px;
+  background-color: $color-code-background;
+}

@@ -1,0 +1,80 @@
+.accordion-wrapper {
+  max-width: 880px;
+  width: 100%;
+  display: block;
+}
+
+.accordion-wrapper .accordion-container {
+  border-bottom: 1px solid #eee;
+  transition: all .3s linear;
+
+  > .panel > p {
+    margin-bottom: 12px;
+  }
+}
+
+.accordion-wrapper .accordion {
+  background-color: #fff;
+  color: #151515;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px 8px;
+  padding-right: 55px;
+  margin-top: 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+}
+
+.accordion-wrapper .active,
+.accordion-wrapper .accordion:hover {
+  background-color: #fff;
+  color: #036400;
+}
+
+.accordion-wrapper .panel {
+  padding: 3px 8px 0;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-wrapper .panel>p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .accordion-wrapper .panel {
+    max-width: 78%;
+  }
+}
+
+.accordion-wrapper .accordion:after {
+  /* Unicode character for "plus" sign (+) */
+  content: "\efc2";
+  font-family: Icofont;
+  font-size: 14px;
+  line-height: 18px;
+  color: #151515;
+  float: right;
+  margin-left: 5px;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  top: calc(50% - 7px);
+}
+
+.accordion-wrapper .active:after {
+  /* Unicode character for "minus" sign (-) */
+  content: "\ef9a";
+  font-family: Icofont;
+  font-size: 14px;
+}

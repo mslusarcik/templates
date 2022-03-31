@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Grunt Template</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+      <div class="container">
+        <h1>Generátor častých dotazů</h1>
+        <code class="place-for-code" id="place-for-code">
+          <pre>
+Pomocí formuláře níže vygenerujte kód..
+          </pre>
+          <button onclick="copyToClip(document.querySelector('.accordion-wrapper').outerHTML)" id="copyButton">
+            Zkopírovat kód
+          </button>
+        </code>
+      </div>
+    </section>
+    <section class="bg-grey">
+      <h2>Vygenerujte si svůj kód</h2>
+      <div class="container">
+        <form class="accordion-form">
+          <label>Na co se lidi ptají?</label>
+          <input type="text" id="question" placeholder="Kdo je autorem tohoto doplňku?" name="question" required />
+          <label>Co jim odpovídáte? <span style="font-size: 13px; font-weight: 300;">(nový řádek = nový odstavec)</span></label>
+          <textarea id="answer" placeholder="Není to nikdo jiný než miroslav@slusarcik.cz" name="answer" required></textarea>
+          <button class="btn-add-accordion js-add-accordion">Vygenerovat kód</button>
+          <a href="#place-for-code" class="js-scroll show-code-button">Ukázat kód <i class="icofont-rounded-up"></i></a>
+        </form>
+      </div>
+    </section>
+    <section class="preview-section pt-0 bg-grey">
+        <h2>Náhled</h2>
+        <div class="preview-faqs"></div>
+    </section>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/min/main.min.js"></script>
+</body>
+</html>

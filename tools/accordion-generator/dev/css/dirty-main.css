@@ -1,0 +1,244 @@
+/*
+ * BASE
+ * **** */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 28px; }
+
+h1 {
+  margin-bottom: 48px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.33rem;
+  text-align: center; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 35px; }
+
+.accordion-form {
+  background-color: #fff;
+  padding: 45px 70px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 2px; }
+
+input[type='text'] {
+  min-height: 54px;
+  min-width: 500px;
+  padding: 6px;
+  margin-bottom: 10px; }
+
+textarea {
+  font-family: Arial;
+  padding: 6px;
+  width: 500px;
+  max-width: 500px;
+  min-height: 162px;
+  max-height: 216px; }
+
+input[type="text"],
+textarea {
+  font-size: 16px;
+  background-color: #F9F9F9;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  padding: 18px; }
+
+label {
+  display: block;
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 16px;
+  margin-bottom: 6px; }
+
+label:first-child {
+  margin-top: 0; }
+
+#copyButton {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 8px 26px;
+  background-color: #226E77;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 0;
+  white-space: normal; }
+
+button {
+  background-color: #36B079;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  border-radius: 2px;
+  padding: 18px 65px;
+  cursor: pointer;
+  display: block;
+  margin: 32px auto 0;
+  transition: all .25s linear;
+  font-size: 16px; }
+
+button:hover {
+  background-color: #2b8d61; }
+
+button:disabled,
+button[disabled] {
+  background-color: #ff3333; }
+
+.hidden {
+  display: none; }
+
+.accordion-wrapper {
+  margin-top: 50px; }
+
+.ready-to-use {
+  display: block;
+  text-align: center; }
+
+section.preview-section {
+  display: none; }
+
+.accordion-wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 20px 10px 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); }
+
+.accordion-wrapper .accordion, .accordion-wrapper .active, .accordion-wrapper .accordion {
+  background-color: transparent !important; }
+
+.accordion-wrapper .panel {
+  background-color: transparent !important; }
+
+.show-code-button {
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #184e53;
+  transition: all .25s linear; }
+  .show-code-button:hover {
+    color: #0e2c30; }
+  .show-code-button > i.icofont-bubble-up {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1000' width='1000' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cmetadata%3EIcoFont Icons%3C/metadata%3E%3Ctitle%3Erounded-up%3C/title%3E%3Cglyph glyph-name='rounded-up' unicode='&%23xeaa1;' horiz-adv-x='1000' /%3E%3Cpath d='M785.7 580.1l-251-251c-9.600000000000023-9.600000000000023-22.100000000000023-14.300000000000011-34.60000000000002-14.300000000000011s-25.100000000000023 4.800000000000011-34.60000000000002 14.300000000000011l-251 251c-19.099999999999994 19.100000000000023-19.099999999999994 50.10000000000002 0 69.29999999999995l21.599999999999994 21.600000000000023c19.099999999999994 19.100000000000023 50.099999999999994 19.100000000000023 69.29999999999998 0l160.20000000000005-160.2c9.599999999999966-9.600000000000023 22.099999999999966-14.300000000000011 34.599999999999966-14.300000000000011s25.099999999999966 4.800000000000011 34.599999999999966 14.300000000000011l160.20000000000005 160.2c19.100000000000023 19.100000000000023 50.10000000000002 19.100000000000023 69.29999999999995 0l21.600000000000023-21.600000000000023c18.899999999999977-19.199999999999932 18.899999999999977-50.19999999999993-0.1999999999999318-69.29999999999995z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 14px;
+    height: 14px; }
+
+/* SCSS PARTS */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+section {
+  padding: 65px 0;
+  width: 100%; }
+
+section.bg-grey {
+  background-color: #F4F4F9; }
+
+section.pt-0 {
+  padding-top: 0; }
+
+.accordion-wrapper {
+  max-width: 880px;
+  width: 100%;
+  display: block; }
+
+.accordion-wrapper .accordion-container {
+  border-bottom: 1px solid #eee;
+  transition: all .3s linear; }
+  .accordion-wrapper .accordion-container > .panel > p {
+    margin-bottom: 12px; }
+
+.accordion-wrapper .accordion {
+  background-color: #fff;
+  color: #151515;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px 8px;
+  padding-right: 55px;
+  margin-top: 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative; }
+
+.accordion-wrapper .active,
+.accordion-wrapper .accordion:hover {
+  background-color: #fff;
+  color: #036400; }
+
+.accordion-wrapper .panel {
+  padding: 3px 8px 0;
+  background-color: white;
+  display: none;
+  overflow: hidden; }
+
+.accordion-wrapper .panel > p {
+  font-size: 16px;
+  line-height: 22px; }
+
+@media (min-width: 768px) {
+  .accordion-wrapper .panel {
+    max-width: 78%; } }
+
+.accordion-wrapper .accordion:after {
+  /* Unicode character for "plus" sign (+) */
+  content: "\efc2";
+  font-family: Icofont;
+  font-size: 14px;
+  line-height: 18px;
+  color: #151515;
+  float: right;
+  margin-left: 5px;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  top: calc(50% - 7px); }
+
+.accordion-wrapper .active:after {
+  /* Unicode character for "minus" sign (-) */
+  content: "\ef9a";
+  font-family: Icofont;
+  font-size: 14px; }
+
+pre {
+  color: #fff; }
+
+.place-for-code {
+  position: relative;
+  width: 100%;
+  max-width: 770px;
+  min-height: 160px;
+  margin: 0 auto;
+  padding: 25px 25px 60px;
+  border-radius: 2px;
+  background-color: #1D2832; }
