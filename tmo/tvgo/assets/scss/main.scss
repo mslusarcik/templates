@@ -1,0 +1,16 @@
+@import "parts/tmo-custom.scss";
+@import "parts/tmo-custom-child.scss";
+
+html, body {
+  background-color: #151515;
+}
+
+i.ico-check-mark-15px {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 307 244' id='check-mark-15px' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M103.01 169.631l-66.446-67.653L0 137.89l103.01 104.883 203.166-206.86L269.61 0z' fill='%236DB131'%3E%3C/path%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 18px;
+  height: 14px;
+}
