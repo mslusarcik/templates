@@ -16,4 +16,14 @@ $(function() {
       }
     ]
   });
+  // Quick & dirty toggle to demonstrate modal toggle behavior
+  $('.modal-toggle').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).data("modal-target")
+    $(id).toggleClass('is-visible');
+  });
+  $('.modal-close').on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.modal').toggleClass('is-visible');
+  });
 });

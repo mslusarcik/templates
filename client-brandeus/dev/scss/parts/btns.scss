@@ -17,6 +17,18 @@
   color: #fff;
 }
 
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #252525;
+}
+
 a.btn {
   text-decoration: none;
 }
