@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="118" viewBox="0 0 111 118">
+  <defs>
+    <filter id="_" x="0" y="0" width="111" height="118" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_5_1" data-name="Component 5 – 1" transform="translate(16 15)">
+    <g transform="matrix(1, 0, 0, 1, -16, -15)" filter="url(#_)">
+      <text id="_2" data-name="" transform="translate(16 86)" fill="#4cd6bc" font-size="80" font-family="icofont, IcoFont"><tspan x="0" y="0"></tspan></text>
+    </g>
+  </g>
+</svg>
