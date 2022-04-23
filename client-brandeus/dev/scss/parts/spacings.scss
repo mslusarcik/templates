@@ -1,0 +1,69 @@
+/* MARGINS FUNCTION */
+@mixin margins() {
+
+  $margins-list: 0 1 2 3 4 5 6 7 8 9 10;
+
+  @each $value in $margins-list {
+    .m-#{$value} {
+      margin: ($value / 2) + rem;
+    }
+    
+    .mt-#{$value} {
+      margin-top: ($value / 2) + rem;
+    }
+    .mb-#{$value} {
+      margin-bottom: ($value / 2) + rem;
+    }
+    .my-#{$value} {
+      margin-bottom: ($value / 2) + rem;
+      margin-top: ($value / 2) + rem;
+    }
+    .mr-#{$value} {
+      margin-right: ($value / 2) + rem;
+    }
+    .ml-#{$value} {
+      margin-left: ($value / 2) + rem;
+    }
+    .mx-#{$value} {
+      margin-right: ($value / 2) + rem;
+      margin-left: ($value / 2) + rem;
+    }
+  }
+}
+
+@include margins();
+
+/* PADDINGS FUNCTION */
+@mixin paddings() {
+
+  $paddings-list: 0 1 2 3 4 5 6 7 8 9 10;
+
+  @each $value in $paddings-list {
+    .p-#{$value} {
+      padding: ($value / 2) + rem;
+    }
+    
+    .pt-#{$value} {
+      padding-top: ($value / 2) + rem;
+    }
+    .pb-#{$value} {
+      padding-bottom: ($value / 2) + rem;
+    }
+    .py-#{$value} {
+      padding-bottom: ($value / 2) + rem;
+      padding-top: ($value / 2) + rem;
+    }
+    .pr-#{$value} {
+      padding-right: ($value / 2) + rem;
+    }
+    .pl-#{$value} {
+      padding-left: ($value / 2) + rem;
+    }
+    .px-#{$value} {
+      padding-right: ($value / 2) + rem;
+      padding-left: ($value / 2) + rem;
+    }
+  }
+}
+
+@include paddings();

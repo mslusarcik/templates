@@ -1,0 +1,102 @@
+section.case-studies {
+  &.bg-grey-half {
+    position: relative;
+    
+    &::before {
+      content: "";
+      background-color: rgba(182, 200, 227, .1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 60%;
+      width: 100%;
+    }
+  }
+
+  .case-studies-wrapper {
+    margin-top: 3rem;
+  }
+
+  .case-study-detail {
+    margin: 0 1.5625rem;
+
+    > .case-study-image-overlay {
+      min-height: 450px;
+      width: 100%;
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform .25s ease-in-out;
+    }
+
+    &.slick-center > .case-study-image-overlay {
+      transform: scale(1.10);
+    }
+  }
+}
+
+section.services {
+  .services-wrapper {
+    margin-top: 3rem;
+
+    .service-detail {
+      padding: 2.1875rem 1.250rem;
+      box-shadow: 0 1px 15px rgba(0, 0, 0, .05);
+      margin-bottom: 2.5rem;
+
+      >i {
+        margin-bottom: 1.750rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      >h3 {
+        margin-bottom: 1.250rem;
+      }
+      >p {
+        margin:0;
+        color: #888888;
+        font-size: .875rem;
+        line-height: 1.375rem;
+      }
+    }
+  }
+}
+
+section.brands {
+  .brands-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 3rem;
+
+    >li {
+      max-width: 165px;
+    }
+  }
+}
+
+section.promo-banner {
+
+  .promo-content {
+    background-color: #3F859E;
+    padding: 4.375rem 2.1875rem;
+    border-radius: 12px;
+    color: #fff;
+    background-size: 320px;
+    background-repeat: no-repeat;
+    background-position: 84% center;
+
+    > h2 {
+      margin-bottom: 1.625rem;
+    }
+
+    > p {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      margin-bottom: 2.25rem;
+    }
+  }
+}
