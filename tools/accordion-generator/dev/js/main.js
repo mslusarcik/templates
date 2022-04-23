@@ -193,8 +193,4 @@ function clearCode(){
 jQuery(function() {
   jQuery("body").addClass("jquery-loaded");
   fillObject();
-  if (jQuery(".accordion-wrapper").length > 0) {
-    //RUN FAQ'S
-    
-  }
 });

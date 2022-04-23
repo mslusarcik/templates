@@ -182,6 +182,11 @@
   box-shadow: 0 6px 20px rgba(75, 17, 47, 0.1);
 }
 
+.box-shadow-v17 {
+  -webkit-box-shadow: 0 6px 6px rgba(75, 17, 47, 0.15);
+  box-shadow: 0 6px 6px rgba(75, 17, 47, 0.15);
+}
+
 .px-24 {
   padding-left: 24px;
   padding-right: 24px;

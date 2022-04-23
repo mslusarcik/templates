@@ -1,0 +1,33 @@
+#formContact .form-group:nth-child(2) {
+  margin-right: 4%;
+}
+
+#formContact .form-group:nth-child(2),
+#formContact .form-group:nth-child(3) {
+  width: 47.8%;
+  display: inline-block;
+}
+
+#formContact .form-group:nth-child(2) #fullName,
+#formContact .form-group:nth-child(2) label,
+#formContact .form-group:nth-child(3) #email,
+#formContact .form-group:nth-child(3) label {
+  display: block;
+  width: 100%;
+  max-width: unset;
+}
+
+#formContact input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  min-width: 230px;
+}
+
+#formContact label[for="consents40"] {
+  font-size: 12px;
+  margin-top: -12px;
+}
+
+#formContact .submit-wrapper {
+  margin-top: 32px;
+}

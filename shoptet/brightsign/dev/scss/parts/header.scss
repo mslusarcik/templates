@@ -1,0 +1,41 @@
+/* HEADER */
+@media (min-width: 992px) {
+  #header .container {
+    min-height: 105px;
+  }
+  .navigation-in > ul > li > a {
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .navigation-in ul.menu-level-2 li a {
+    font-size: 15px;
+  }
+  .navigation-buttons > a,
+  .navigation-buttons {
+    border-left-width: 0;
+  }
+  .navigation-buttons {
+    border-right-width: 0;
+    top: -12px;
+  }
+  .navigation-buttons a::after {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .navigation-buttons a[data-target="search"]::after {
+    content: "Vyhledávání";
+  }
+  .navigation-buttons a[data-target="login"]::after {
+    content: "Přihlášení";
+  }
+  .navigation-buttons a[data-target="cart"]::after {
+    content: "Košík";
+  }
+}

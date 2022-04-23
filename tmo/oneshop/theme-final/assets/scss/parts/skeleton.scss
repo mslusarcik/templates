@@ -1,0 +1,99 @@
+:root {
+  --loading-grey: #ededed;
+}
+
+@keyframes shine {
+  to {
+    // Move shine from left to right, with offset on the right based on the width of the shine - see background-size
+    background-position: right -40px top 0;
+  }
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}
+
+.skeleton {
+  border-radius:4px;
+  display: block;
+  width: 100%;
+  background-color: var(--loading-grey);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, .5) 50%,
+    rgba(255, 255, 255, 0) 60%
+  ) var(--loading-grey);
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  animation: 1.3s loading ease-in-out infinite;
+
+  > span {
+    display: none;
+  }
+
+  &.skeleton-title {
+    display: block;
+    height: 40px;
+  }
+  
+  &.skeleton-content {
+    display: block;
+    height: 20px;
+    width: 90%;
+
+    &.one-line {
+      &::before, &::after {
+        display: none;
+      }
+    }
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      position: relative;
+      border-radius: 4px;
+      height: 20px;
+      background-color: var(--loading-grey);
+      background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, .5) 50%,
+        rgba(255, 255, 255, 0) 60%
+      ) var(--loading-grey);
+      background-size: 200% 100%;
+      background-position-x: 180%;
+      animation: 1.3s loading ease-in-out infinite;
+    }
+
+    &::after {
+      top: 40px;
+      width: 85%;
+    }
+
+    &::before {
+      top: 30px; 
+      width: 100%;
+    }
+  }
+  
+  &.skeleton-image {
+    display: block;
+    height: 200px;
+    &.small {
+      height: 60px;
+    }
+    &.large {
+      height:450px;
+    }
+    > img {
+      display: none;
+    }
+  }
+}
+
+.skeleton-content::after {
+    
+}

@@ -1,0 +1,41 @@
+/* GENERAL */
+body.in-index h2,
+body.in-index h2+p {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 4px !important;
+}
+
+a.btn-outline {
+  background-color: transparent;
+  border-color: #372f89;
+  color: #151515;
+}
+
+.navigation-home-icon-wrapper::before {
+  margin-top: -8px;
+}
+
+body.in-index h2, body.in-index h2 + p {
+  z-index: 1;
+  position: relative;
+}
+
+.overall-wrapper {
+  overflow-x: hidden;
+}
+
+@media (min-width: 992px){
+  .breadcrumbs>span>a, .breadcrumbs>span>span {
+    padding: 15px 0 12px 20px;
+  }
+}
+
+/* DONT DISPLAY THOSE */
+.homepage-tabs-wrapper,
+.homepage-texts-wrapper,
+.footer-newsletter {
+  display: none !important;
+}

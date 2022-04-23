@@ -1,6 +1,5 @@
 //Send form
-function ajaxFormSender() {
-  console.log("ajaxFormSender is running.");
+function ajaxSendForm() {
   $("form.ajax-form").submit(function (e) {
     e.preventDefault(); // avoid to execute the actual submit of the form.
 
@@ -28,14 +27,15 @@ function ajaxFormSender() {
 
 $(function() {
   jQuery("body").addClass("jquery-loaded");
+  $("img.lazyload").lazyload();
   var swiper = new Swiper(".references-swiper", {
-    spaceBetween: 250,
-    autoHeight: false,
+    spaceBetween: 50,
+    autoHeight: true,
     effect: "coverflow",
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
-      depth: 250,
+      depth: 0,
       modifier: 1,
       slideShadows: false,
     },
@@ -48,13 +48,28 @@ $(function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    autoplay: {
-      delay: 5000,
-      pauseOnMouseEnter: true,
-    },
+    autoplay: false,
     centeredSlides: true,
     slidesPerView: 1,
-    loop: true,
+    loop: false,
+    lazy: {
+      loadPrevNext: true,
+      loadPrevNextAmount: 1,
+    },    
+    breakpoints: {
+      768: {
+        autoHeight: false,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        },
+        coverflowEffect: {
+          depth: 250,
+        },
+        spaceBetween: 250,
+      }
+    }
   });
   const reviewsSwiper = new Swiper('.reviews-swiper', {
     // Optional parameters
@@ -70,14 +85,21 @@ $(function() {
     speed: 600
   });
   // Focus on input
-  var focusOnForm = function (event) {
+  $(".focus-link").click(function(){
     setTimeout(function() {
       document.querySelector("input.focus-on-me").focus();
     }, 350);
-  };
+  });
 
-  // Listen for scroll event
-  document.addEventListener('scrollStop', focusOnForm, false);
+  ajaxSendForm();
 
-  ajaxFormSender();
+  // document.querySelector('.lead-form-wrapper input[type=submit]').addEventListener('click', function() {
+  //   fbq('track', 'Contact');
+  //   console.log("Contact sent");
+  // }, false);
+  
+  // document.querySelector('.ajax-form input[type=submit]').addEventListener('click', function() {
+  //   fbq('track', 'Contact');
+  //   console.log("Contact sent");
+  // }, false);
 });

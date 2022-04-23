@@ -12,6 +12,7 @@
     "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-cssnano": "^3.0.0",
+    "grunt-cwebp": "^3.0.3",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^3.1.0",
     "node-sass": "^7.0.1",
@@ -19,6 +20,7 @@
     "postcss-flexbugs-fixes": "^5.0.2"
   },
   "dependencies": {
+    "grunt-purgecss": "^4.1.3",
     "gulp-dart-sass": "^1.0.2"
   }
 }

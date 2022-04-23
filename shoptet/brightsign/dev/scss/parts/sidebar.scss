@@ -1,0 +1,47 @@
+/* SIDEBAR */
+aside .box-categories>h4 {
+  display: none;
+}
+
+.categories .topic>a {
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.category-perex {
+  margin-bottom: 55px;
+}
+
+#categories .expandable>a>span,
+#categories .expandable>.topic>a>span {
+  left: auto;
+  right: 10px;
+}
+
+.box-bg-variant .categories a {
+  border-bottom-color: #ededed;
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.sidebar>div {
+  padding-bottom: 45px;
+  border-color: #ededed;
+}
+
+.box-bg-variant .categories ul li a {
+  font-size: 15px;
+  line-height: 26px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #ededed;
+}
+
+.box-bg-variant .categories ul li a::after {
+  position: relative;
+  content: "\eaa0";
+  padding-left: 7px;
+  font-family: Icofont;
+  font-size: 13px;
+}

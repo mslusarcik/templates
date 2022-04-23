@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
+  max-width: 550px;
+  margin: 0 auto;
 
   .benefit-item {
     display: flex;
@@ -47,9 +49,11 @@
 /* 
  * QUERIES */
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
   .benefits-wrapper {
     flex-direction: row;
+    max-width: 100%;
+    margin: 0;
 
     .benefit-item { 
       margin-top: 0;
@@ -87,14 +91,18 @@
   .box-items-wrapper {
     margin-top: 35px;
   }
+  .price-details {
+    font-size: 14px;
+    margin-top: 0;
+  }
 }
 
 @include media-breakpoint-up(md) {
   .box-items-wrapper {
     margin-top: 35px;
 
-    .benefit-item { 
-      margin-top: 0;
+    .box-item { 
+      height: 100%;
     }
   }
 }
@@ -173,6 +181,9 @@
 
 
 footer {
+  z-index: 25;
+  position: relative;
+  
   p {
     font-size: 13px;
     line-height: 20px;

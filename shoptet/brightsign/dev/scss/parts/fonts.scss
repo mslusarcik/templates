@@ -1,0 +1,52 @@
+/* FONTS */
+.external-fonts-loaded h1,
+.external-fonts-loaded h2,
+.external-fonts-loaded h3,
+.external-fonts-loaded h4,
+.external-fonts-loaded h5,
+.external-fonts-loaded h6,
+.external-fonts-loaded .h1,
+.external-fonts-loaded .h2,
+.external-fonts-loaded .h3,
+.external-fonts-loaded .h4,
+.external-fonts-loaded .h5,
+.external-fonts-loaded .h6,
+.external-fonts-loaded .cart-table .main-link,
+.external-fonts-loaded .cart-related-name,
+.blank-mode h1,
+.blank-mode h2,
+.blank-mode h3,
+.blank-mode h4,
+.blank-mode h5,
+.blank-mode h6,
+.blank-mode .h1,
+.blank-mode .h2,
+.blank-mode .h3,
+.blank-mode .h4,
+.blank-mode .h5,
+.blank-mode .h6,
+.blank-mode .cart-table .main-link,
+.blank-mode .cart-related-name {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.external-fonts-loaded body,
+body.blank-mode {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 44px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #151515;
+}
+
+h2+p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  color: #707070;
+  margin-bottom: 45px;
+}

@@ -1,0 +1,80 @@
+/* FOOTER */
+#footer ul.social-list li:first-child,
+#footer ul.social-list {
+  padding-left: 0 !important;
+}
+
+#footer ul.social-list li {
+  display: block;
+  float: left;
+  padding: 12px !important;
+}
+
+#footer ul.social-list li::before {
+  display: none;
+}
+
+#footer {
+  background-color: #372f89;
+  border-color: none !important;
+  padding-bottom: 0;
+  margin-top: 65px;
+}
+
+body.in-index #footer {
+  margin-top: 0;
+}
+
+.custom-footer {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.custom-footer .banner {
+  margin-bottom: 0;
+}
+
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6,
+#footer .h1,
+#footer .h2,
+#footer .h3,
+#footer .h4,
+#footer .h5,
+#footer .h6,
+#footer li,
+#footer ul li,
+#footer p,
+#footer span,
+#footer a {
+  color: #fff;
+}
+
+#footer a {
+  text-decoration: underline;
+}
+
+#footer ul li a {
+  text-decoration: none;
+}
+
+#footer ul li::before {
+  border-color: #fff;
+}
+
+.footer-bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#footer #signature {
+  margin-bottom: 0;
+}
+
+#footer #signature a {
+  text-decoration: none;
+}

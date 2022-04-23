@@ -30,17 +30,19 @@ Pomocí formuláře níže vygenerujte kód..
       <div class="container">
         <form class="accordion-form">
           <label>Na co se lidi ptají?</label>
-          <input type="text" id="question" placeholder="Kdo je autorem tohoto doplňku?" name="question" required />
+          <input type="text" id="question" placeholder="Kdo je autorem?" name="question" required />
           <label>Co jim odpovídáte? <span style="font-size: 13px; font-weight: 300;">(nový řádek = nový odstavec)</span></label>
-          <textarea id="answer" placeholder="Není to nikdo jiný než miroslav@slusarcik.cz" name="answer" required></textarea>
+          <textarea id="answer" placeholder="Míra Slusarčík, miroslav@slusarcik.cz" name="answer" required></textarea>
           <button class="btn-add-accordion js-add-accordion">Vygenerovat kód</button>
           <a href="#place-for-code" class="js-scroll show-code-button">Ukázat kód <i class="icofont-rounded-up"></i></a>
         </form>
       </div>
     </section>
     <section class="preview-section pt-0 bg-grey">
-        <h2>Náhled</h2>
-        <div class="preview-faqs"></div>
+        <div class="container">
+          <h2>Náhled</h2>
+          <div class="preview-faqs"></div>
+        </div>
     </section>
   </div>
   

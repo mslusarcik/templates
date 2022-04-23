@@ -1,0 +1,130 @@
+/* CATEGORY PAGE */
+ul.subcategories {
+  display: none;
+}
+
+.category-perex {
+  font-size: 16px;
+  line-height: 26px;
+  color: #666666;
+}
+
+.category-perex+h4,
+#productsTop {
+  margin-top: 2rem;
+  display: none;
+}
+
+.category-header input[type="radio"]+label {
+  font-size: 15px;
+  line-height: 26px;
+  background-color: #fff;
+  border: 0;
+  transition: all 0.15s linear;
+}
+
+.category-header input[type="radio"]:checked+label {
+  border: 0;
+  border-bottom: 2px solid #372f89;
+}
+
+.category-header input[type="radio"]+label:hover {
+  background: #fff;
+  border-bottom: 2px solid #372f89;
+}
+
+@media (min-width: 768px) {
+  .products-block .product {
+    width: 100%;
+  }
+
+  .products-block>div .p {
+    flex-direction: row;
+    padding: 42px 65px 42px 45px;
+    border-radius: 4px;
+  }
+
+  .products-block .p>a {
+    flex: 1 1 35%;
+    padding: 25px;
+  }
+
+  .products-block>div .p .p-in {
+    flex: 1 1 65%;
+  }
+}
+
+.products-block>div .p .name {
+  height: auto;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+}
+
+.products-block>div .p .p-desc {
+  font-size: 15px;
+  line-height: 23px;
+  color: #666666;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.columns-3 .products-block>div,
+.columns-4 .products-block>div {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.products-block .p-bottom .prices,
+.products-block>div .p .availability,
+.products-block>div .p .p-bottom>div .p-tools {
+  text-align: left;
+}
+
+.products-block>div .p .prices .price-final {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.products-block>div .p .p-bottom>div .p-tools .btn,
+.products-block>div .p .p-bottom>div .p-tools .btn.btn-cart {
+  color: #fff;
+  border-color: #372f89;
+  background-color: #372f89;
+  width: auto;
+  min-width: unset;
+  padding: 5px 22px !important;
+}
+
+.products-block>div .p .p-bottom>div .p-tools .btn:hover,
+.products-block>div .p .p-bottom>div .p-tools .btn.btn-cart:hover {
+  background-color: #0b3c5d;
+  border-color: #0b3c5d;
+}
+
+.products-block>div .p .availability {
+  padding-top: 0;
+}
+
+.products-block>div .p .p-bottom>div .p-tools .btn.btn-outline {
+  margin-left: 18px;
+  background-color: transparent;
+  border-color: #372f89;
+  color: #151515;
+}
+
+.products-block>div .p .p-bottom>div .p-tools .btn.btn-outline:hover {
+  background-color: transparent;
+  border-color: #0b3c5d;
+  color: #0b3c5d;
+}
+
+.flags-default .flag::before,
+.flags-default .flag:after {
+  display: none;
+}

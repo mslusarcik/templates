@@ -30,7 +30,8 @@ module.exports = function (grunt) {
     uglify: {
       target: {
         files: {
-          'assets/js/min/main.min.js': ['dev/js/main.js']
+          'assets/js/min/main.min.js': ['dev/js/main.js'],
+          'assets/js/min/leadCollector.min.js': ['dev/js/leadCollector.js']
         }
       }
     },
@@ -88,6 +89,19 @@ module.exports = function (grunt) {
         src: 'dev/css/dirty-main.css',
         dest: 'assets/css/min/main.min.css'
       }
+    },
+    cwebp: {
+      dynamic: {
+        options: {
+          q: 95
+        },
+        files: [{
+          expand: true,
+          cwd: 'assets/images',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/images/webp'
+        }]
+      }
     }
   });
 
@@ -104,4 +118,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('@lodder/grunt-postcss');
+  grunt.loadNpmTasks('grunt-cwebp');
 };

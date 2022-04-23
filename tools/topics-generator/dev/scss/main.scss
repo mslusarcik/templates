@@ -1,0 +1,91 @@
+/*
+ * BASE
+ * **** */
+
+ * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F4F9;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media (max-width:768px){
+  html, body {
+    font-size: 10px;
+  } 
+}
+
+h1, .h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.33rem;
+  text-align: center;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h2 + p, .h2 + p {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.8rem;
+  }
+}
+
+input[type='text']{
+  min-height: 54px;
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #F9F9F9;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  padding: 18px
+}
+
+button {
+  background-color: #36B079;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  border-radius: 2px;
+  padding:18px 65px;
+  cursor: pointer;
+  display: block;
+  margin: 32px auto 0;
+  transition: background-color .3s linear;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2b8d61;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #ff3333;
+}
+
+/* SCSS PARTS */
+@import 'parts/layout.scss';
+@import 'parts/helpers.scss';
+@import 'parts/topics-generator.scss';

@@ -644,10 +644,10 @@ function loadFont(name, style, weight, woff2, woff){
 setTimeout(function () {
   checkOneshopScripts();
   document.body.classList.add("js-loaded");
-}, 3000);
+}, 100);
 
 /*
- * LOAD FONTS 
+ * LOAD FONTS
  * WITH NO DELAY
  * ***************** */
 loadFont("TeleNeo Regular", "normal", "300", "https://static.t-mobile.cz/cdn/fonts/teleneo/v1/teleneo-regular.woff2", "https://static.t-mobile.cz/cdn/fonts/teleneo/v1/teleneo-regular.woff");

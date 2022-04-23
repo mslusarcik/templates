@@ -7,18 +7,20 @@
 
 @import "parts/custom.scss";
 @import "parts/custom-child.scss";
+
 @import "parts/icons.scss";
 @import "parts/alerts.scss";
 @import "parts/helpers.scss";
 @import "parts/slider.scss";
 @import "parts/modal.scss";
-@import "parts/leads.scss";
+@import "parts/lc-c-style.scss";
 @import "parts/tabs.scss";
 @import "parts/faqs.scss";
 @import "parts/tooltips.scss";
 @import "parts/tvlogos.scss";
 @import "parts/xmas.scss";
 @import "parts/overlays.scss";
+@import "parts/skeleton.scss";
 
 .icon-check {
   float: left;
@@ -280,13 +282,18 @@
     content: '';
     display: block;
     width: 100%;
-    height: 190px;
+    height: 260px;
     background-image: url(https://dtdl-static-natco.eshop.yo-digital.com/resize-image?f=assets/cz/bf777332-1551-498a-a01f-c402c8aef024.png);
     background-color: #f5f5f9;
     background-size: cover;
+    background-position: left -50px;
+    background-repeat: no-repeat;
     position: absolute;
-    bottom: -185px;
-    z-index: 0;
+    bottom: -58px;
+    z-index: -1;
+  }
+  .bg-magenta-curve {
+    margin-bottom: -180px;
   }
 }
 

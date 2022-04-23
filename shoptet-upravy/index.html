@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic Grunt Template</title>
+  <title>Postavím vám funkční web i e-shop na míru | Miroslav Slusarčík</title>
+  <meta name="description"
+    content="Postarám se o e-shop na míru i individuální úpravy. Zkrátka vám budu spolehlivým partnerem na cestě za úspěšným on-line podnikáním.">
   <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/icofont/icofont.min.css">
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- ****** Favicons ****** -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#151515">
+  <meta name="msapplication-TileImage" content="/favicon-144.png">
+  <!-- ****** Favicons ****** -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGLMG6G');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
+
 <body>
+
   <!-- HEADER -->
   <header class="bs-section pt-0 bg-blue-v1 header-section">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center order-2 order-md-1">
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1">
+          <img src="assets/images/logo-jaknaeshop-colored.svg" class="d-none d-lg-block" alt="Jak na e-shop - logo"
+            style="position: absolute; top: 25px; left: 15px; max-width: 105px;" />
           <p class="font-light font-small text-uppercase m-0">Spolehlivost je u mě na 1. místě</p>
           <h1>
-            O váš e-shop se postarám <br class="d-none d-md-block" />
-            jako o vlastní
+            Postavím vám funkční <br class="d-none d-md-block" />
+            web i&nbsp;e-shop na<span class="d-none d-lg-inline-block">&nbsp;(M)íru</span><span
+              class="d-inline-block d-lg-none">&nbsp;míru</span>
           </h1>
-          <p class="mt-3">
-            Postavím vám funkční <strong class="font-medium">e-shop na míru</strong>. 
-            Postarám se o <strong class="font-medium">individuální úpravy</strong>.
-            Zkrátka budu <strong class="font-medium">spolehlivým partnerem</strong> na cestě za úspěšným on-line podnikáním.
+          <p class="mt-2 mt-lg-3">
+            Nebo se&nbsp;postarám o&nbsp;<strong class="font-medium">individuální úpravy</strong>.
+            Zkrátka vám budu <strong class="font-medium text-nowrap">spolehlivým partnerem</strong> na&nbsp;cestě
+            za&nbsp;úspěšným on-line podnikáním.
           </p>
-          <p class="mt-1 mt-md-3">
-            <a href="#contact" class="btn btn-lg btn-primary mt-2 form-focus" data-scroll>
+          <p class="mt-3 mt-md-3">
+            <a href="#modal-contact" data-toggle="modal" data-target="#modal-contact"
+              class="btn btn-lg btn-primary mt-2">
               Chci spolupracovat
             </a>
           </p>
         </div>
-        <div class="col-12 col-lg-6 mt-0 order-1 order-md-2 px-0 px-md-2">
-          <img src="assets/images/hero_image.png" alt="Hero profile image - Miroslav Slusarčík" class="mx-auto d-block max-w-100 mb-4 pb-2 pb-md-0 mb-md-3">
-          <h2 class="mb-0 text-center font-black mt-3 mt-md-2 d-none d-md-block">MIROSLAV <span class="font-light">SLUSARČÍK</span></h2>
-          <p class="mt-0 text-center d-none d-md-block">
-            Kodér a autor projektu <a href="https://www.instagram.com/jaknaeshop/" target="_blank" class="link-red">@jaknaeshop</a>
+        <div class="col-12 col-lg-6 mt-0 order-1 order-lg-2 px-0 px-md-2">
+          <img src="assets/images/webp/loading.webp" data-src="assets/images/webp/hero_image.webp"
+            alt="Profilový obrázek - Miroslav Slusarčík"
+            class="mx-auto mx-sm-0 mx-lg-auto d-block max-w-100 mb-4 pb-2 pb-md-0 mb-md-3 lazyload">
+          <h2 class="mb-0 text-center font-black mt-3 mt-md-2 d-none d-lg-block">MIROSLAV <span
+              class="font-light">SLUSARČÍK</span></h2>
+          <p class="mt-0 text-center d-none d-lg-block">
+            Kodér a&nbsp;autor projektu <a href="https://www.instagram.com/jaknaeshop/" target="_blank"
+              class="link-red">@jaknaeshop</a>
           </p>
         </div>
       </div>
@@ -56,7 +105,7 @@
           </div>
           <div class="content">
             <h2>Jsem časově flexibilní</h2>
-            <p>Své klienty si pečlivě vybírám a mám tak prostor pro nové projekty.</p>
+            <p>Své klienty si&nbsp;vybírám a&nbsp;mám tak&nbsp;prostor pro&nbsp;nové projekty.</p>
           </div>
         </div>
         <div class="benefit-item">
@@ -65,7 +114,7 @@
           </div>
           <div class="content">
             <h2>Pracuji transparentně</h2>
-            <p>Po celou dobu spolupráce máte přehled o všem co se děje.</p>
+            <p>Po celou dobu spolupráce máte přehled o&nbsp;všem co&nbsp;se&nbsp;děje.</p>
           </div>
         </div>
         <div class="benefit-item">
@@ -73,8 +122,8 @@
             <i class="icofont-medal-sport"></i>
           </div>
           <div class="content">
-            <h2>S každým jednám individuálně</h2>
-            <p>Osobní přístup je pro mě alfou a omegou každé fungující spolupráce.</p>
+            <h2 class="text-lg-nowrap">S každým jednám individuálně</h2>
+            <p>Osobní přístup je&nbsp;pro&nbsp;mě alfou a&nbsp;omegou každé fungující spolupráce.</p>
           </div>
         </div>
       </div>
@@ -83,33 +132,41 @@
   <!-- /BENEFITS -->
 
   <!-- SERVICES -->
-  <section class="bs-section services-section bg-blue-v2">
+  <section class="bs-section services-section bg-blue-v2" id="services">
     <div class="container">
-      <h2>Služby, se kterými se rád poperu</h2>
-      <p>Ať už chcete postavit nový e-shop nebo jen upravit stávající, jsem tu pro vás.</p>
-      <div class="row box-items-wrapper">
-        <div class="col-12 col-lg-4">
+      <h2 class="text-left text-xl-left text-md-center">Výběr dobrého <br class="d-block d-lg-none" />partnera
+        je&nbsp;základ</h2>
+      <p class="text-left text-xl-left text-md-center">Ať už chcete postavit nový e-shop <br
+          class="d-block d-lg-none" />nebo&nbsp;jen&nbsp;upravit stávající, jsem tu pro&nbsp;vás.</p>
+      <div class="row box-items-wrapper justify-content-md-center">
+        <div class="col-12 col-xl-4 col-lg-5 col-md-6 h-lg-100">
           <div class="box-item box-shadow-v1 mt-2 mt-md-0">
             <i class="icofont-bullseye color-lightorange"></i>
-            <h2 class="color-lightorange">E-shop na míru</h2>
-            <p>Odlište se od konkurence a dejte svým stránkám atraktivní a funkční vzhled.</p>
-            <p class="mt-4 mb-0"><a href="#contact" class="link-red form-focus" data-scroll>Chci e-shop na míru <i class="icofont-rounded-right"></i></a></p>
+            <h2 class="color-lightorange mb-0">E-shop na&nbsp;míru</h2>
+            <p class="price-details color-lightorange">Od 6 000 Kč/projekt</p>
+            <p>Odlište se&nbsp;od&nbsp;konkurence a&nbsp;dejte svým stránkám atraktivní a&nbsp;funkční vzhled.</p>
+            <p class="mt-4 mb-0"><a href="#modal-contact" data-toggle="modal" data-target="#modal-contact"
+                class="link-red" data-scroll>Chci e-shop na míru <i class="icofont-rounded-right"></i></a></p>
           </div>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-xl-4 col-lg-5 col-md-6 mt-md-0 h-lg-100">
           <div class="box-item box-shadow-v1 mt-md-0">
             <i class="icofont-code-alt color-lightgreen"></i>
-            <h2 class="color-lightgreen">Programování a kódování</h2>
-            <p>Nelimitujte se. Rozšířím vám e-shop o jakoukoli individuální úpravu.</p>
-            <p class="mt-4 mb-0"><a href="#contact" class="link-red form-focus" data-scroll>Hledám kodéra <i class="icofont-rounded-right"></i></a></p>
+            <h2 class="color-lightgreen mb-0">Programování a kódování</h2>
+            <p class="price-details color-lightgreen">800 Kč/hodina práce</p>
+            <p>Nelimitujte se. Rozšířím vám e-shop o&nbsp;jakoukoli individuální úpravu.</p>
+            <p class="mt-4 mb-0"><a href="#modal-contact" data-toggle="modal" data-target="#modal-contact"
+                class="link-red" data-scroll>Hledám kodéra <i class="icofont-rounded-right"></i></a></p>
           </div>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-xl-4 col-lg-5 col-md-6 mt-md-4 mt-xl-0 h-lg-100">
           <div class="box-item box-shadow-v1 mt-md-0">
             <i class="icofont-heart color-lightblue"></i>
-            <h2 class="color-lightblue">Školení a konzultace</h2>
-            <p>Ušetřete si čas při hledání řešení a nechte si poradit.</p>
-            <p class="mt-4 mb-0"><a href="#contact" class="link-red form-focus" data-scroll>Potřebuju poradit <i class="icofont-rounded-right"></i></a></p>
+            <h2 class="color-lightblue mb-0">Školení a konzultace</h2>
+            <p class="price-details color-lightblue">Individuálně dle potřeby</p>
+            <p>Ušetřete si&nbsp;čas při&nbsp;hledání řešení a&nbsp;nechte si&nbsp;poradit.</p>
+            <p class="mt-4 mb-0"><a href="#modal-contact" data-toggle="modal" data-target="#modal-contact"
+                class="link-red" data-scroll>Potřebuju poradit <i class="icofont-rounded-right"></i></a></p>
           </div>
         </div>
       </div>
@@ -120,8 +177,9 @@
   <!-- REFERENCES -->
   <section class="bs-section references-section pb-lg">
     <div class="container text-center">
-      <h2 class="text-left text-md-center">Projekty, se kterými už jsem se popral</h2>
-      <p class="text-left text-md-center">Nahlédněte na vybrané e-shopy, se kterými spolupracuji.</p>
+      <h2 class="text-left text-md-center">Projekty, které mi&nbsp;prošly pod&nbsp;rukama </h2>
+      <p class="text-left text-md-center">Koukněte na&nbsp;vybrané e-shopy, <br
+          class="d-block d-md-none" />se&nbsp;kterými spolupracuji.</p>
       <!-- Slider main container -->
       <!-- Swiper -->
       <div class="swiper references-swiper mt-5">
@@ -132,37 +190,54 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="box-item box-shadow-v1 text-left">
-              <img src="assets/images/zafax-shop.png" width="100%">
+              <img data-src="assets/images/webp/zafax-shop.webp" alt="Ukázka práce - zafax.shop" width="100%"
+                class="swiper-lazy">
+              <div class="swiper-lazy-preloader"></div>
               <div class="box-inner-content">
-                <h2>Tvorba e-shopu na míru s vlastním designem</h2>
-                <p>Pro Zafax jsem vytvořil e-shop na míru, který běží na Shoptetu. Na základě UX návrhu jsem vytvořil vlastní design a dodělal chybějící funkcionality.</p>
+                <h2>Tvorba e-shopu na&nbsp;míru s&nbsp;vlastním designem</h2>
+                <p>Pro Zafax jsem vytvořil e-shop na&nbsp;míru, který běží na&nbsp;Shoptetu. Na základě UX návrhu jsem
+                  vytvořil vlastní design a&nbsp;dodělal chybějící funkcionality.</p>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="box-item box-shadow-v1 text-left">
-              <img src="assets/images/shisharium.png" width="100%">
+              <img data-src="assets/images/webp/shisharium.webp" alt="Ukázka práce - shisharium.cz" width="100%"
+                class="swiper-lazy">
+              <div class="swiper-lazy-preloader"></div>
               <div class="box-inner-content">
-                <h2>Úprava šablony a rozšíření registrace o validaci dokladu</h2>
-                <p>Do e-shopu Shisharium.cz jsem doprogramoval jednu z hlavních funkcí - rozšíření registrace o ověření dokladu totožnosti. Dalšími úpravami postupně vytváříme UX vychytávky, které pomáhají zvyšovat průchodnost e-shopu a zvýšení konverzí. </p>
+                <h2>Úprava šablony a&nbsp;rozšíření registrace o&nbsp;validaci dokladu</h2>
+                <p>Do e-shopu Shisharium.cz jsem doprogramoval jednu z&nbsp;hlavních funkcí - rozšíření registrace
+                  o&nbsp;ověření dokladu totožnosti. Dalšími úpravami postupně vytváříme UX&nbsp;vychytávky,
+                  které&nbsp;pomáhají zvyšovat průchodnost e-shopu a&nbsp;zvýšení konverzí.</p>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="box-item box-shadow-v1 text-left">
-              <img src="assets/images/ospaly-medved.png" width="100%">
+              <img data-src="assets/images/webp/ospaly-medved.webp" alt="Ukázka práce - ospaly-medved.cz" width="100%"
+                class="swiper-lazy">
+              <div class="swiper-lazy-preloader"></div>
               <div class="box-inner-content">
-                <h2>Úprava šablony a nasazení floating lead collectoru</h2>
-                <p>Pro e-shop ospaly-medved.cz jsem připravil formulář na sběr telefonních čísel. Zákazníci, kteří nemají čas dokončit nákup nebo narazí na problém, zanechají tzv. lead. Následně je firma může kontaktovat a dokončit s nimi objednávku po telefonu. Postupně také ladíme design a UX e-shopu. S klientem jsme spolupracovali už čtyřech projektech.</p>
+                <h2>Úprava šablony a&nbsp;nasazení floating lead collectoru</h2>
+                <p>Pro e-shop ospaly-medved.cz jsem připravil formulář na&nbsp;sběr telefonních čísel. Zákazníci,
+                  kteří&nbsp;nemají čas dokončit nákup nebo&nbsp;narazí na&nbsp;problém, zanechají tzv. lead. Následně
+                  je&nbsp;firma může kontaktovat a&nbsp;dokončit s&nbsp;nimi objednávku po&nbsp;telefonu. Postupně také
+                  ladíme design a&nbsp;UX&nbsp;e-shopu. S&nbsp;klientem jsme spolupracovali už&nbsp;na&nbsp;čtyřech
+                  projektech.</p>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="box-item box-shadow-v1 text-left">
-              <img src="assets/images/t-mobile.png" width="100%">
+              <img data-src="assets/images/webp/t-mobile.webp" alt="Ukázka práce - t-mobile.cz" width="100%"
+                class="swiper-lazy">
+              <div class="swiper-lazy-preloader"></div>
               <div class="box-inner-content">
-                <h2>Úprava webových stránek a optimalizace pro vyhledávače</h2>
-                <p>Už několik let se v T-Mobilu podílím na tvorbě nových stránek a meziročně zvyšuji organický traffic a pozice stránek ve vyhledávačích.</p>
+                <h2>Úprava webových stránek a&nbsp;optimalizace pro&nbsp;vyhledávače</h2>
+                <p>Už několik let se&nbsp;v&nbsp;T-Mobilu podílím na&nbsp;tvorbě nových stránek a&nbsp;optimalizaci pro
+                  vyhledávače. Se&nbsp;strategickými úpravami tak&nbsp;meziročně zvyšuji organický traffic a&nbsp;pozice
+                  stránek ve&nbsp;vyhledávačích.</p>
               </div>
             </div>
           </div>
@@ -178,12 +253,14 @@
   <section class="bs-section reviews-section bg-blue-v2" id="reviews">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-8 mx-auto">
-          <h2>Pár slov od mých klientů</h2>
-          <p>Přesvědčte se sami, jak hodnotí mou práci.</p>
+        <div class="col-12 col-xl-8 col-lg-10 mx-auto">
+          <h2>Pár slov od&nbsp;mých klientů</h2>
+          <p>Přesvědčte se&nbsp;sami, jak&nbsp;hodnotí mou práci <a href="https://www.shoptet.cz/" target="_blank"
+              class="link-underline text-nowrap">e-shopaři z&nbsp;Shoptetu</a>.</p>
           <div class="box-items-wrapper">
-            <a href="https://partneri.shoptet.cz/profesionalove/slusarcik-miroslav/" target="_blank" class="shoptet-badge">
-              <img src="assets/images/shoptet_certifikat.png" alt="Ověřeno Shoptetem">
+            <a href="https://partneri.shoptet.cz/profesionalove/slusarcik-miroslav/" target="_blank"
+              class="shoptet-badge">
+              <img src="assets/images/webp/shoptet_certifikat.webp" alt="Jsem partner ověřený Shoptetem">
             </a>
             <div class="box-item box-shadow-v1">
               <!-- Swiper -->
@@ -195,28 +272,43 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <p class="font-italic">
-                      Míra pre nás realizoval celkom zložitú úpravu v detaile produktu, s ktorou sme veľmi spokojní. Skvelá kounikácia a nápady. Rozumie nielen kódovaniu, ale aj UX. Veľmi cením proaktivitu a doladení detailov, ktoré mňa nenapadli a aj následný servis pri rozšrování úprav. Určitě to nie je naša posledná spolupráca. Po úprave vidíme reálne zvýšené percenta konverzií!
+                      Míra pre nás realizoval celkom zložitú úpravu v detaile produktu, s ktorou sme veľmi spokojní.
+                      Skvelá kounikácia a nápady. Rozumie nielen kódovaniu, ale aj UX. Veľmi cením proaktivitu a
+                      doladení detailov, ktoré mňa nenapadli a aj následný servis pri rozšrování úprav. Určitě to nie je
+                      naša posledná spolupráca. Po úprave vidíme reálne zvýšené percenta konverzií!
                     </p>
-                    <p class="mt-4"><strong class="font-medium">Igor Randa</strong>, <a href="https://www.ospalymedved.cz/">ospaly-medved.cz</a> & <a href="https://www.premiove-matrace.cz/">premiove-matrace.cz</a></p>
+                    <p class="mt-4"><strong class="font-medium">Igor Randa</strong>, <a
+                        href="https://www.ospalymedved.cz/" class="link-underline">ospaly-medved.cz</a> & <a
+                        href="https://www.premiove-matrace.cz/" class="link-underline">premiove-matrace.cz</a></p>
                   </div>
                   <div class="swiper-slide">
                     <p class="font-italic">
-                      Musím říci, že jsem nemohla mít šťastnější ruku při výběru webprogramátora na můj nově vznikající e-shop Tuláčkův svět. Bezproblémová komunikace, vše bylo ještě před deadlinem. Vše podle mého přání (dokonce někdy i s přidanou hodnotou). Míra skvěle reaguje, nebojí se ani různých vychytávek a své práci očividně rozumí. Naše spolupráce trvá nadále a věřím, že jen tak neskončí. Já k tomu nemám důvod.
+                      Musím říci, že jsem nemohla mít šťastnější ruku při výběru webprogramátora na můj nově vznikající
+                      e-shop Tuláčkův svět. Bezproblémová komunikace, vše bylo ještě před deadlinem. Vše podle mého
+                      přání (dokonce někdy i s přidanou hodnotou). Míra skvěle reaguje, nebojí se ani různých vychytávek
+                      a své práci očividně rozumí. Naše spolupráce trvá nadále a věřím, že jen tak neskončí. Já k tomu
+                      nemám důvod.
                     </p>
-                    <p class="mt-4"><strong class="font-medium">Hana Šormová</strong>, <a href="https://www.tulackuvsvet.cz/">tulackuvsvet.cz</a></p>
+                    <p class="mt-4"><strong class="font-medium">Hana Šormová</strong>, <a
+                        href="https://www.tulackuvsvet.cz/" class="link-underline">tulackuvsvet.cz</a></p>
                   </div>
                   <div class="swiper-slide">
                     <p class="font-italic">
-                      Profesionální, ale zároveň přátelský přístup. Naše požadavky jsme projednali do detailu, aby výstup odpovídal našim potřebám. To, co jiní programátoři považovali za nemožné zvládl pan Slusarčík levou zadní. S jeho službami jsem velmi spokojen a mohu jen doporučit.
+                      Profesionální, ale zároveň přátelský přístup. Naše požadavky jsme projednali do detailu, aby
+                      výstup odpovídal našim potřebám. To, co jiní programátoři považovali za nemožné zvládl pan
+                      Slusarčík levou zadní. S jeho službami jsem velmi spokojen a mohu jen doporučit.
                     </p>
-                    <p class="mt-4"><strong class="font-medium">Martin Bílek</strong>, <a href="https://www.tattoosonclothes.cz/">tattoosonclothes.cz</a></p>
+                    <p class="mt-4"><strong class="font-medium">Martin Bílek</strong>, <a
+                        href="https://www.tattoosonclothes.cz/" class="link-underline">tattoosonclothes.cz</a></p>
                   </div>
                   <div class="swiper-slide">
-                    <h3 class="mb-0 mt-4">Příště tu můžete být i vy.</h3>
+                    <h3 class="mb-0 mt-4">Příště tu můžete být i&nbsp;vy.</h3>
                     <p class="mt-3">
-                      <a class="btn btn-primary btn-md form-focus" href="#contact" data-scroll>Kontaktujte mě</a>
+                      <a class="btn btn-primary btn-md focus-link" href="#contact" data-scroll>Kontaktujte mě</a>
                     </p>
-                    <p class="font-small font-light mt-2">..nebo si prohlédněte <a href="https://partneri.shoptet.cz/profesionalove/slusarcik-miroslav/#comments" target="_blank" class="link-underline">další hodnocení na Shoptetu</a>.</p>
+                    <p class="font-small font-light mt-2">…nebo&nbsp;si&nbsp;prohlédněte <a
+                        href="https://partneri.shoptet.cz/profesionalove/slusarcik-miroslav/#comments" target="_blank"
+                        class="link-underline">další hodnocení na&nbsp;Shoptetu</a>.</p>
                   </div>
                 </div>
               </div>
@@ -233,22 +325,31 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8 mx-auto">
-          <h2 class="text-left text-md-center">Připraveni na spolupráci?</h2>
-          <p class="text-left text-md-center">Vyplňte své údaje a já se s vámi nezávazně spojím.</p>
-          <form method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMz67y20ZLUU1KUOfTn8r9smwcRZJBYOS_QSyK82otdHZyKw/formResponse" class="mt-5 position-relative ajax-form" data-autosubmit="" autocomplete="off">
-            <img src="assets/images/prvni_krok.png" class="make-first-step" />
+          <h2 class="text-left text-md-center">Připraveni na&nbsp;spolupráci?</h2>
+          <p class="text-left text-md-center">Vyplňte své údaje a já se&nbsp;s&nbsp;vámi nezávazně&nbsp;spojím.</p>
+          <form method="POST"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMz67y20ZLUU1KUOfTn8r9smwcRZJBYOS_QSyK82otdHZyKw/formResponse"
+            class="mt-5 position-relative ajax-form" data-autosubmit="" autocomplete="off">
+            <img src="assets/images/webp/loading.webp" data-src="assets/images/webp/prvni_krok.webp"
+              alt="Udělejte první krok na cestě za e-shopem na míru" class="make-first-step lazyload" />
             <div class="row">
               <div class="col-12 col-lg-6">
                 <label for="entry.1140674996">Jméno</label>
-                <input type="text" name="entry.1140674996" class="focus-on-me" placeholder="Zadejte své jméno…" oninvalid="this.setCustomValidity('Zadejte své jméno nebo název firmy')" oninput="this.setCustomValidity('')" required />
+                <input type="text" name="entry.1140674996" class="focus-on-me" placeholder="Zadejte své jméno…"
+                  oninvalid="this.setCustomValidity('Zadejte své jméno nebo název firmy')"
+                  oninput="this.setCustomValidity('')" required />
               </div>
               <div class="col-12 col-lg-6">
                 <label for="entry.1682784041">E-mail</label>
-                <input type="email" name="entry.1682784041" placeholder="Zadejte svůj e-mail…" oninvalid="this.setCustomValidity('Zadejte svůj e-mail')" oninput="this.setCustomValidity('')" required />
+                <input type="email" name="entry.1682784041" placeholder="Zadejte svůj e-mail…"
+                  oninvalid="this.setCustomValidity('Zadejte svůj e-mail')" oninput="this.setCustomValidity('')"
+                  required />
               </div>
               <div class="col-12">
-                <label for="entry.789164851">Měl bych vědět něco dalšího? <span class="color-lightgrey font-regular font-small">(nepovinné)</span></label>
-                <textarea type="text" name="entry.789164851" rows="4" placeholder="Klidně nechte pole prázdné a probereme to později…"></textarea>
+                <label for="entry.789164851">Měl bych vědět něco dalšího? <span
+                    class="color-lightgrey font-regular font-small">(nepovinné)</span></label>
+                <textarea type="text" name="entry.789164851" rows="4"
+                  placeholder="Klidně nechte pole prázdné a probereme to později…"></textarea>
                 <div class="submit-button mt-4 pt-2 text-center">
                   <input type="submit" value="Odeslat formulář" class="btn btn-primary btn-lg" />
                 </div>
@@ -261,7 +362,7 @@
             </div>
             <div class="content">
               <h2>Skvělá práce!</h2>
-              <p>Co nevidět se vám ozvu a probereme společně vaše představy.</p>
+              <p>Co nevidět se&nbsp;vám ozvu a&nbsp;probereme společně vaše&nbsp;představy.</p>
             </div>
           </div>
         </div>
@@ -274,8 +375,12 @@
   <section class="bs-section pt-0">
     <div class="container">
       <a href="https://www.instagram.com/jaknaeshop/" target="_blank">
-        <img src="assets/images/instagram_promo_banner.png" alt="" class="d-none d-md-block max-w-100" />
-        <img src="assets/images/instagram_promo_xs.png" alt="" class="d-block d-md-none max-w-100" />
+        <img src="assets/images/webp/loading.webp" data-src="assets/images/webp/instagram_promo_banner.webp"
+          alt="Banner, který vede na Instagram @jaknaeshop" class="d-none d-md-block max-w-100 lazyload" />
+        <img src="assets/images/webp/loading.webp" data-src="assets/images/webp/instagram_promo_xs.webp"
+          alt="Banner, který vede na Instagram @jaknaeshop" class="d-block d-md-none max-w-100 lazyload" />
+        <span class="d-none">Každý měsíc se svými klienty a sledujícmi sdílíp tipy, které pomáhájí posouvat jejich
+          podnikání dál.</span>
       </a>
     </div>
   </section>
@@ -286,16 +391,19 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-3 order-3 order-md-1 mt-1 mt-md-0">
-          <p><i class="icofont-copyright"></i> Miroslav Slusarčík | <a href="https://www.instagram.com/jaknaeshop/" class="link-red" target="_blank">@jaknaeshop</a></p>
+          <p><i class="icofont-copyright"></i> Miroslav Slusarčík | <a href="https://www.instagram.com/jaknaeshop/"
+              class="link-red" target="_blank">@jaknaeshop</a></p>
         </div>
         <div class="col-12 col-lg-6 order-1 order-md-2">
           <p class="contacts">
             <span class="d-block d-md-inline-block mr-md-2">
-              <i class="icofont-smart-phone"></i> <a href="tel:+420731326653" class="link-underline">+420 731 326 653</a>
+              <i class="icofont-smart-phone"></i> <a href="tel:+420731326653" class="link-underline">+420 731 326
+                653</a>
             </span>
             <span class="d-none d-md-inline-block">|</span>
             <span class="d-block d-md-inline-block ml-md-2">
-              <i class="icofont-envelope"></i> <a href="mailto:miroslav@slusarcik.cz" class="link-underline">miroslav@slusarcik.cz</a>
+              <i class="icofont-envelope"></i> <a href="mailto:miroslav@slusarcik.cz"
+                class="link-underline">miroslav@slusarcik.cz</a>
             </span>
           </p>
         </div>
@@ -306,10 +414,88 @@
     </div>
   </footer>
   <!-- /FOOTER -->
-  
+
+  <!-- MODAL -->
+  <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body contact-section p-4">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 class="text-left text-md-center">Už zbývá jen chvilka…</h2>
+          <p class="text-left text-md-center">Do několika hodin se&nbsp;s&nbsp;vámi nezávazně&nbsp;spojím.</p>
+          <form method="POST"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMz67y20ZLUU1KUOfTn8r9smwcRZJBYOS_QSyK82otdHZyKw/formResponse"
+            class="mt-4 position-relative ajax-form" data-autosubmit="">
+            <div class="row">
+              <div class="col-12 col-lg-12">
+                <label for="entry.1140674996">Jméno</label>
+                <input type="text" name="entry.1140674996" placeholder="Zadejte své jméno…"
+                  oninvalid="this.setCustomValidity('Zadejte své jméno nebo název firmy')"
+                  oninput="this.setCustomValidity('')" required />
+              </div>
+              <div class="col-12 col-lg-12">
+                <label for="entry.1682784041">E-mail</label>
+                <input type="email" name="entry.1682784041" placeholder="Zadejte svůj e-mail…"
+                  oninvalid="this.setCustomValidity('Zadejte svůj e-mail')" oninput="this.setCustomValidity('')"
+                  required />
+              </div>
+              <div class="col-12">
+                <div class="submit-button mt-2 mb-3 pt-2 text-center">
+                  <input type="submit" value="Odeslat formulář" class="btn btn-primary btn-lg" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="form-success hidden">
+            <div class="icon">
+              <i class="icofont-check-circled"></i>
+            </div>
+            <div class="content">
+              <h2>Skvělá práce!</h2>
+              <p>Co nevidět se&nbsp;vám ozvu a&nbsp;probereme společně vaše&nbsp;představy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /MODAL -->
+
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGLMG6G" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <!-- LazyLoading -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <!-- Swiper -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Smoothscroll -->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- Lead Collector -->
+  <script src="assets/js/min/leadCollector.min.js"></script>
+  <!-- Main Template -->
   <script src="assets/js/min/main.min.js"></script>
+  <!-- Events -->
+  <script type="text/javascript">
+    $("form").one('submit', function () {
+      console.log("Contact sent!");
+      fbq('track', 'Contact');
+    });
+  </script>
 </body>
+
 </html>
