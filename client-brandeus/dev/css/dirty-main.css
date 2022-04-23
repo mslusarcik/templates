@@ -793,7 +793,7 @@ a.btn {
       position: relative;
       width: 85px;
       height: 85px;
-      background-image: url(/assets/images/play-button.svg);
+      background-image: url(../../../assets/images/play-button.svg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -818,7 +818,7 @@ a.btn {
         -webkit-animation: pulsate-data 3s ease-out .5s infinite;
         animation: pulsate-data 3s ease-out .5s infinite; }
     .hero-section .play-video-overlay .play-button-wrapper .play-button:hover {
-      background-image: url(/assets/images/play-button-hover.svg); }
+      background-image: url(../../../assets/images/play-button-hover.svg); }
       .hero-section .play-video-overlay .play-button-wrapper .play-button:hover::after {
         border: 2px solid #252525; }
 
