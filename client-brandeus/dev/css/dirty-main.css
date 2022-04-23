@@ -793,7 +793,7 @@ a.btn {
       position: relative;
       width: 85px;
       height: 85px;
-      background-image: url(../../../assets/images/play-button.svg);
+      background-image: url(../../../assets/images/play-button.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -818,7 +818,7 @@ a.btn {
         -webkit-animation: pulsate-data 3s ease-out .5s infinite;
         animation: pulsate-data 3s ease-out .5s infinite; }
     .hero-section .play-video-overlay .play-button-wrapper .play-button:hover {
-      background-image: url(../../../assets/images/play-button-hover.svg); }
+      background-image: url(../../../assets/images/play-button-hover.png); }
       .hero-section .play-video-overlay .play-button-wrapper .play-button:hover::after {
         border: 2px solid #252525; }
 
@@ -1018,7 +1018,7 @@ section.promo-banner {
 
 @media (min-width: 768px) {
   .modal-wrapper {
-    min-width: 45em; } }
+    max-width: 45em; } }
 
 .modal-transition {
   transition: all 0.3s 0.12s;
