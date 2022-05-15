@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+}
+
+hr {
+  border-width: 3px;
+}
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+.bold {
+  font-weight: 700;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-medium-italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.fill-primary {
+  fill: $primary;
+}
+
+.color-primary {
+  color: $primary;
+}
+
+.border-primary {
+  border-color: $primary;
+}
+
+button:focus-visible,
+button:focus {
+  outline: 0;
+}
+
+ul, ol {
+  padding-left: 0.9375rem;
+}
+
+p {
+  margin-bottom: 0.625rem;
+}
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  margin-bottom: 1.5rem;
+  >.suffix {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}

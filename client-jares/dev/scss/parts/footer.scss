@@ -1,0 +1,33 @@
+footer {
+  background-color: #011728;
+  color: #fff;
+  padding: 30px 0;
+
+  .brand-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2rem;
+  }
+  .brand-title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    > span {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+  .brand-message {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  .brand-suffix {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .footer-section {
+    margin-top: 3rem;
+  }
+}

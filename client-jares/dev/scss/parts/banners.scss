@@ -1,0 +1,25 @@
+.main-banner {
+  height: 500px;
+  padding-top: 96px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+
+  .btn-wrapper {
+    margin-top: 4rem;
+  }
+}
+
+.section-how-it-works {
+  color: #fff;
+  background-image: url(../../../assets/images/how-it-works-mobile.png);
+  background-position: center;
+}
+
+body.type-home .main-banner {
+  background-image: url(../../../assets/images/main-banner-mobile.png);
+}
