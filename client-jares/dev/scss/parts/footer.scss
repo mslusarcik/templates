@@ -1,31 +1,51 @@
 footer {
   background-color: #011728;
   color: #fff;
-  padding: 30px 0;
+  padding: 2rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 3rem 0;
+  }
 
   .brand-image {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     margin-bottom: 2rem;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
   }
   .brand-title {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
     font-weight: 700;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-left: 1rem;
+      margin-bottom: 0;
+    }
     > span {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 400;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.25rem;
+        display: block;
+      }
     }
   }
   .brand-message {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
   }
   .brand-suffix {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 500;
+    @include media-breakpoint-up(lg) {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
   }
   .footer-section {
     margin-top: 3rem;

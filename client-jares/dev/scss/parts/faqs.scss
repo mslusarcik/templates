@@ -1,0 +1,39 @@
+.faq-card {
+  border: none;
+  .card-link {
+    &.collapsed {
+      .card-header {
+        color: #252525;
+        i {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    .card-header {
+      background: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 1.25rem;
+      color: $primary;
+      i {
+        transform: rotate(180deg);
+        transition: transform .1s ease-in-out;
+      }
+      h3 {
+        font-size: 1.05rem;
+        line-height: 1.55rem;
+        margin-right: 1.25rem;
+      }
+    }
+  }
+  .collapse {
+    .card-body {
+      padding: 1.25rem 1.25rem .5rem;  
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

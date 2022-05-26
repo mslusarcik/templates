@@ -1,0 +1,27 @@
+.alert {
+  &.alert-icon {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: .85rem;
+      font-size: 2rem;
+      @include media-breakpoint-up(lg) {
+        margin-right: .5rem;
+      }
+    }
+  }
+  &.alert-info {
+    background-color: transparent;
+    border-width: 2px;
+  }
+  &.alert-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    i {
+      font-size: 75px;
+    }
+  }
+}

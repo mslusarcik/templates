@@ -1,12 +1,37 @@
 .btn {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   padding: 10px 22px;
 }
 
 .btn-lg {
-  font-size: 18px;
-  line-height: 24px;
-  padding: 13px 30px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 0.8125rem 1.875rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.2rem;
+    padding: 0.9rem 2.25rem;
+  }
+}
+
+.btn-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.8125rem 1.875rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1rem;
+  }
+}
+
+.btn-secondary {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+
+  &:hover, &:active, &:focus {
+    background-color: #fff;
+    border-color: #fff;
+    color: #252525;
+  }
 }

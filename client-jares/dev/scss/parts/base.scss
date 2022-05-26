@@ -6,22 +6,103 @@ html, body {
   font-size: 16px;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 400;
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+}
+
+body.menu-opened {
+  overflow: hidden;
 }
 
 hr {
   border-width: 3px;
 }
 
-h1,
-h2, 
-h3,
-h4,
-h5,
-h6,
-strong,
-b,
-.bold {
-  font-weight: 700;
+h1, .h1,
+h2, .h2, 
+h3, .h3,
+h4, .h4,
+h5, .h5
+h6, .h6 {
+  font-weight: 600;
+}
+
+button:focus-visible,
+button:focus {
+  outline: 0;
+}
+
+ul, ol {
+  padding-left: 1.1rem;
+}
+
+p {
+  margin-bottom: 0.625rem;
+}
+
+p.btn-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+h1, .h1 {
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  margin-bottom: 1.5rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+  >.suffix {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+  }
+}
+
+h2, .h2 {
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  margin-bottom: 2rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin-bottom: 3.75rem;
+  }
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: .5rem;
+  }
+  >span {
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+  }
+}
+
+h4, .h4 {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+  font-weight: 600;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: .5rem;
+  }
+  >span {
+    @include media-breakpoint-up(lg) {
+      font-size: 1.1rem;
+      line-height: 1.45rem;
+    }
+  }
 }
 
 .font-regular {
@@ -37,7 +118,9 @@ b,
   font-style: italic;
 }
 
-.font-semibold {
+.font-semibold,
+strong,
+b {
   font-weight: 600;
 }
 
@@ -57,37 +140,37 @@ b,
   border-color: $primary;
 }
 
-button:focus-visible,
-button:focus {
-  outline: 0;
+.bg-blue {
+  background-color: #011728 !important;
 }
 
-ul, ol {
-  padding-left: 0.9375rem;
+.bg-grey {
+  background-color: #f7f9fa;
 }
 
-p {
-  margin-bottom: 0.625rem;
+.max-w-860 {
+  max-width: 860px;
 }
 
-h1 {
-  font-size: 1.875rem;
-  line-height: 2.375rem;
-  margin-bottom: 1.5rem;
-  >.suffix {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
+.price {
+  font-size: 1.35rem;
+  line-height: 1.65rem;
+  font-weight: 500;
+  color: $primary;
+  >.price-suffix {
+    font-size: 1rem;
+    color: #757575;
+    font-weight: 400;
   }
 }
 
-h2 {
-  font-size: 1.875rem;
-  line-height: 2.375rem;
-  margin-bottom: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
+.legal-line {
+  font-size: .75rem;
+  line-height: 1.15rem;
+  color: #999;
+  max-width: 800px;
+  margin: .85rem auto 0;
+  text-align: center;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }

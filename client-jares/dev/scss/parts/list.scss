@@ -9,13 +9,45 @@ ul.list-icons {
 
   li {
     position: relative;
-    padding-left: 1.5rem;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
+    padding-left: 2.3rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    @include media-breakpoint-up(lg) {
+      padding-left: 2.75rem;
+    }
     >i {
       position: absolute;
-      top: 8px;
+      font-size: 1.375rem;
+      top: 6px;
       left: 0;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.4rem;
+        top: 9px;
+      }
+    }
+  }
+}
+
+.social-icons-section {
+  display: flex;
+  h3 {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  ul.social-icons {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 1.25rem;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      position: relative;
+      display: inline-block;
+      margin-left: 1rem;
+      >i {
+        font-size: 36px;
+      }
     }
   }
 }
@@ -49,17 +81,25 @@ ul.vertical-progress {
       position: absolute;
       left: -68px;
       top: -2px;
-      font-size: 24px;
+      font-size: 1.2rem;
       font-weight: 700;
       line-height: 1;
       color: #252525;
+
+      @include media-breakpoint-up(lg) {
+        left: -74px;
+        top: 0;
+      }
     }
 
     .price {
       margin-bottom: 0;
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 1.2rem;
+      line-height: 2rem;
       font-weight: 500;
+      @include media-breakpoint-up(lg) {
+        margin-right: 2rem;
+      }
     }
   }
 }

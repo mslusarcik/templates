@@ -8,9 +8,20 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
+  @include media-breakpoint-up(lg) {
+    height: 696px;
+  }
+
+  h1 + p {
+    font-size:1.15rem;
+    line-height: 1.65rem;
+  }
 
   .btn-wrapper {
     margin-top: 4rem;
+    @include media-breakpoint-up(lg) {
+      margin-top: 3.4rem;
+    }
   }
 }
 
@@ -18,8 +29,41 @@
   color: #fff;
   background-image: url(../../../assets/images/how-it-works-mobile.png);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-breakpoint-up(lg) {
+    background-image: url(../../../assets/images/how-it-works-desktop.png);
+    background-attachment: fixed;
+  }
 }
 
 body.type-home .main-banner {
   background-image: url(../../../assets/images/main-banner-mobile.png);
+  @include media-breakpoint-up(lg) {
+    background-image: url(../../../assets/images/main-banner.png);
+  }
+}
+
+.promo-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 12px;
+  min-height: 300px;
+  padding: 30px;
+  background-color: $primary;
+  color: #fff;
+  @include media-breakpoint-up(lg) {
+    min-height: 240px;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
 }

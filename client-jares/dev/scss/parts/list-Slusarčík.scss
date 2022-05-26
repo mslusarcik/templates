@@ -1,0 +1,21 @@
+ul.ul-reset {
+  list-style-type: none;
+  padding-left: .5rem;
+}
+
+ul.list-icons {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    >i {
+      position: absolute;
+      top: 8px;
+      left: 0;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 section {
   padding: 4rem 0;
   position: relative;
+  @include media-breakpoint-up(lg) {
+    padding: 4.5rem 0;
+  }
 }
 
 section + section {
