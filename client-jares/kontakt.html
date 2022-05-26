@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css">
   <!-- FontAwesome -->
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/all.css">
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body class="type-home">
   <header class="bg-blue">
@@ -99,7 +101,8 @@
           <div class="promo-banner">
             <h2 class="mb-lg-0">Zarezervujte si termín <br class="d-none d-lg-block" />úvodní konzultace.</h2>
             <p class="btn-wrapper">
-              <a href="#" class="btn btn-secondary btn-md">Domluvit úvodní konzultaci <i class="far fa-chevron-right ml-2 pl-1"></i></a>
+              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jaknaeshop/konzultace'});return false;" class="btn btn-secondary btn-md">Domluvit úvodní konzultaci <i class="far fa-chevron-right ml-2 pl-1"></i></a>
+              
             </p>
           </div>
         </div>
@@ -176,5 +179,7 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Calendly -->
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 </body>
 </html>

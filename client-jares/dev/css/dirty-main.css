@@ -6772,3 +6772,6 @@ section.padding-lg {
     padding: 1.25rem 1.25rem .5rem; }
     .faq-card .collapse .card-body p:last-child {
       margin-bottom: 0; }
+
+.calendly-overlay {
+  background-color: rgba(31, 31, 31, 0.65); }
