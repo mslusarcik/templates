@@ -6162,6 +6162,13 @@ b {
 .max-w-860 {
   max-width: 860px; }
 
+.inner-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .price {
   font-size: 1.35rem;
   line-height: 1.65rem;
@@ -6552,6 +6559,7 @@ section.padding-lg {
     justify-content: space-around; } }
 
 .boxes .box-item {
+  position: relative;
   text-align: center;
   width: 100%;
   margin-top: 1.75rem; }
