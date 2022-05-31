@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ceník služeb | Kryptoinvestor Pavel Jareš</title>
+  <title>Ceník služeb | Kryptoinvestor.cz</title>
   <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css">
   <!-- FontAwesome -->
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/all.css">
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body class="type-home">
   <header class="bg-blue">
@@ -85,7 +87,7 @@
               </div>
             </div>
             <div class="price-boxes-cta">
-              <p class="text-center"><a href="#" class="btn btn-primary btn-md">Objednat balíček</a></p>
+              <p class="text-center"><a href="https://form.simpleshop.cz/lmDw/buy/" class="btn btn-primary btn-md">Objednat balíček</a></p>
             </div>
           </div>
         </div>
@@ -112,7 +114,7 @@
               </div>
             </div>
             <div class="price-boxes-cta">
-              <p class="text-center"><a href="#" class="btn btn-primary btn-md">Objednat balíček</a></p>
+              <p class="text-center"><a href="https://form.simpleshop.cz/GzGm/buy/" class="btn btn-primary btn-md">Objednat balíček</a></p>
             </div>
           </div>
         </div>
@@ -139,7 +141,7 @@
               </div>
             </div>
             <div class="price-boxes-cta">
-              <p class="text-center"><a href="#" class="btn btn-primary btn-md">Objednat balíček</a></p>
+              <p class="text-center"><a href="https://form.simpleshop.cz/bKXb/buy/" class="btn btn-primary btn-md">Objednat balíček</a></p>
             </div>
           </div>
         </div>
@@ -159,7 +161,7 @@
           <div class="promo-banner">
             <h2 class="mb-lg-0">Nejste si jisti, jaký<br /> balíček si vybrat?</h2>
             <p class="btn-wrapper">
-              <a href="kontakt.html" class="btn btn-secondary btn-md">Domluvit úvodní konzultaci <i class="far fa-chevron-right ml-2 pl-1"></i></a>
+              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kryptoinvestor-jares/uvodni-konzultace'});return false;" class="btn btn-secondary btn-md">Domluvit úvodní konzultaci <i class="far fa-chevron-right ml-2 pl-1"></i></a>
             </p>
           </div>
         </div>
@@ -220,7 +222,7 @@
           <div class="d-lg-flex align-items-lg-center">
             <img src="assets/images/logo.png" width="45" height="45" alt="Logo Pavla Jareše - Odborníka na krypotoměny" class="brand-image">
             <h2 class="brand-title">
-              Pavel Jareš<span class="d-lg-none">,</span> <span>Kryptoinvestor</span>
+              Ing. Pavel Jareš<span class="d-lg-none">,</span> <span>Kryptoinvestor</span>
             </h2>
           </div>
         </div>  
@@ -238,7 +240,7 @@
         <div class="col-12 col-lg-6 footer-section">
           <h3>Kontaktní informace</h3>
           <ul class="list-icons">
-            <li><i class="fas fa-user color-primary"></i> Pavel Jareš, kryptoměnový investor</li>
+            <li><i class="fas fa-user color-primary"></i> Ing. Pavel Jareš, kryptoměnový investor</li>
             <li><i class="fas fa-phone-volume color-primary"></i> +420 603 809 826</li>
             <li><i class="fas fa-envelope color-primary"></i> jares@kryptoinvestor.cz</li>
             <li><i class="fas fa-map-marker-alt color-primary"></i> V Olšinách 2300/75, 100 00 Praha 10</li>
@@ -260,10 +262,14 @@
           <h3>Sledujte mě na:</h3>
           <ul class="social-icons">
             <li>
-              <i class="fab fa-linkedin color-primary"></i>
+              <a href="https://www.linkedin.com/in/paveljares/" target="_blank">
+                <i class="fab fa-linkedin color-primary"></i>
+              </a>
             </li>
             <li>
-              <i class="fab fa-twitter-square color-primary"></i>
+              <a href="https://twitter.com/jarespavel" target="_blank">
+                <i class="fab fa-twitter-square color-primary"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -280,5 +286,7 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Calendly -->
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 </body>
 </html>

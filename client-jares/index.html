@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hlavní stránka | Kryptoinvestor Pavel Jareš</title>
+  <title>Hlavní stránka | Kryptoinvestor.cz</title>
   <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css">
   <!-- FontAwesome -->
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/all.css">
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body class="type-home">
   <header>
@@ -182,7 +184,7 @@
           <img src="assets/images/seznamte-se-desktop.png" alt="Pavel Jareš - Kryptoinvestor" class="mx-auto d-none d-lg-block w-100 mb-4 pb-1">
         </div>
         <div class="col-12 col-lg-6">
-          <h3 class="mb-4 mb-lg-2">Pavel Jareš, Kryptoinvestor<br/><span class="font-medium-italic">Certified Blockchain Expert</span></h3>
+          <h3 class="mb-4 mb-lg-2">Ing. Pavel Jareš, Kryptoinvestor<br/><span class="font-medium-italic">Certified Blockchain Expert</span></h3>
           <p class="mb-4 mb-lg-2">
             V oblasti blockchainu a kryptoměn se pohybuji od roku 2017. Za tu dobu jsem získal bohaté zkušenosti s tvorbou investičních strategií do kryptoměn a optimálních řešení pro zajištění pasivních příjmů.
           </p>
@@ -326,14 +328,14 @@
               </p>
             </li>
             <li>
-              <h3>Poskytnutí vybraných služeb <span class="float-lg-right color-primary text-right price d-none d-lg-inline-block">placená</span></h3>
+              <h3>Poskytnutí vybraných služeb <span class="float-lg-right color-primary text-right price d-none d-lg-inline-block">placené</span></h3>
               <p>
                 Po opřipomínkování návrhu si&nbsp;odsouhlasíme celkový rozsah poradenských 
                 služeb, domluvíme harmonogram schůzek a&nbsp;přejdeme k&nbsp;praktickému plnění 
                 vašich investičních cílů.
               </p>
               <p class="color-primary text-right price d-lg-none">
-                placená
+                placené
               </p>
             </li>
             <li>
@@ -349,7 +351,7 @@
             </li>
           </ul>
           <p class="text-center mt-5 pt-3">
-            <a href="kontakt.html" class="btn btn-lg btn-primary">Chci úvodní konzultaci zdarma</a>
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kryptoinvestor-jares/uvodni-konzultace'});return false;" class="btn btn-lg btn-primary">Chci úvodní konzultaci zdarma <i class="far fa-chevron-right ml-2 pl-1"></i></a>
           </p>
         </div>
       </div>
@@ -379,7 +381,26 @@
             <li>Typické otázky a odpovědi</li>
           </ol>
           <p class="text-center text-lg-left mt-5">
-            <a href="#TODO" class="btn btn-lg btn-primary">Objednat e-knihu zdarma</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#objednatEbook">
+              Objednat e-knihu zdarma
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="objednatEbook" tabindex="-1" role="dialog" aria-labelledby="objednatEbook" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">E-kniha - Úvod do kryptoměn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="f-1-43c2cd496486bcc27217c3e790fb4088"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </p>
         </div>
       </div>
@@ -395,7 +416,7 @@
           <div class="d-lg-flex align-items-lg-center">
             <img src="assets/images/logo.png" width="45" height="45" alt="Logo Pavla Jareše - Odborníka na krypotoměny" class="brand-image">
             <h2 class="brand-title">
-              Pavel Jareš<span class="d-lg-none">,</span> <span>Kryptoinvestor</span>
+              Ing. Pavel Jareš<span class="d-lg-none">,</span> <span>Kryptoinvestor</span>
             </h2>
           </div>
         </div>  
@@ -413,7 +434,7 @@
         <div class="col-12 col-lg-6 footer-section">
           <h3>Kontaktní informace</h3>
           <ul class="list-icons">
-            <li><i class="fas fa-user color-primary"></i> Pavel Jareš, kryptoměnový investor</li>
+            <li><i class="fas fa-user color-primary"></i> Ing. Pavel Jareš, kryptoměnový investor</li>
             <li><i class="fas fa-phone-volume color-primary"></i> +420 603 809 826</li>
             <li><i class="fas fa-envelope color-primary"></i> jares@kryptoinvestor.cz</li>
             <li><i class="fas fa-map-marker-alt color-primary"></i> V Olšinách 2300/75, 100 00 Praha 10</li>
@@ -435,10 +456,14 @@
           <h3>Sledujte mě na:</h3>
           <ul class="social-icons">
             <li>
-              <i class="fab fa-linkedin color-primary"></i>
+              <a href="https://www.linkedin.com/in/paveljares/" target="_blank">
+                <i class="fab fa-linkedin color-primary"></i>
+              </a>
             </li>
             <li>
-              <i class="fab fa-twitter-square color-primary"></i>
+              <a href="https://twitter.com/jarespavel" target="_blank">
+                <i class="fab fa-twitter-square color-primary"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -455,5 +480,15 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Calendly -->
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+  <!-- EcoMail form -->
+  <script>
+    (function (w,d,s,o,f,js,fjs) {
+        w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = '1-43c2cd496486bcc27217c3e790fb4088'; js.dataset.a = 'kryptoinvestor'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+    }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
+</script>
 </body>
 </html>

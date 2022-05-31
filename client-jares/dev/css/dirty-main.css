@@ -6150,6 +6150,9 @@ b {
 .color-primary {
   color: #f8440d; }
 
+.color-red {
+  color: #F61F1F; }
+
 .border-primary {
   border-color: #f8440d; }
 
@@ -6401,6 +6404,9 @@ body.type-home .main-banner {
     border-color: #fff;
     color: #252525; }
 
+.ec-v-form-submit button {
+  padding: 0.8125rem 1.875rem !important; }
+
 footer {
   background-color: #011728;
   color: #fff;
@@ -6487,7 +6493,7 @@ ul.list-icons {
       position: relative;
       display: inline-block;
       margin-left: 1rem; }
-      .social-icons-section ul.social-icons li > i {
+      .social-icons-section ul.social-icons li i {
         font-size: 36px; }
 
 ul.vertical-progress {
@@ -6553,6 +6559,10 @@ section.padding-mmd {
 
 section.padding-lg {
   padding: 6rem 0; }
+
+@media (min-width: 992px) {
+  section.fill-whole-page {
+    min-height: calc(100vh - 704px); } }
 
 @media (min-width: 992px) {
   .boxes.boxes-row {
@@ -6780,3 +6790,32 @@ section.padding-lg {
 
 .calendly-overlay {
   background-color: rgba(31, 31, 31, 0.65); }
+
+.form-success {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-left: 8px solid #28a745;
+  border-radius: 6px;
+  transition: visibility 0s, opacity 0.350s linear;
+  margin-top: 35px;
+  padding-top: 0.85rem;
+  padding-bottom: 0.55rem;
+  display: none; }
+  .form-success .icon {
+    padding: 0 1.25rem 0 1rem; }
+    .form-success .icon i {
+      font-size: 2.5rem;
+      color: #28a745; }
+  .form-success .content {
+    flex-basis: 100%; }
+    .form-success .content h2 {
+      margin-bottom: 0;
+      font-size: 1.35rem;
+      line-height: 1.65rem; }
+    .form-success .content p {
+      font-size: 1.15rem;
+      margin-top: 0; }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt | Kryptoinvestor Pavel Jareš</title>
+  <title>Kontakt | Kryptoinvestor.cz</title>
   <link rel="stylesheet" type="text/css" href="assets/css/min/main.min.css">
   <!-- FontAwesome -->
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/all.css">
@@ -66,27 +66,38 @@
       <p class="text-center h4 mb-5">Nechte mi na sebe kontakt. Ozvu se vám do&nbsp;24&nbsp;hodin.</p>
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
-          <form class="form">
+          <form method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWoY1MPP3fOrFfnu1em6dJq8pBTXV8NamI95MzcXaPlKeZjw/formResponse"  class="ajax-form" data-autosubmit="" autocomplete="off">
             <div class="form-group">
-              <label for="name" class="formbuilder-text-label">Jméno a příjmení</label>
-              <input type="text" class="form-control" name="name" access="false">
+              <label for="name" class="formbuilder-text-label">Jméno a příjmení<span class="pl-1 color-red">*</span></label>
+              <input type="text" name="entry.423002453" class="form-control" oninvalid="this.setCustomValidity('Zadejte své jméno')" oninput="this.setCustomValidity('')" required="">
             </div>
             <div class="form-group">
-              <label for="phone" class="formbuilder-text-label">Telefon</label>
-              <input type="tel" class="form-control" name="phone" access="false">
+              <label for="phone" class="formbuilder-text-label">Telefon<span class="pl-1 color-red">*</span></label>
+              <input type="tel" name="entry.541712406" class="form-control" oninvalid="this.setCustomValidity('Zadejte své číslo')" oninput="this.setCustomValidity('')" required="">
             </div>
             <div class="form-group">
-              <label for="email" class="formbuilder-text-label">E-mail</label>
-              <input type="email" class="form-control" name="email" access="false">
+              <label for="email" class="formbuilder-text-label">E-mail<span class="pl-1 color-red">*</span></label>
+              <input type="email" name="entry.1764146391" class="form-control" oninvalid="this.setCustomValidity('Zadejte svůj e-mail')" oninput="this.setCustomValidity('')" required="">
             </div>
             <div class="form-group">
-              <label for="message" class="formbuilder-textarea-label">Zpráva</label>
-              <textarea type="textarea" class="form-control" name="message" access="false" rows="3"></textarea>
+              <label for="message" class="formbuilder-textarea-label">Zpráva<span class="pl-1 color-red">*</span></label>
+              <textarea type="textarea" class="form-control" name="entry.1308833359" access="false" rows="3" required=""></textarea>
             </div>
             <div class="form-group mt-5">
-              <p class="btn-wrapper text-center"><a href="#" class="btn btn-primary btn-md">Odeslat formulář</a></p>
+              <p class="btn-wrapper text-center">
+                <input type="submit" value="Odeslat formulář" class="btn btn-primary btn-md">
+              </p>
             </div>
           </form>
+          <div class="form-success hidden">
+            <div class="icon">
+              <i class="fal fa-check-circle"></i>
+            </div>
+            <div class="content">
+              <h2>Skvělá práce!</h2>
+              <p>Do 24 hodin vám odepíšu na vaši zprávu.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -101,7 +112,7 @@
           <div class="promo-banner">
             <h2 class="mb-lg-0">Zarezervujte si termín <br class="d-none d-lg-block" />úvodní konzultace.</h2>
             <p class="btn-wrapper">
-              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jaknaeshop/konzultace'});return false;" class="btn btn-secondary btn-md">Domluvit úvodní konzultaci <i class="far fa-chevron-right ml-2 pl-1"></i></a>
+              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kryptoinvestor-jares/uvodni-konzultace'});return false;" class="btn btn-secondary btn-md">Domluvit úvodní konzultaci <i class="far fa-chevron-right ml-2 pl-1"></i></a>
             </p>
           </div>
         </div>
@@ -118,7 +129,7 @@
           <div class="d-lg-flex align-items-lg-center">
             <img src="assets/images/logo.png" width="45" height="45" alt="Logo Pavla Jareše - Odborníka na krypotoměny" class="brand-image">
             <h2 class="brand-title">
-              Pavel Jareš<span class="d-lg-none">,</span> <span>Kryptoinvestor</span>
+              Ing. Pavel Jareš<span class="d-lg-none">,</span> <span>Kryptoinvestor</span>
             </h2>
           </div>
         </div>  
@@ -136,7 +147,7 @@
         <div class="col-12 col-lg-6 footer-section">
           <h3>Kontaktní informace</h3>
           <ul class="list-icons">
-            <li><i class="fas fa-user color-primary"></i> Pavel Jareš, kryptoměnový investor</li>
+            <li><i class="fas fa-user color-primary"></i> Ing. Pavel Jareš, kryptoměnový investor</li>
             <li><i class="fas fa-phone-volume color-primary"></i> +420 603 809 826</li>
             <li><i class="fas fa-envelope color-primary"></i> jares@kryptoinvestor.cz</li>
             <li><i class="fas fa-map-marker-alt color-primary"></i> V Olšinách 2300/75, 100 00 Praha 10</li>
@@ -158,10 +169,14 @@
           <h3>Sledujte mě na:</h3>
           <ul class="social-icons">
             <li>
-              <i class="fab fa-linkedin color-primary"></i>
+              <a href="https://www.linkedin.com/in/paveljares/" target="_blank">
+                <i class="fab fa-linkedin color-primary"></i>
+              </a>
             </li>
             <li>
-              <i class="fab fa-twitter-square color-primary"></i>
+              <a href="https://twitter.com/jarespavel" target="_blank">
+                <i class="fab fa-twitter-square color-primary"></i>
+              </a>
             </li>
           </ul>
         </div>
