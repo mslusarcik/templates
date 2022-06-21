@@ -1,0 +1,28 @@
+.product-top .p-detail-info .stars-wrapper .stars-label, .availability-value {
+  display: none;
+}
+
+.product-top .add-to-cart .quantity .decrease, .product-top .add-to-cart .quantity .increase {
+  top: 6px;
+}
+
+.product-top .add-to-cart .quantity {
+  height: 58px;
+  margin-right: 25px;
+  border-radius: 12px !important;
+  width: 140px;
+  height: 32px;
+}
+
+.product-top .add-to-cart .quantity input {
+  height: 32px;
+  width: 140px;
+}
+
+.product-top .add-to-cart {
+  background-color: #FAFAFA;
+  border: 2px solid #C3B482;
+  border-radius: 6px;
+  padding: 30px;
+}
+
